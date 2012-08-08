@@ -7,7 +7,7 @@ and add the following line add the end of file :
 www-data ALL=(ALL) NOPASSWD: ALL
 }}}
 
-Then include the library (gpio.php) in your script and you are ready to use it.
+Then include the library (gpio.php) in your PHP script and you are ready to use it.
 
 {{{
 include("gpio.php");
