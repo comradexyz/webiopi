@@ -1,6 +1,7 @@
   * improve CSS for a fully customizable UI
-  * and/or refactor Javascript into a library ?
+  * refactor Javascript into a library ?
   * find a way to release/reset GPIO with PHP version
   * UART/SPI/I2C support
   * Java server version ?
+  * long-polling/Bayeux/Cometd and/or WebSocket
   * 
