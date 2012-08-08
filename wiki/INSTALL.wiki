@@ -1,4 +1,3 @@
-#labels l
 You have the choice of the install, regards on wich technology you prefer : PHP or Pyhton.
 But don't use different server at the same time, or it may not work correctly.
 
