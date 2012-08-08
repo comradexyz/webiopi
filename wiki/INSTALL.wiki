@@ -61,7 +61,7 @@ To run it, open a terminal in the directory you extracted WebIOPi, and start the
 {{{
 $ python webiopi.py [port]
 or
-$ ./webiopy.py [port]
+$ ./webiopi.py [port]
 }}}
 where port is the port to bind the HTTP server, default is 80, but maybe used by Apache.
 
