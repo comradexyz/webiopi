@@ -48,7 +48,7 @@ On Raspbian, with root user  (or using sudo):
 $ aptitude install python-dev
 }}}
 
-Then download & install the module :
+Then download & install the GPIO module :
 {{{
 $ wget http://pypi.python.org/packages/source/R/RPi.GPIO/RPi.GPIO-0.3.1a.tar.gz
 $ tar xvzf RPi.GPIO-0.3.1a.tar.gz
