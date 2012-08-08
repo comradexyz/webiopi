@@ -2,7 +2,8 @@ You have the choice of the install, regards on wich technology you prefer : PHP 
 But don't use different server at the same time, or it may not work correctly.
 
 ==PHP==
-Requires Apache2 and PHP5 on you Pi, and also some tweaks :
+Requires Apache2 and PHP5 on you Pi, and also some tweaks.
+
 First install required packages :
 {{{
 $ aptitude install apache2 php5
