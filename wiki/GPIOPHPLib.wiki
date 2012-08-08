@@ -1,0 +1,33 @@
+First, to use GPIOs inside PHP, you need to add the Apache user (www-data) to the sudoers.
+{{{
+$ sudo visudo
+}}}
+and add the following line add the end of file :
+{{{
+www-data ALL=(ALL) NOPASSWD: ALL
+}}}
+
+Then include the library (gpio.php) in your script and you are ready to use it.
+
+{{{
+$gpio = new GPIO(); // get the GPIO API
+$gpio->init();      // initialize GPIO pins
+
+$gpio->GPIO_AVAILABLE // contains mapped GPIOs :
+// [0, 1, 4, 7, 8, 9, 10, 11, 14, 15, 17, 18, 21, 22, 23, 24, 25];
+
+$gpio->getALTPins() // return an array with ALT activated GPIOs :
+// [14, 15] by default and until next version
+
+$gpio->setDirection(0, "in");   // setup GPIO 0 in input
+$gpio->setDirection(1, "in");   // setup GPIO 1 in input
+$gpio->setDirection(24, "out"); // setup GPIO 24 in output
+$gpio->setDirection(25, "out"); // setup GPIO 25 in output
+
+$gpio->getValue(0);     // return GPIO 0 value
+$gpio->getValue(1);     // return GPIO 1 value
+$gpio->setValue(24, 0); // fall GPIO 24
+$gpio->setValue(25, 1); // raise GPIO 25
+
+$gpio->release(); // release the GPIO (reset and discard GPIO state)
+}}}
