@@ -1,3 +1,4 @@
+#labels l
 You have the choice of the install, regards on wich technology you prefer : PHP or Pyhton.
 But don't use different server at the same time, or it may not work correctly.
 
@@ -39,8 +40,8 @@ You can now open a browser to http://raspberrypi/webiopi/  (or replace raspberry
   
 
 ==PYTHON==
-Requires [http://pypi.python.org/pypi/RPi.GPIO/ RPi.GPIO] module
-You will need Python development headers
+Requires [http://pypi.python.org/pypi/RPi.GPIO/ RPi.GPIO] module. You will also need Python development headers.
+
 On Raspbian, with root user  (or using sudo):
 {{{
 $ aptitude install python-dev
