@@ -13,7 +13,8 @@ Then include the library (gpio.php) in your PHP script and you are ready to use 
 include("gpio.php");
 
 $gpio = new GPIO(); // get the GPIO API
-$gpio->init();      // initialize GPIO pins
+$gpio->enable(0);   // enable GPIO 0 
+$gpio->init();      // enable all GPIO pins
 
 $gpio->GPIO_AVAILABLE // contains available GPIO on RPi :
 // [0, 1, 4, 7, 8, 9, 10, 11, 14, 15, 17, 18, 21, 22, 23, 24, 25];
@@ -38,5 +39,6 @@ $gpio->getValue(1);     // return GPIO 1 value
 $gpio->setValue(24, 0); // fall GPIO 24
 $gpio->setValue(25, 1); // raise GPIO 25
 
-$gpio->release(); // release the GPIO (reset and discard GPIO state)
+$gpio->disable(0); // disable GPIO 0
+$gpio->release();  // disable all GPIO pins(reset and discard state)
 }}}
