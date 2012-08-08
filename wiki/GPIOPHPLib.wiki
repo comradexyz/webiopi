@@ -34,8 +34,11 @@ $gpio->setDirection(1, "in");   // setup GPIO 1 in input
 $gpio->setDirection(24, "out"); // setup GPIO 24 in output
 $gpio->setDirection(25, "out"); // setup GPIO 25 in output
 
+$gpio->getDirection(23);        // return GPIO 23 direction
+
 $gpio->getValue(0);     // return GPIO 0 value
 $gpio->getValue(1);     // return GPIO 1 value
+
 $gpio->setValue(24, 0); // fall GPIO 24
 $gpio->setValue(25, 1); // raise GPIO 25
 
