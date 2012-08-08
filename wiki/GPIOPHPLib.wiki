@@ -18,7 +18,7 @@ $gpio->init();      // initialize GPIO pins
 $gpio->GPIO_AVAILABLE // contains available GPIO on RPi :
 // [0, 1, 4, 7, 8, 9, 10, 11, 14, 15, 17, 18, 21, 22, 23, 24, 25];
 
-$gpio->ALT            // contains ALT config
+$gpio->ALT            // contains ALT config :
 //[
 //  "UART" =>["enabled" => true, "pins"=>[14, 15]],
 //  "I2C" => ["enabled" => false, "pins"=>[0, 1]],
