@@ -1,4 +1,4 @@
- * Improve CSS for a fully customizable UI
+  * Improve CSS for a fully customizable UI
   * Refactor Javascript into a library ?
   * Parallel BUS helper
   * UART/SPI/I2C support
