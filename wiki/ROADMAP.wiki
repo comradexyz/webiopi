@@ -1,10 +1,9 @@
-  * add REST methods to retrieve single GPIO direction/value
-  * improve CSS for a fully customizable UI
-  * refactor Javascript into a library ?
-  * find a way to release/reset GPIO with PHP version
+  * Add REST methods to retrieve single GPIO direction/value
+  * Improve CSS for a fully customizable UI
+  * Refactor Javascript into a library ?
   * Parallel BUS helper
   * UART/SPI/I2C support
-  * interrupts
-  * long-polling/Bayeux/Cometd and/or WebSocket
-  * web oscilloscope
+  * Interrupts
+  * Long-polling/Bayeux/Cometd and/or WebSocket
+  * Web oscilloscope
   * Java server version ?
