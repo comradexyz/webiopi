@@ -4,5 +4,7 @@
   * find a way to release/reset GPIO with PHP version
   * Parallel BUS helper
   * UART/SPI/I2C support
-  * Java server version ?
+  * interrupts
   * long-polling/Bayeux/Cometd and/or WebSocket
+  * web oscilloscope
+  * Java server version ?
