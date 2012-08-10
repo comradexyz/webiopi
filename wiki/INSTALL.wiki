@@ -4,7 +4,7 @@ But don't use different server at the same time, or it may not work correctly.
   * Python version is perfect for one time use,  or for users who don't want to install and/or modify Apache configuration files.
 
 ==PHP==
-Requires Apache2 and PHP5 on you Pi, and also some tweaks.
+Requires Apache2 and PHP5 on your Pi, and also some tweaks.
 
 First install required packages :
 {{{
@@ -14,7 +14,7 @@ Then download and extract WebIOPi to /var/www
 
 In order to work, PHP version of WebIOPi requires to allow .htaccess :
 {{{
-$ nano /etc/apache2/site-enabled/000-default
+$ nano /etc/apache2/sites-enabled/000-default
 }}}
 Find the "<Directory /var/www>" section and change the line "AllowOverride None" to "AllowOverride All" :
 {{{
@@ -26,7 +26,7 @@ Find the "<Directory /var/www>" section and change the line "AllowOverride None"
 ﻿  </Directory>
 }}}
 ﻿  
-You will also need to add apache's user (www-data) to the sudoers :
+You will also need to add Apache's user (www-data) to the sudoers :
 {{{
 $ sudo visudo
 }}}
