@@ -1,0 +1,44 @@
+The API is currently limited to 3 features :
+===Retrieve GPIO state/configuration===
+  * HTTP GET /`*`
+  * Returns full GPIO state in JSON :
+{{{
+{"UART": 1, "I2C": 0, "SPI": 0, "GPIO":{
+"0": {"mode": "GPIO", "direction": "in", "value": 1}, 
+"1": {"mode": "GPIO", "direction": "in", "value": 1}, 
+"4": {"mode": "GPIO", "direction": "out", "value": 1}, 
+"7": {"mode": "GPIO", "direction": "out", "value": 0}, 
+"8": {"mode": "GPIO", "direction": "out", "value": 0}, 
+"9": {"mode": "GPIO", "direction": "out", "value": 0}, 
+"10": {"mode": "GPIO", "direction": "out", "value": 0}, 
+"11": {"mode": "GPIO", "direction": "out", "value": 0}, 
+"14": {"mode": "ALT", "direction": "out", "value": 0}, 
+"15": {"mode": "ALT", "direction": "out", "value": 0}, 
+"17": {"mode": "GPIO", "direction": "out", "value": 0}, 
+"18": {"mode": "GPIO", "direction": "out", "value": 0}, 
+"21": {"mode": "GPIO", "direction": "out", "value": 0}, 
+"22": {"mode": "GPIO", "direction": "out", "value": 0}, 
+"23": {"mode": "GPIO", "direction": "out", "value": 0}, 
+"24": {"mode": "GPIO", "direction": "out", "value": 0}, 
+"25": {"mode": "GPIO", "direction": "out", "value": 0}
+}}
+}}}
+
+===Setup GPIO direction===
+  * HTTP POST /GPIO/(pinNumber)/direction/(in" or "out")
+    * Returns new setup : "int" or "out"
+  * Examples:
+    * To set GPIO 0 in input : HTTP POST /GPIO/0/direction/in
+      * Returns "in"
+    * To set GPIO 1 in output : HTTP POST /GPIO/1/direction/out
+      * Returns "out"
+
+
+===Change GPIO value===
+  * HTTP POST /GPIO/(pinNumber)/value/(0 or 1)
+    * Return new value : 0 or 1
+  * Examples:
+    * To raise GPIO 0 : HTTP POST /GPIO/0/value/1
+      * Returns 1
+    * To fall GPIO 1 : HTTP POST /GPIO/1/value/0
+      * Returns 0
