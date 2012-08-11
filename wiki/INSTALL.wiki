@@ -41,7 +41,7 @@ You can now open a browser to http://raspberrypi/webiopi/
 
 Replace raspberrypi by its IP if DNS doesn't work.
 
-You can also use localhost if you have have keyboard/mouse/display.
+You can also use localhost if you use your Pi with a display plugged in.
   
 
 ==PYTHON==
@@ -74,4 +74,4 @@ You can now open a browser to http://raspberrypi[:port]/
 
 Replace raspberrypi by its IP if DNS doesn't work.
 
-You can also use localhost if you have have keyboard/mouse/display.
+You can also use localhost if you use your Pi with a display plugged in.
