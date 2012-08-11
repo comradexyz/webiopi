@@ -1,5 +1,19 @@
-The API is currently limited to 3 features :
-===Retrieve GPIO state/configuration===
+The API is REST based, so use HTTP GET to retrieve something, and use a HTTP POST to modify something.
+
+
+===Get GPIO direction===
+  * HTTP GET /GPIO/{pinNumber}/direction
+  * Returns "in" or "out"
+  * Example :
+    * To get GPIO 0 direction : HTTP GET /GPIO/0/direction
+
+===Get GPIO value===
+  * HTTP GET /GPIO/{pinNumber}/value
+  * Returns 0 or 1
+  * Example :
+    * To get GPIO 0 value : HTTP GET /GPIO/0/value
+
+===Get full GPIO state/configuration===
   * HTTP GET /`*`
   * Returns full GPIO state in JSON :
 {{{
