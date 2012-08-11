@@ -40,7 +40,7 @@ The API is REST based, so use HTTP GET to retrieve something, and use a HTTP POS
 
 ===Setup GPIO direction===
   * HTTP POST /GPIO/(pinNumber)/direction/(in" or "out")
-    * Returns new setup : "int" or "out"
+    * Returns new setup : "in" or "out"
   * Examples:
     * To set GPIO 0 in input : HTTP POST /GPIO/0/direction/in
       * Returns "in"
