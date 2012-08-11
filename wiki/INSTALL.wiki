@@ -37,8 +37,10 @@ www-data ALL=(ALL) NOPASSWD: ALL
 
 Exit, save, and confirm changes.
 
-You can now open a browser to http://raspberrypi/webiopi/<br/>
-Replace raspberrypi by its IP if DNS doesn't work.<br/>
+You can now open a browser to http://raspberrypi/webiopi/
+
+Replace raspberrypi by its IP if DNS doesn't work.
+
 You can also use localhost if you have have keyboard/mouse/display.
   
 
@@ -68,6 +70,8 @@ $ ./webiopi.py [port]
 }}}
 where port is the port to bind the HTTP server, default is 80, but maybe used by Apache.
 
-You can now open a browser to http://raspberrypi[:port]/<br/>
-Replace raspberrypi by its IP if DNS doesn't work.<br/>
+You can now open a browser to http://raspberrypi[:port]/
+
+Replace raspberrypi by its IP if DNS doesn't work.
+
 You can also use localhost if you have have keyboard/mouse/display.
