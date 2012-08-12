@@ -1,17 +1,42 @@
 The Web API included in the servers scripts allows you to make you own client, using an HTTP REST based API. You can you use it to achieve several tasks :
 <wiki:toc max_depth="3" />
 
+Errors returned by the WebAPI are understandable when the HTTP call is not valid :
+  * 400 Bad Request
+  * 403 GPIO # Not Available
+  * 403 GPIO # Disabled
+  * 404 `[something]` Not Found
+
+
 =Get GPIO direction=
   * HTTP GET /GPIO/(pinNumber)/direction
   * Returns "in" or "out"
   * Example :
     * To get GPIO 0 direction : HTTP GET /GPIO/0/direction
 
+=Set GPIO direction=
+  * HTTP POST /GPIO/(pinNumber)/direction/("in" or "out")
+    * Returns new setup : "in" or "out"
+  * Examples:
+    * To set GPIO 0 in input : HTTP POST /GPIO/0/direction/in
+      * Returns "in"
+    * To set GPIO 1 in output : HTTP POST /GPIO/1/direction/out
+      * Returns "out"
+
 =Get GPIO value=
   * HTTP GET /GPIO/(pinNumber)/value
   * Returns 0 or 1
   * Example :
     * To get GPIO 0 value : HTTP GET /GPIO/0/value
+
+=Set GPIO value=
+  * HTTP POST /GPIO/(pinNumber)/value/(0 or 1)
+    * Return new value : 0 or 1
+  * Examples:
+    * To raise GPIO 0 : HTTP POST /GPIO/0/value/1
+      * Returns 1
+    * To fall GPIO 1 : HTTP POST /GPIO/1/value/0
+      * Returns 0
 
 =Get full GPIO state/configuration=
   * HTTP GET /`*`
@@ -37,32 +62,6 @@ The Web API included in the servers scripts allows you to make you own client, u
 "25": {"mode": "GPIO", "direction": "out", "value": 0}
 }}
 }}}
-
-=Set GPIO direction=
-  * HTTP POST /GPIO/(pinNumber)/direction/("in" or "out")
-    * Returns new setup : "in" or "out"
-  * Examples:
-    * To set GPIO 0 in input : HTTP POST /GPIO/0/direction/in
-      * Returns "in"
-    * To set GPIO 1 in output : HTTP POST /GPIO/1/direction/out
-      * Returns "out"
-
-
-=Set GPIO value=
-  * HTTP POST /GPIO/(pinNumber)/value/(0 or 1)
-    * Return new value : 0 or 1
-  * Examples:
-    * To raise GPIO 0 : HTTP POST /GPIO/0/value/1
-      * Returns 1
-    * To fall GPIO 1 : HTTP POST /GPIO/1/value/0
-      * Returns 0
-
-=Errors=
-Errors returned by the WebAPI are understandable when the URL is not valid :
-  * 400 Bad Request
-  * 403 GPIO # Not Available
-  * 403 GPIO # Disabled
-  * 404 `[something]` Not Found
 
 
 
