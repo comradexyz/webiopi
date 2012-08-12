@@ -34,7 +34,10 @@ then add the following line at the end of file :
 www-data ALL=(ALL) NOPASSWD: ALL
 }}}
 
-Exit, save, and confirm changes.
+Exit, save, confirm changes, and restart Apache :
+{{{
+# sudo /etc/init.d/apache2 restart
+}}}
 
 Now, download and extract WebIOPi :
 {{{
@@ -48,6 +51,7 @@ or
 # sudo ln -s webiopi /var/www/webiopi
 }}}
 
+You're done, and ready to enjoy WebIOPi !
 
 =PYTHON=
 Requires [http://pypi.python.org/pypi/RPi.GPIO/ RPi.GPIO] module.
@@ -74,6 +78,6 @@ Finally download, extract WebIOPi and launch the process :
 or
 # sudo ./webiopi.py [port]
 }}}
-where port is the port to bind the HTTP server, default is 80, but maybe used by Apache.
+where port is the port to bind the HTTP server, default is 80, but maybe used.
 
 You're done, and ready to enjoy WebIOPi !
