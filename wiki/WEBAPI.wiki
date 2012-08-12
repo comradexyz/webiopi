@@ -19,9 +19,7 @@ Errors returned by the WebAPI are understandable when the HTTP call is not valid
     * Returns new setup : "in" or "out"
   * Examples:
     * To set GPIO 0 in input : HTTP POST /GPIO/0/direction/in
-      * Returns "in"
     * To set GPIO 1 in output : HTTP POST /GPIO/1/direction/out
-      * Returns "out"
 
 =Get GPIO value=
   * HTTP GET /GPIO/(pinNumber)/value
@@ -34,13 +32,11 @@ Errors returned by the WebAPI are understandable when the HTTP call is not valid
     * Return new value : 0 or 1
   * Examples:
     * To raise GPIO 0 : HTTP POST /GPIO/0/value/1
-      * Returns 1
     * To fall GPIO 1 : HTTP POST /GPIO/1/value/0
-      * Returns 0
 
 =Get full GPIO state/configuration=
   * HTTP GET /`*`
-  * Returns full GPIO state in JSON :
+    * Returns full GPIO state in JSON :
 {{{
 {"UART": 1, "I2C": 0, "SPI": 0, "GPIO":{
 "0": {"mode": "GPIO", "direction": "in", "value": 1}, 
@@ -62,7 +58,6 @@ Errors returned by the WebAPI are understandable when the HTTP call is not valid
 "25": {"mode": "GPIO", "direction": "out", "value": 0}
 }}
 }}}
-
-
+"UART": 1, "I2C": 0, "SPI": 0 mean that UART is enabled, whereas both I2C and SPI are disabled. So GPIOs used by the UART (14 and 15) are unusable.
 
   
