@@ -11,6 +11,7 @@
   * Only support binary GPIOs, in both input and output.
   * GPIOs 0 and 1 have input pull-up resistor enabled.
   * UART is enabled but unusable for now.
+    * GPIOs 14 and 15 are disabled
   * UART, SPI and I2C support will be added as soon as possible.
   * Don't forget that GPIO support only 3.3V, don't plug them to 5V !!!
 
