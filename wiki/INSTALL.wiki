@@ -35,12 +35,7 @@ then add the following line at the end of file :
 www-data ALL=(ALL) NOPASSWD: ALL
 }}}
 
-Exit, save, and confirm changes.
-
-If your are directly using your Raspberry Pi with some keyboard/mouse/display plugged in, you can now open a browser to http://localhost/webiopi/
-
-If your Raspberry Pi is connected to your network, yo can now open a browser to http://raspberrypi/webiopi/ with any device of your network. Replace raspberrypi by its IP if DNS doesn't work.
-  
+Exit, save, and confirm changes, you're done ! You can now enjoy WebIOPi.
 
 ==PYTHON==
 Requires [http://pypi.python.org/pypi/RPi.GPIO/ RPi.GPIO] module. You will also need Python development headers.
@@ -63,6 +58,4 @@ or
 }}}
 where port is the port to bind the HTTP server, default is 80, but maybe used by Apache.
 
-If your are directly using your Raspberry Pi with some keyboard/mouse/display plugged in, you can now open a browser to http://localhost[:port]/
-
-If your Raspberry Pi is connected to your network, yo can now open a browser to http://raspberrypi[:port]/ with any device of your network. Replace raspberrypi by its IP if DNS doesn't work.
+You're done, and ready to enjoy WebIOPi !
