@@ -10,7 +10,6 @@ First install required packages. On Raspbian, using sudo (or root user) :
 {{{
 # sudo aptitude install apache2 php5
 }}}
-Then download and extract WebIOPi to /var/www
 
 In order to work, WebIOPi requires to allow .htaccess :
 {{{
@@ -35,7 +34,9 @@ then add the following line at the end of file :
 www-data ALL=(ALL) NOPASSWD: ALL
 }}}
 
-Exit, save, and confirm changes, you're done ! You can now enjoy WebIOPi.
+Exit, save, and confirm changes.
+
+FInally, download and extract WebIOPi to /var/www to enjoy WebIOPi.
 
 =PYTHON=
 Requires [http://pypi.python.org/pypi/RPi.GPIO/ RPi.GPIO] module. You will also need Python development headers.
