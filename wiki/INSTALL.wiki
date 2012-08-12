@@ -41,8 +41,8 @@ Exit, save, confirm changes, and restart Apache :
 
 Now, download and extract WebIOPi :
 {{{
-# wget http://webiopi.googlecode.com/files/WebIOPi-0.1.tar.gz
-# tar xvzf WebIOPi-0.1.tar.gz
+# wget http://webiopi.googlecode.com/files/WebIOPi-0.2.tar.gz
+# tar xvzf WebIOPi-0.2.tar.gz
 }}}
 Finally, move extracted files or create a symbolic link :
 {{{
@@ -69,7 +69,7 @@ Then download, and install GPIO module :
 # sudo python setup.py install
 }}}
 
-Now download and WebIOPi :
+Now download and extract WebIOPi :
 {{{
 # wget http://webiopi.googlecode.com/files/WebIOPi-0.2.tar.gz
 # tar xvzf WebIOPi-0.2.tar.gz
