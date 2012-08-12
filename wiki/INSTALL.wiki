@@ -1,12 +1,13 @@
 You have the choice of the install, regards on wich technology you prefer : PHP or Pyhton.
-But don't use different server at the same time, or it may not work correctly.
+
+*<font color="red">Don't use different server at the same time, or it may not work correctly.</font>*
   * PHP version is good if you already have Apache/PHP or if you plan to use it, but requires some configuration.
   * Python version is perfect for one time use,  or for users who don't want to install and/or modify Apache configuration files.
 
 =PHP=
 Requires Apache2 and PHP5 on your Pi, and also some tweaks.
 
-First install required packages. On Raspbian, using sudo (or root user) :
+First install required packages. On Raspbian, open a terminal :
 {{{
 # sudo aptitude install apache2 php5
 }}}
@@ -56,7 +57,7 @@ You're done, and ready to enjoy WebIOPi !
 =PYTHON=
 Requires [http://pypi.python.org/pypi/RPi.GPIO/ RPi.GPIO] module.
 
-You will also need Python development headers. On Raspbian, with a terminal :
+You will also need Python development headers. On Raspbian, open a terminal :
 {{{
 # sudo aptitude install python-dev
 }}}
