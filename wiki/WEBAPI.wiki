@@ -2,7 +2,7 @@ The Web API included in the servers scripts allows you to make you own client, u
 <wiki:toc max_depth="3" />
 
 Errors returned by the WebAPI are understandable when the HTTP call is not valid :
-  * 400 Bad Request
+  * 400 Bad Request (path incomplete)
   * 403 GPIO # Not Available
   * 403 GPIO # Disabled
   * 404 `[something]` Not Found
@@ -58,6 +58,6 @@ Errors returned by the WebAPI are understandable when the HTTP call is not valid
 "25": {"mode": "GPIO", "direction": "out", "value": 0}
 }}
 }}}
-"UART": 1, "I2C": 0, "SPI": 0 mean that UART is enabled, whereas both I2C and SPI are disabled. So GPIOs used by the UART (14 and 15) are unusable.
+"UART": 1, "I2C": 0, "SPI": 0 mean that UART is enabled, whereas both I2C and SPI are disabled. So GPIOs used by the UART (14 and 15) are disabled and unusable.
 
   
