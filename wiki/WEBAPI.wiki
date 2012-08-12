@@ -1,14 +1,13 @@
-The API is REST based, so use HTTP GET to retrieve something, and use a HTTP POST to modify something.
-
+<wiki:toc max_depth="1" />
 
 ===Get GPIO direction===
-  * HTTP GET /GPIO/{pinNumber}/direction
+  * HTTP GET /GPIO/(pinNumber)/direction
   * Returns "in" or "out"
   * Example :
     * To get GPIO 0 direction : HTTP GET /GPIO/0/direction
 
 ===Get GPIO value===
-  * HTTP GET /GPIO/{pinNumber}/value
+  * HTTP GET /GPIO/(pinNumber)/value
   * Returns 0 or 1
   * Example :
     * To get GPIO 0 value : HTTP GET /GPIO/0/value
@@ -38,8 +37,8 @@ The API is REST based, so use HTTP GET to retrieve something, and use a HTTP POS
 }}
 }}}
 
-===Setup GPIO direction===
-  * HTTP POST /GPIO/(pinNumber)/direction/(in" or "out")
+===Set GPIO direction===
+  * HTTP POST /GPIO/(pinNumber)/direction/("in" or "out")
     * Returns new setup : "in" or "out"
   * Examples:
     * To set GPIO 0 in input : HTTP POST /GPIO/0/direction/in
@@ -48,7 +47,7 @@ The API is REST based, so use HTTP GET to retrieve something, and use a HTTP POS
       * Returns "out"
 
 
-===Change GPIO value===
+===Set GPIO value===
   * HTTP POST /GPIO/(pinNumber)/value/(0 or 1)
     * Return new value : 0 or 1
   * Examples:
