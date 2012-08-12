@@ -1,6 +1,6 @@
-First, to use GPIOs inside PHP, you need to add the Apache user (www-data) to the sudoers.
+First, to use GPIOs inside PHP, you need to add the Apache user (www-data) to the sudoers with a terminal :
 {{{
-$ sudo visudo
+# sudo visudo
 }}}
 and add the following line add the end of file :
 {{{
@@ -8,7 +8,6 @@ www-data ALL=(ALL) NOPASSWD: ALL
 }}}
 
 Then include the library (gpio.php) in your PHP script and you are ready to use it.
-
 {{{
 include("gpio.php");
 
