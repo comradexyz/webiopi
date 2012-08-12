@@ -55,14 +55,12 @@ $ sudo ln -s webiopi /var/www/webiopi
 You're done, and ready to enjoy WebIOPi !
 
 =PYTHON=
-Requires [http://pypi.python.org/pypi/RPi.GPIO/ RPi.GPIO] module.
-
-You will also need Python development headers. On Raspbian, open a terminal :
+You will need Python development headers. On Raspbian, open a terminal :
 {{{
 $ sudo aptitude install python-dev
 }}}
 
-Then download, and install GPIO module :
+Then download, and install [http://pypi.python.org/pypi/RPi.GPIO/ RPi.GPIO] module :
 {{{
 $ wget http://raspberry-gpio-python.googlecode.com/files/RPi.GPIO-0.3.1a.tar.gz
 $ tar xvzf RPi.GPIO-0.3.1a.tar.gz
