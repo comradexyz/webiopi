@@ -1,10 +1,10 @@
-* Improve CSS for a fully customizable UI (client)
-* Refactor Javascript into a library (client)
-* Parallel BUS helper (client, servers)
-* PHP Extension to use registers (php server)
-* UART/SPI/I2C support (client, servers)
-* Interrupts (servers)
-* Long-polling/Bayeux/Cometd and/or WebSocket (client, servers)
-* Web oscilloscope (client, may be servers)
+  * Improve CSS for a fully customizable UI (client)
+  * Refactor Javascript into a library (client)
+  * Parallel BUS helper (client, servers)
+  * PHP Extension to use registers (php server)
+  * UART/SPI/I2C support (client, servers)
+  * Interrupts (servers)
+  * Long-polling/Bayeux/Cometd and/or WebSocket (client, servers)
+  * Web oscilloscope (client, may be servers)
 
-* Java server version ?
+  * Java server version ?
