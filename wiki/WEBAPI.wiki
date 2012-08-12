@@ -1,18 +1,18 @@
 <wiki:toc max_depth="3" />
 
-===Get GPIO direction===
+=Get GPIO direction=
   * HTTP GET /GPIO/(pinNumber)/direction
   * Returns "in" or "out"
   * Example :
     * To get GPIO 0 direction : HTTP GET /GPIO/0/direction
 
-===Get GPIO value===
+=Get GPIO value=
   * HTTP GET /GPIO/(pinNumber)/value
   * Returns 0 or 1
   * Example :
     * To get GPIO 0 value : HTTP GET /GPIO/0/value
 
-===Get full GPIO state/configuration===
+=Get full GPIO state/configuration=
   * HTTP GET /`*`
   * Returns full GPIO state in JSON :
 {{{
@@ -37,7 +37,7 @@
 }}
 }}}
 
-===Set GPIO direction===
+=Set GPIO direction=
   * HTTP POST /GPIO/(pinNumber)/direction/("in" or "out")
     * Returns new setup : "in" or "out"
   * Examples:
@@ -47,7 +47,7 @@
       * Returns "out"
 
 
-===Set GPIO value===
+=Set GPIO value=
   * HTTP POST /GPIO/(pinNumber)/value/(0 or 1)
     * Return new value : 0 or 1
   * Examples:
