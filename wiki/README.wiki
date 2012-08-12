@@ -22,6 +22,8 @@ If your are directly using your Raspberry Pi with keyboard/mouse/display plugged
 
 If your Raspberry Pi is connected to your network, yo can open a browser to http://raspberrypi/webiopi/ with any device of your network. Replace raspberrypi by its IP if DNS doesn't work.
 
+_Don't forget to add :port right after raspberrypi/IP if you use a different port._
+
 You can even add a port redirection on your router (and/or use IPv6) to control your GPIOs over Internet !
 
   * Click/Tap the OUT/IN button to change GPIO direction.
