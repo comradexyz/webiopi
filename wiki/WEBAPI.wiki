@@ -1,4 +1,4 @@
-#sidebar <wiki:toc max_depth="3" />
+<wiki:toc max_depth="3" />
 
 =Get GPIO direction=
   * HTTP GET /GPIO/(pinNumber)/direction
