@@ -69,11 +69,15 @@ Then download, and install GPIO module :
 # sudo python setup.py install
 }}}
 
-Finally download, extract WebIOPi and launch the process :
+Now download and WebIOPi :
 {{{
 # wget http://webiopi.googlecode.com/files/WebIOPi-0.2.tar.gz
 # tar xvzf WebIOPi-0.2.tar.gz
 # cd webiopi
+}}}
+
+Finally, run the python script :
+{{{
 # sudo python webiopi.py [port]
 or
 # sudo ./webiopi.py [port]
