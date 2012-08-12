@@ -55,3 +55,12 @@
       * Returns 1
     * To fall GPIO 1 : HTTP POST /GPIO/1/value/0
       * Returns 0
+
+=Errors=
+Errors returned by the WebAPI are understandable
+  * 400 Bad Request
+  * 403 GPIO # Not Available
+  * 403 GPIO # Disabled
+  * 404 [something] Not Found
+
+Examples :
