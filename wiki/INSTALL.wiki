@@ -55,15 +55,7 @@ Then download, extract the GPIO module and open a terminal where you extracted i
 # sudo python setup.py install
 }}}
 
-Finally, extract the WebIOPi archive and open a terminal to where you extracted it :
-{{{
-# sudo python webiopi.py [port]
-or
-# sudo ./webiopi.py [port]
-}}}
-
-
-To run it, open a terminal in the directory you extracted WebIOPi, and start the server process with sudo or root user : 
+Finally, extract the WebIOPi archive and open a terminal where you extracted it :
 {{{
 # sudo python webiopi.py [port]
 or
