@@ -1,4 +1,4 @@
-You have the choice of the install, depending on which technology you prefer : PHP or Pyhton.
+You have the choice of the install, depending on your need and which technology you prefer : PHP or Pyhton.
 
 *<font color="red">Don't use different server at the same time, or it may not work correctly.</font>*
   * PHP version is good if you already have Apache/PHP or if you plan to use it, but requires some configuration.
