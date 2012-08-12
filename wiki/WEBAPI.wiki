@@ -10,7 +10,7 @@ Errors returned by the WebAPI are understandable when the HTTP call is not valid
 
 =Get GPIO direction=
   * HTTP GET /GPIO/(pinNumber)/direction
-  * Returns "in" or "out"
+    * Returns "in" or "out"
   * Example :
     * To get GPIO 0 direction : HTTP GET /GPIO/0/direction
 
@@ -25,7 +25,7 @@ Errors returned by the WebAPI are understandable when the HTTP call is not valid
 
 =Get GPIO value=
   * HTTP GET /GPIO/(pinNumber)/value
-  * Returns 0 or 1
+    * Returns 0 or 1
   * Example :
     * To get GPIO 0 value : HTTP GET /GPIO/0/value
 
