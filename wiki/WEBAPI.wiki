@@ -1,4 +1,4 @@
-=Table of Content=
+The Web API included in the servers scripts allows you to make you own client, using an HTTP REST based API. It allows you to do several tasks :
 <wiki:toc max_depth="3" />
 
 =Get GPIO direction=
