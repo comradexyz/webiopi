@@ -61,6 +61,6 @@ Errors returned by the WebAPI are understandable
   * 400 Bad Request
   * 403 GPIO # Not Available
   * 403 GPIO # Disabled
-  * 404 [something] Not Found
+  * 404 `[something]` Not Found
 
 Examples :
