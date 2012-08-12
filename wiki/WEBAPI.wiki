@@ -57,10 +57,12 @@
       * Returns 0
 
 =Errors=
-Errors returned by the WebAPI are understandable
+Errors returned by the WebAPI are understandable when the URL is not valid :
   * 400 Bad Request
   * 403 GPIO # Not Available
   * 403 GPIO # Disabled
   * 404 `[something]` Not Found
 
-Examples :
+
+
+  
