@@ -2,7 +2,7 @@ You have the choice of the install, regards on wich technology you prefer : PHP 
 
 *<font color="red">Don't use different server at the same time, or it may not work correctly.</font>*
   * PHP version is good if you already have Apache/PHP or if you plan to use it, but requires some configuration.
-  * Python version is perfect for one time use,  or for users who don't want to install and/or modify Apache configuration files.
+  * Python version is perfect for one time use,  or for users who don't want to install Apache and/or modify its configuration.
 
 =PHP=
 Requires Apache2 and PHP5 on your Pi, and also some tweaks.
