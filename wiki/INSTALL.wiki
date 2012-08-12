@@ -9,12 +9,12 @@ Requires Apache2 and PHP5 on your Pi, and also some tweaks.
 
 First install required packages. On Raspbian, open a terminal :
 {{{
-# sudo aptitude install apache2 php5
+$ sudo aptitude install apache2 php5
 }}}
 
 In order to work, WebIOPi requires to allow .htaccess :
 {{{
-# sudo nano /etc/apache2/sites-enabled/000-default
+$ sudo nano /etc/apache2/sites-enabled/000-default
 }}}
 Find the <Directory /var/www> section and change the line "AllowOverride None" to "AllowOverride All" :
 {{{
@@ -28,7 +28,7 @@ Find the <Directory /var/www> section and change the line "AllowOverride None" t
 ﻿  
 You will also need to add Apache's user (www-data) to the sudoers :
 {{{
-# sudo visudo
+$ sudo visudo
 }}}
 then add the following line at the end of file :
 {{{
@@ -37,19 +37,19 @@ www-data ALL=(ALL) NOPASSWD: ALL
 
 Exit, save, confirm changes, and restart Apache :
 {{{
-# sudo /etc/init.d/apache2 restart
+$ sudo /etc/init.d/apache2 restart
 }}}
 
 Now, download and extract WebIOPi :
 {{{
-# wget http://webiopi.googlecode.com/files/WebIOPi-0.2.tar.gz
-# tar xvzf WebIOPi-0.2.tar.gz
+$ wget http://webiopi.googlecode.com/files/WebIOPi-0.2.tar.gz
+$ tar xvzf WebIOPi-0.2.tar.gz
 }}}
 Finally, move extracted files or create a symbolic link :
 {{{
-# sudo mv webiopi /var/www
+$ sudo mv webiopi /var/www
 or
-# sudo ln -s webiopi /var/www/webiopi
+$ sudo ln -s webiopi /var/www/webiopi
 }}}
 
 You're done, and ready to enjoy WebIOPi !
@@ -59,29 +59,29 @@ Requires [http://pypi.python.org/pypi/RPi.GPIO/ RPi.GPIO] module.
 
 You will also need Python development headers. On Raspbian, open a terminal :
 {{{
-# sudo aptitude install python-dev
+$ sudo aptitude install python-dev
 }}}
 
 Then download, and install GPIO module :
 {{{
-# wget http://raspberry-gpio-python.googlecode.com/files/RPi.GPIO-0.3.1a.tar.gz
-# tar xvzf RPi.GPIO-0.3.1a.tar.gz
-# cd RPi.GPIO-0.3.1a
-# sudo python setup.py install
+$ wget http://raspberry-gpio-python.googlecode.com/files/RPi.GPIO-0.3.1a.tar.gz
+$ tar xvzf RPi.GPIO-0.3.1a.tar.gz
+$ cd RPi.GPIO-0.3.1a
+$ sudo python setup.py install
 }}}
 
 Now download and extract WebIOPi :
 {{{
-# wget http://webiopi.googlecode.com/files/WebIOPi-0.2.tar.gz
-# tar xvzf WebIOPi-0.2.tar.gz
-# cd webiopi
+$ wget http://webiopi.googlecode.com/files/WebIOPi-0.2.tar.gz
+$ tar xvzf WebIOPi-0.2.tar.gz
+$ cd webiopi
 }}}
 
 Finally, run the python script :
 {{{
-# sudo python webiopi.py [port]
+$ sudo python webiopi.py [port]
 or
-# sudo ./webiopi.py [port]
+$ sudo ./webiopi.py [port]
 }}}
 where port is the port to bind the HTTP server, default is 80, but maybe used.
 
