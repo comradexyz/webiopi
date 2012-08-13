@@ -29,16 +29,28 @@ Then, you can use a selector to show and modify each desired pin :
   width: 80px;
   height: 80px;
 }
+#pin26 {
+  visibility: visible;
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+}
 }}}
 will display the RPi pin 3 (GPIO 0), with a big button in the upper-left corner.
 
 In your HTML file, replace the title, change the link tag with webiopi.css to point to your CSS. You also have to add some Javascript next to CSS link :
 {{{
-	<script type="text/javascript">
-	$(document).ready(function() {
-		postDirection(3, "out"); // set RPi pin 3 (GPIO 0) to output
-		$("#pin3").val("LED");    // change the label
-	});
+<script type="text/javascript">
+$(document).ready(function() {
+	postDirection(3, "in"); // set RPi pin 3 (GPIO 0) to input
+	$("#pin3").val("SW");  // change the label
+
+	postDirection(26, "out"); // set RPi pin 3 (GPIO 7) to output
+	$("#pin26").val("LED");  // change the label
+});
+</script>
 }}}
 
 Then Open a browser by appending yourfile.html to the usual URL. (http://raspberrypi/webiopi/yourfile.html) and you will see only the RPi pin 3.
