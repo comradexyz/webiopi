@@ -98,7 +98,6 @@ $(document).ready(function() {
 	setPinLabel(3, "SW");  // change the label
 
 	postDirection(26, "out"); // set RPi pin 3 (GPIO 7) to output
-	postValue(26, 1); // and set it HIGH
 	setPinLabel(26, "LED");  // change the label
 });
 </script>
