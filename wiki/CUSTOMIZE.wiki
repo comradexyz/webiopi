@@ -47,7 +47,7 @@ In your HTML file, replace the title, change the link tag with webiopi.css to po
 <title>My Page</title>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="webiopi.js"></script>
-<link rel="stylesheet" type="text/css" href=mypage.css" />
+<link rel="stylesheet" type="text/css" href="mypage.css" />
 <script type="text/javascript">
 $(document).ready(function() {
 	postDirection(3, "in"); // set RPi pin 3 (GPIO 0) to input
