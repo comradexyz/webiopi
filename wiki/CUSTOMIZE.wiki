@@ -1,0 +1,44 @@
+WebIOPi UI customization is easy but requires some CSS knowledge. The basic technic is to hide all controls, then show and move wanted controls. You will also need to add a Javascript line for each button you want to change the label.
+
+<font color="red>*Don't modify webiopi.html and webiopi.css directly, make copies first !*</font>
+
+RPi pins and direction buttons are all html inputs, and inherit the _input_ CSS style. There is also some class to get some generic controls :
+  * .DNC : Do not connect
+  * .GND : Ground
+  * .V33 : 3.3V
+  * .V55 : 5.0V
+  * .GPIO_HIGH : GPIO in high state
+  * .GPIO_LOW : GPIO in low state
+  * .UART
+  * .SPI
+  * .I2C
+
+  * .pinDirection_Enabled : Direction button for enabled GPIOs
+  * .pinDirection_Disabled : Direction button for disabled GPIOs
+  * .pinName : Name on the left/right of each pin
+
+To hide all controls, add "visibility: hidden" to the generic input selector, to .pinDirection_Enabled and  .pinName classes in your CSS file.
+
+Then, you can use a selector to show and modify each desired pin :
+{{{
+#pin3 {
+  visibility: visible;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+}
+}}}
+will display the RPi pin 3 (GPIO 0), with a big button in the upper-left corner.
+
+In your HTML file, replace the title, change the link tag with webiopi.css to point to your CSS. You also have to add some Javascript next to CSS link :
+{{{
+	<script type="text/javascript">
+	$(document).ready(function() {
+		postDirection(3, "out"); // set RPi pin 3 (GPIO 0) to output
+		$("#pin3").val("LED");    // change the label
+	});
+}}}
+
+Then Open a browser by appending yourfile.html to the usual URL. (http://raspberrypi/webiopi/yourfile.html) and you will see only the RPi pin 3.
