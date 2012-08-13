@@ -18,6 +18,37 @@ RPi pins and direction buttons are all html inputs, and inherit the _input_ CSS 
   * .pinName : Name on the left/right of each pin { font-size: 12pt; font-weight: bold; width: 75px; }
 
 To hide all controls, add "visibility: hidden" to the generic input selector, and to both .pinDirection_Enabled and .pinName CSS classes.
+{{{
+input {
+	-webkit-appearance: none;
+	font-size: 14pt;
+	font-weight: bold;
+	color: white;
+	border: black 3px solid;
+	width: 40px;
+	height: 30px;
+	padding: 0 0 0 0;
+	visibility: hidden;
+}
+
+.pinDirection_Enabled {
+	width: 50px;
+	background-color: Gray;
+	visibility: hidden;
+}
+
+.pinDirection_Disabled {
+	visibility: hidden;
+}
+
+.pinName {
+	font-size: 12pt;
+	font-weight: bold;
+	width: 75px;
+	visibility: hidden;
+}
+
+}}}
 
 Then, you can use a selector to show and modify each desired pin by using their IDs:
 {{{
