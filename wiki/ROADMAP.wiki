@@ -1,5 +1,3 @@
-  * Improve CSS for a fully customizable UI (client)
-  * Refactor Javascript into a library (client)
   * Parallel BUS helper (client, servers)
   * PHP Extension to use registers (php server)
   * UART/SPI/I2C support (client, servers)
