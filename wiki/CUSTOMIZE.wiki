@@ -3,19 +3,19 @@ WebIOPi UI customization is easy but requires some CSS knowledge. The basic tech
 <font color="red>*Don't modify webiopi.html and webiopi.css directly, make copies first !*</font>
 
 RPi pins and direction buttons are all html inputs, and inherit the _input_ CSS style. There is also some class to modify generic controls :
-  * .DNC : Do not connect
-  * .GND : Ground
-  * .V33 : 3.3V
-  * .V55 : 5.0V
-  * .GPIO_HIGH : GPIO in high state
-  * .GPIO_LOW : GPIO in low state
-  * .UART
-  * .SPI
-  * .I2C
+  * .DNC :  Do not connect{ background-color: Gray; }
+  * .GND : Ground { background-color: Black; }
+  * .V33 : 3.3V { background-color: Orange; }
+  * .V50 : 5.0V { background-color: Red; }
+  * .GPIO_LOW { background-color: Black; }
+  * .GPIO_HIGH { background-color: Orange; }
+  * .UART { background-color: DarkBlue; }
+  * .SPI { background-color: Purple; }
+  * .I2C { background-color: LightBlue; }
 
-  * .pinDirection_Enabled : Direction button for enabled GPIOs
-  * .pinDirection_Disabled : Direction button for disabled GPIOs
-  * .pinName : Name on the left/right of each pin
+  * .pinDirection_Enabled : Direction button for enabled GPIOs { width: 50px; background-color: Gray; }
+  * .pinDirection_Disabled : Direction button for disabled GPIOs{ visibility: hidden; }
+  * .pinName : Name on the left/right of each pin { font-size: 12pt; font-weight: bold; width: 75px; }
 
 To hide all controls, add "visibility: hidden" to the generic input selector, and to both .pinDirection_Enabled and .pinName CSS classes.
 
