@@ -2,7 +2,7 @@ WebIOPi UI customization is easy but requires some CSS knowledge. The basic tech
 
 <font color="red>*Don't modify webiopi.html and webiopi.css directly, make copies first !*</font>
 
-RPi pins and direction buttons are all html inputs, and inherit the _input_ CSS style. There is also some class to get some generic controls :
+RPi pins and direction buttons are all html inputs, and inherit the _input_ CSS style. There is also some class to modify generic controls :
   * .DNC : Do not connect
   * .GND : Ground
   * .V33 : 3.3V
