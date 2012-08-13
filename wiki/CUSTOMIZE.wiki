@@ -51,10 +51,11 @@ In your HTML file, replace the title, change the link tag with webiopi.css to po
 <script type="text/javascript">
 $(document).ready(function() {
 	postDirection(3, "in"); // set RPi pin 3 (GPIO 0) to input
-	$("#pin3").val("SW");  // change the label
+	setPinLabel(3, "SW");  // change the label
 
 	postDirection(26, "out"); // set RPi pin 3 (GPIO 7) to output
-	$("#pin26").val("LED");  // change the label
+	postValue(26, 1); // set RPi pin 26 (GPIO 7) HIGH
+	setPinLabel(26, "LED");  // change the label
 });
 </script>
 }}}
