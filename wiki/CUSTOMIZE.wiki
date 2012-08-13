@@ -17,7 +17,7 @@ RPi pins and direction buttons are all html inputs, and inherit the _input_ CSS 
   * .pinDirection_Disabled : Direction button for disabled GPIOs
   * .pinName : Name on the left/right of each pin
 
-To hide all controls, add "visibility: hidden" to the generic input selector, to .pinDirection_Enabled and  .pinName classes in your CSS file.
+To hide all controls, add "visibility: hidden" to the generic input selector, and to both .pinDirection_Enabled and .pinName classes in your CSS file.
 
 Then, you can use a selector to show and modify each desired pin by using their IDs:
 {{{
@@ -59,4 +59,4 @@ $(document).ready(function() {
 </script>
 }}}
 
-Then Open a browser by appending mypage.html to the usual URL. (http://raspberrypi/webiopi/mypage.html) and you will see 2 big controls : "SW" and "LED".
+Then open a browser by appending mypage.html to the usual URL. (http://raspberrypi/webiopi/mypage.html) and you will see 2 big controls : "SW" and "LED".
