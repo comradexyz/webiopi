@@ -60,4 +60,4 @@ $(document).ready(function() {
 </script>
 }}}
 
-Then open a browser by appending mypage.html to the usual URL. (http://raspberrypi/webiopi/mypage.html) and you will see 2 big controls : "SW" and "LED".
+Then open a browser by appending mypage.html to the usual URL. (http://raspberrypi/webiopi/mypage.html) and you will see 2 big controls.
