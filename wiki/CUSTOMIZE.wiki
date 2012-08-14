@@ -24,7 +24,7 @@ RPi pins *descriptions* are made of html div, *id from _name1_ to _name26_*, wit
   * .pinName : Name on the left/right of each pin
 
 =Example=
-To hide all controls open your CSS file, override and add "visibility: hidden" to the _#webiopi_ selector. Then set absolute positionning and any property that will be shared between all _input_ controls : solid border, no padding, white text color and no webkit appearance.
+To hide all controls open your CSS file, override and add "visibility: hidden" to the _#webiopi_ selector. Then set absolute positionning and any property that will be shared between all _input_ controls.
 {{{
 #webiopi {
         visibility: hidden;
