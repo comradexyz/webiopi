@@ -76,11 +76,12 @@ Then, you can use a selector to show and modify each desired pin by using their 
 }}}
 will display the RPi pin 3 (GPIO 0) and 26 (GPIO 7), with two bigs buttons in the upper-left corner. It also changes the background color of the PIN 26 for both low and high states.
 
-In your HTML file, replace the title, change the link tag with webiopi.css to point to your CSS. You also have to add some Javascript next to the CSS link :
+In your HTML file, replace the title, and add a link to your CSS. You also have to add some Javascript next to the CSS link :
 {{{
 <title>My Page</title>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="webiopi.js"></script>
+<link rel="stylesheet" type="text/css" href="webiopi.css" />
 <link rel="stylesheet" type="text/css" href="mypage.css" />
 <script type="text/javascript">
 $(document).ready(function() {
