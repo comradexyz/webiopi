@@ -18,7 +18,7 @@ There is also some class to modify generic controls :
   * .pinDirection_Disabled : Direction button for disabled GPIOs
   * .pinName : Name on the left/right of each pin
 
-To hide all controls, override and add "visibility: hidden" to _input_ selector, and to both .pinDirection_Enabled and .pinName CSS classes. This is also a good place to set the absolute positionning and we can add any property that will be shared between _input_ controls : solid border, no padding, white text color and no webkit appearance.
+To hide all controls open your CSS file, override and add "visibility: hidden" to _input_ selector, and to both .pinDirection_Enabled and .pinName CSS classes. This is also a good place to set the absolute positionning and we can add any property that will be shared between _input_ controls : solid border, no padding, white text color and no webkit appearance.
 {{{
 input {
         visibility: hidden;
