@@ -20,8 +20,8 @@ There is also some class to modify generic controls :
   * .GND : Ground { background-color: Black; }
   * .V33 : 3.3V { background-color: Orange; }
   * .V50 : 5.0V { background-color: Red; }
-  * .GPIO_LOW { background-color: Black; }
-  * .GPIO_HIGH { background-color: Orange; }
+  * .LOW : GPIO in low state { background-color: Black; }
+  * .HIGH : GPIO in high state { background-color: Orange; }
   * .UART { background-color: DarkBlue; }
   * .SPI { background-color: Purple; }
   * .I2C { background-color: LightBlue; }
@@ -74,6 +74,7 @@ Then, you can use a selector to show and modify each desired pin by using their 
   height: 80px;
   font-size: 24pt;
 }
+
 #pin26 {
   visibility: visible;
   position: absolute;
@@ -82,9 +83,20 @@ Then, you can use a selector to show and modify each desired pin by using their 
   width: 80px;
   height: 80px;
   font-size: 24pt;
+  color: black;
 }
+
+#pin26.LOW {
+  background-color: white;
+}
+
+#pin26.HIGH {
+  background-color: red;
+}
+
+
 }}}
-will display the RPi pin 3 (GPIO 0) and 26 (GPIO 7), with two bigs buttons in the upper-left corner.
+will display the RPi pin 3 (GPIO 0) and 26 (GPIO 7), with two bigs buttons in the upper-left corner. It also changes the background color of the PIN 26 for both low and high states.
 
 In your HTML file, replace the title, change the link tag with webiopi.css to point to your CSS. You also have to add some Javascript next to the CSS link :
 {{{
