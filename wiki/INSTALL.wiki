@@ -58,7 +58,7 @@ You will need Python development headers. On Raspbian, open a terminal :
 $ sudo aptitude install python-dev
 }}}
 
-Then download, and install [http://pypi.python.org/pypi/RPi.GPIO/ RPi.GPIO] module :
+Then download, and install RPi.GPIO module :
 {{{
 $ wget http://raspberry-gpio-python.googlecode.com/files/RPi.GPIO-0.3.1a.tar.gz
 $ tar xvzf RPi.GPIO-0.3.1a.tar.gz
