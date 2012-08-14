@@ -1,99 +1,77 @@
 WebIOPi UI customization is easy but requires some CSS knowledge. The basic technic is to hide all controls, then show and move wanted controls. You will also need to add a Javascript line for each button you want to change the label.
 
-<font color="red>*Don't modify webiopi.html and webiopi.css directly, make copies first !*</font>
+<font color="red>*Before starting, copy webiopi.html to mypage.html and create a new blank mypage.css*</font>
 
 RPi pins and direction buttons are all html inputs, and inherit the _input_ CSS style.
-{{{
-input {
-        -webkit-appearance: none;
-        font-size: 14pt;
-        font-weight: bold;
-        color: white;
-        border: black 3px solid;
-        width: 40px;
-        height: 30px;
-        padding: 0 0 0 0;
-}
-}}}
 There is also some class to modify generic controls :
-  * .DNC :  Do not connect{ background-color: Gray; }
-  * .GND : Ground { background-color: Black; }
-  * .V33 : 3.3V { background-color: Orange; }
-  * .V50 : 5.0V { background-color: Red; }
-  * .LOW : GPIO in low state { background-color: Black; }
-  * .HIGH : GPIO in high state { background-color: Orange; }
-  * .UART { background-color: DarkBlue; }
-  * .SPI { background-color: Purple; }
-  * .I2C { background-color: LightBlue; }
+  * .DNC : Do not connect
+  * .GND : Ground
+  * .V33 : 3.3V
+  * .V50 : 5.0V
+  * .LOW : GPIO in low state
+  * .HIGH : GPIO in high state
+  * .UART
+  * .SPI
+  * .I2C
 
-  * .pinDirection_Enabled : Direction button for enabled GPIOs { width: 50px; background-color: Gray; }
-  * .pinDirection_Disabled : Direction button for disabled GPIOs{ visibility: hidden; }
-  * .pinName : Name on the left/right of each pin { font-size: 12pt; font-weight: bold; width: 75px; }
+  * .pinDirection_Enabled : Direction button for enabled GPIOs
+  * .pinDirection_Disabled : Direction button for disabled GPIOs
+  * .pinName : Name on the left/right of each pin
 
-To hide all controls, add "visibility: hidden" to the generic input selector, and to both .pinDirection_Enabled and .pinName CSS classes.
+To hide all controls, override and add "visibility: hidden" to _input_ selector, and to both .pinDirection_Enabled and .pinName CSS classes. This is also a good place to set the absolute positionning and we can add any property that will be shared between _input_ controls : solid border, no padding, white text color and no webkit appearance.
 {{{
 input {
-	-webkit-appearance: none;
-	font-size: 14pt;
-	font-weight: bold;
-	color: white;
-	border: black 3px solid;
-	width: 40px;
-	height: 30px;
-	padding: 0 0 0 0;
-	visibility: hidden;
+        visibility: hidden;
+        position: absolute;
+        border: black 3px solid;
+        padding: 0 0 0 0;
+        color: white;
+        -webkit-appearance: none;
 }
 
 .pinDirection_Enabled {
-	width: 50px;
-	background-color: Gray;
-	visibility: hidden;
+        visibility: hidden;
 }
 
 .pinDirection_Disabled {
-	visibility: hidden;
+        visibility: hidden;
 }
 
 .pinName {
-	font-size: 12pt;
-	font-weight: bold;
-	width: 75px;
-	visibility: hidden;
+        visibility: hidden;
 }
-
 }}}
 
-Then, you can use a selector to show and modify each desired pin by using their IDs:
+Then, you can use a selector to show and modify each desired pin by using their IDs while inheriting from _input_:
 {{{
 #pin3 {
-  visibility: visible;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 80px;
-  height: 80px;
-  font-size: 24pt;
+        visibility: visible;
+        top: 20px;
+        left: 20px;
+        width: 80px;
+        height: 80px;
+        font-size: 24pt;
+        font-weight: bold;
 }
 
 #pin26 {
-  visibility: visible;
-  position: absolute;
-  top: 120px;
-  left: 20px;
-  width: 80px;
-  height: 80px;
-  font-size: 24pt;
-  color: black;
+        visibility: visible;
+        top: 120px;
+        left: 20px;
+        width: 80px;
+        height: 80px;
+        font-size: 24pt;
+        font-weight: bold;
+        color: black;
 }
 
 #pin26.LOW {
-  background-color: white;
+        background-color: white;
 }
 
 #pin26.HIGH {
-  background-color: red;
+        background-color: red;
 }
-
 
 }}}
 will display the RPi pin 3 (GPIO 0) and 26 (GPIO 7), with two bigs buttons in the upper-left corner. It also changes the background color of the PIN 26 for both low and high states.
