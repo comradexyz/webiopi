@@ -22,7 +22,7 @@ RPi pins *descriptions* are made of html div, from id "name1" to id "name26", wi
   * .pinName : Name on the left/right of each pin
 
 =Example=
-To hide all controls open your CSS file, override and add "visibility: hidden" to _input_ selector, and to both _.pinDirection_Enabled_ and _.pinName_ CSS classes. This is also a good place to set the absolute positionning and any property that will be shared between _input_ controls : solid border, no padding, white text color and no webkit appearance.
+To hide all controls open your CSS file, override and add "visibility: hidden" to _input_ selector, and to both _.pinDirection_Enabled_ and _.pinName_ CSS classes. This is also a good place to set the absolute positionning and any property that will be shared between all _input_ controls : solid border, no padding, white text color and no webkit appearance.
 {{{
 input {
         visibility: hidden;
