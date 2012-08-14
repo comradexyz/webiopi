@@ -2,9 +2,10 @@ WebIOPi UI customization is easy but requires some CSS knowledge. The basic tech
 
 <font color="red>*Before starting, copy webiopi.html to mypage.html and create a new blank mypage.css*</font>
 
-RPi pins buttons are html inputs (type=submit), and inherit the _input_ CSS style. Their ids are "pin1" to "pin26". There is also two classes for both low and high states, and also somes for non GPIO pins :
-  * .LOW : GPIO in low state
-  * .HIGH : GPIO in high state
+=CSS naming=
+RPi pins *buttons* are html inputs (type=submit), and inherit the _input_ CSS style. Their ids are "pin1" to "pin26". There is also two classes for both low and high states, and also somes for non GPIO pins :
+  * *.LOW* : GPIO in low state
+  * *.HIGH* : GPIO in high state
   * .DNC : Do not connect
   * .GND : Ground
   * .V33 : 3.3V
@@ -13,15 +14,14 @@ RPi pins buttons are html inputs (type=submit), and inherit the _input_ CSS styl
   * .SPI
   * .I2C
 
-RPi pin direction buttons are also html inputs, with ids from "direction1" to "direction26". Two classes are also used :
+RPi pins *direction buttons* are also html inputs, with ids from "direction1" to "direction26". Two classes are also used :
   * .pinDirection_Enabled : Direction button for enabled GPIOs
   * .pinDirection_Disabled : Direction button for disabled GPIOs
 
-RPi pin description are made of html div, from id "name1" to id "name26", with a single class :
+RPi pins *descriptions* are made of html div, from id "name1" to id "name26", with a single class :
   * .pinName : Name on the left/right of each pin
 
-----
-
+=Example=
 To hide all controls open your CSS file, override and add "visibility: hidden" to _input_ selector, and to both _.pinDirection_Enabled_ and _.pinName_ CSS classes. This is also a good place to set the absolute positionning and any property that will be shared between _input_ controls : solid border, no padding, white text color and no webkit appearance.
 {{{
 input {
