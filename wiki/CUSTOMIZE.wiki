@@ -5,7 +5,7 @@ WebIOPi UI customization is easy but requires some CSS knowledge. The basic tech
 =CSS naming=
 All the *UI* is included in a single div, with the *id _webiopi_*. This box then contains a 6 columns / 13 rows table. Each cell has a single control.
 
-RPi pins *buttons* are html inputs (type=submit), and inherit the _input_ CSS style. Their *ids are _pin1_ to _pin26_*. There is also two classes for both low and high states, and also somes for non GPIO pins :
+RPi pins *buttons* are html inputs (type=submit), and inherit the _input_ CSS style. Their *id are from _pin1_ to _pin26_*. There is also two classes for both low and high states, and also somes for non GPIO pins :
   * *.LOW* : GPIO in low state
   * *.HIGH* : GPIO in high state
   * .DNC : Do not connect
@@ -16,11 +16,11 @@ RPi pins *buttons* are html inputs (type=submit), and inherit the _input_ CSS st
   * .SPI
   * .I2C
 
-RPi pins *direction buttons* are also html inputs, with *ids from _direction1_ to _direction26_*. Two classes are also used :
+RPi pins *direction buttons* are also html inputs, with *id from _direction1_ to _direction26_*. Two classes are also used :
   * .pinDirection_Enabled : Direction button for enabled GPIOs
   * .pinDirection_Disabled : Direction button for disabled GPIOs
 
-RPi pins *descriptions* are made of html div, from *id _name1_ to id _name26_*, with a single class :
+RPi pins *descriptions* are made of html div, *id from _name1_ to _name26_*, with a single class :
   * .pinName : Name on the left/right of each pin
 
 =Example=
