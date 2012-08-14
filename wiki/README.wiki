@@ -1,4 +1,5 @@
 =Features=
+  * Support binary GPIOs, in both input and output.
   * HTML / Javascript / CSS client side
   * Easily [CUSTOMIZE] UI
   * REST/JSON [WEBAPI]
@@ -9,7 +10,6 @@
   * Auto-refresh
 
 =Restrictions=
-  * Only support binary GPIOs, in both input and output.
   * GPIOs 0 and 1 have input pull-up resistor enabled.
   * UART is enabled but unusable for now.
     * GPIOs 14 and 15 are disabled
