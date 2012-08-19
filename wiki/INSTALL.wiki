@@ -1,10 +1,12 @@
-You have the choice of the install, depending on your need and which technology you prefer : PHP or Pyhton.
+You have the choice of the install, depending on your need and which technology you prefer : PHP/Apache, PHP/lighttpd or Pyhton.
 
 *<font color="red">Don't use different server at the same time, or it may not work correctly.</font>*
-  * PHP version is good if you already have Apache/PHP on your Pi or if you plan to use it, but requires some configuration.
-  * Python version is perfect for one time use,  or for users who don't want to install Apache and/or modify its configuration.
+  * PHP/Apache version is good if you already have PHP/Apache on your Pi or if you plan to use it, but requires some common configuration.
+  * PHP/lighttpd version allows you to use a lighter HTTP server, but requires more specific configuration.
+  * Python version is perfect for one time use,  or for users who don't want to install 
+a web server and/or modify its configuration.
 
-=PHP=
+=PHP/Apache=
 First install required packages. On Raspbian, open a terminal :
 {{{
 $ sudo aptitude install apache2 php5
@@ -52,6 +54,8 @@ $ sudo ln -s webiopi /var/www/webiopi
 }}}
 
 You're done, and ready to enjoy WebIOPi !
+
+=PHP/lighttpd=
 
 =PYTHON=
 You will need Python development headers. On Raspbian, open a terminal :
