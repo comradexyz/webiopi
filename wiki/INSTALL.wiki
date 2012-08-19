@@ -7,7 +7,7 @@ You have the choice of the install, depending on your need and which technology 
 a web server and/or modify its configuration.
 
 =PHP/Apache=
-First install required packages. On Raspbian, open a terminal :
+If you don't already have Apache and PHP, install required packages first. On Raspbian, open a terminal :
 {{{
 $ sudo aptitude install apache2 php5
 }}}
@@ -56,6 +56,38 @@ $ sudo ln -s webiopi /var/www/webiopi
 You're done, and ready to enjoy WebIOPi !
 
 =PHP/lighttpd=
+If you don't already have lighttpd and PHP, install required packages first :
+{{{
+$ sudo aptitude install lighttpd php5-cgi
+}}}
+
+You will need to add the lighttpd user (www-data) to the sudoers :
+{{{
+$ sudo visudo
+}}}
+then add the following line at the end of file :
+{{{
+www-data ALL=(ALL) NOPASSWD: ALL
+}}}
+
+Now, download and extract WebIOPi :
+{{{
+$ wget http://webiopi.googlecode.com/files/WebIOPi-0.2.tar.gz
+$ tar xvzf WebIOPi-0.2.tar.gz
+}}}
+Then move extracted files or create a symbolic link :
+{{{
+$ sudo mv webiopi /var/www
+or
+$ sudo ln -s webiopi /var/www/webiopi
+}}}
+
+Now restart lighttpd :
+{{{
+$ sudo /etc/init.d/lighttpd restart
+}}}
+You're done, and ready to enjoy WebIOPi !
+
 
 =PYTHON=
 You will need Python development headers. On Raspbian, open a terminal :
