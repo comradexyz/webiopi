@@ -61,39 +61,6 @@ If you don't already have lighttpd and PHP, install required packages first :
 $ sudo aptitude install lighttpd php5-cgi
 }}}
 
-You will need to add the lighttpd user (www-data) to the sudoers :
-{{{
-$ sudo visudo
-}}}
-then add the following line at the end of file :
-{{{
-www-data ALL=(ALL) NOPASSWD: ALL
-}}}
-
-We will now enable PHP in lighttpd and some other features :
-{{{
-$ sudo nano /etc/lighttpd/lighttpd.conf
-}}}
-then uncomment _*mod_rewrite*_ in the server.module variable and add _*mod_fastcgi*_ :
-{{{
-server.modules = (
-        "mod_access",
-        "mod_alias",
-        "mod_compress",
-        "mod_redirect",
-        "mod_rewrite",
-        "mod_fastcgi",
-)
-}}}
-and add the fastcgi config at the end of the same file :
-{{{
-fastcgi.server = ( ".php" => ((
-  "bin-path" => "/usr/bin/php-cgi",
-  "socket" => "/tmp/php.socket"
-)))
-}}}
-
-
 Now, download and extract WebIOPi :
 {{{
 $ wget http://webiopi.googlecode.com/files/WebIOPi-0.2.tar.gz
@@ -106,7 +73,36 @@ or
 $ sudo ln -s webiopi /var/www/webiopi
 }}}
 
-Now restart lighttpd :
+You will need to add the lighttpd user (www-data) to the sudoers :
+{{{
+$ sudo visudo
+}}}
+then add the following line at the end of file :
+{{{
+www-data ALL=(ALL) NOPASSWD: ALL
+}}}
+
+We will now enable PHP in lighttpd and setup url rewriting :
+{{{
+$ sudo nano /etc/lighttpd/lighttpd.conf
+}}}
+then add following lines at the end of file :
+{{{
+server.modules += ("mod_rewrite", "mod_fastcgi")
+
+fastcgi.server = ( ".php" => ((
+        "bin-path" => "/usr/bin/php-cgi",
+        "socket" => "/tmp/php.socket"
+)))
+
+url.rewrite += (
+        "^/webiopi/(.*)\.(.+)$" => "$0",
+        "^/webiopi/(.+)$" => "/webiopi/webiopi.php"
+)
+}}}
+
+
+Finally restart lighttpd :
 {{{
 $ sudo /etc/init.d/lighttpd restart
 }}}
