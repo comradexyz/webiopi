@@ -1,9 +1,9 @@
 You have the choice of the install, depending on your need and which technology you prefer : PHP/Apache, PHP/lighttpd or Pyhton.
 
 *<font color="red">Don't use different server at the same time, or it may not work correctly.</font>*
-  * [#PHP/Apache] version is good if you already have PHP/Apache on your Pi or if you plan to use it, but requires some common configuration.
-  * [#PHP/lighttpd] version allows you to use a lighter HTTP server, but requires more specific configuration.
-  * Python version is perfect for one time use,  or for users who don't want to install 
+  * [#PHP/Apache PHP/Apache] version is good if you already have PHP/Apache on your Pi or if you plan to use it, but requires some common configuration.
+  * [#PHP/lighttpd PHP/lighttpd] version allows you to use a lighter HTTP server, but requires more specific configuration.
+  * [#Python Python] version is perfect for one time use,  or for users who don't want to install 
 a web server and/or modify its configuration.
 
 =PHP/Apache=
@@ -69,6 +69,30 @@ then add the following line at the end of file :
 {{{
 www-data ALL=(ALL) NOPASSWD: ALL
 }}}
+
+We will now enable PHP in lighttpd and some other features :
+{{{
+$ sudo nano /etc/lighttpd/lighttpd.conf
+}}}
+then uncomment _*mod_rewrite*_ in the server.module variable and add _*mod_fastcgi*_ :
+{{{
+server.modules = (
+        "mod_access",
+        "mod_alias",
+        "mod_compress",
+        "mod_redirect",
+        "mod_rewrite",
+        "mod_fastcgi",
+)
+}}}
+and add the fastcgi config at the end of the same file :
+{{{
+fastcgi.server = ( ".php" => ((
+  "bin-path" => "/usr/bin/php-cgi",
+  "socket" => "/tmp/php.socket"
+)))
+}}}
+
 
 Now, download and extract WebIOPi :
 {{{
