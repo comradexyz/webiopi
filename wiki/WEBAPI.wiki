@@ -18,8 +18,8 @@ Errors returned by the WebAPI are understandable when the HTTP call is not valid
   * HTTP POST /webiopi/GPIO/(pinNumber)/direction/("in" or "out")
     * Returns new setup : "in" or "out"
   * Examples:
-    * To set GPIO 0 in input : HTTP POST /webiopi/GPIO/0/direction/in
-    * To set GPIO 1 in output : HTTP POST /webiopi/GPIO/1/direction/out
+    * To set GPIO 0 as input : HTTP POST /webiopi/GPIO/0/direction/in
+    * To set GPIO 1 as output : HTTP POST /webiopi/GPIO/1/direction/out
 
 =Get GPIO value=
   * HTTP GET /webiopi/GPIO/(pinNumber)/value
