@@ -144,7 +144,7 @@ You're done, and ready to enjoy WebIOPi ! But the server and GPIO state will be 
 
 You can also run it or install it as a daemon, using the provided webiopi.init.sample file :
 {{{
-$ sudo cp webiopi.init.sample /etc/init.d/webiopi
+$ sudo cp webiopi.py.init /etc/init.d/webiopi
 }}}
 
 Then change WEBIOPI_HOME and WEBIOPI_PORT variables according to the path you installed it, and to the port you want to use :
