@@ -1,4 +1,4 @@
-WebIOPi is a web application which allows you to control your Raspberry Pi's GPIO. Just install it on your Pi, and use any browser from your network. Click/tap the in/out buttons to change GPIO direction, and click/tap on each output pin square to change their state. 
+WebIOPi is a web application which allows you to control your Raspberry Pi's GPIO. Just install it on your Pi, and use any browser from your network. Click/tap the in/out buttons to change GPIO direction, and click/tap on each output pin button to change their state. 
 
 It's useful to start enjoying GPIOs and also to debug some circuits without writing any line of code.
 
