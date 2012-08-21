@@ -55,7 +55,7 @@ $ sudo ln -s webiopi /var/www/webiopi
 You're done, and ready to enjoy WebIOPi !
 
 =PHP/lighttpd=
-If you don't already have lighttpd and PHP, install required packages first :
+If you don't already have lighttpd and PHP, install required packages first. On Raspbian, open a terminal :
 {{{
 $ sudo aptitude install lighttpd php5-cgi
 }}}
