@@ -1,4 +1,4 @@
-WebIOPi is a web application which allow you to control your Raspberry Pi's GPIO. Just install it on your Pi, and use any browser from your network.
+WebIOPi is a web application which allows you to control your Raspberry Pi's GPIO. Just install it on your Pi, and use any browser from your network.
 
 It's useful to start enjoying GPIOs and also to debug some circuits without writing any line of code.
 
