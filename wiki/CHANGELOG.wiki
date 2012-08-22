@@ -1,0 +1,8 @@
+=Current version : 0.2 (08/21/12)=
+
+==trunk==
+  * Removed a language feature available with PHP >= 5.4 to allow lower PHP version
+  * Fixed security issue in the Python server
+
+==0.2 (08/21/12)==
+  * Initial release
