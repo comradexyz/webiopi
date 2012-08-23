@@ -1,4 +1,4 @@
-You have the choice of the install, depending on your need and which technology you prefer : PHP/Apache, PHP/lighttpd or Python.
+You have the choice of the install, depending on your need and which technology you prefer : PHP/Apache, PHP/lighttpd or Python. Python version is standalone as it serves HTTP.
 
 *<font color="red">Don't use different server at the same time, or it may not work correctly.</font>*
   * [#PHP/Apache PHP/Apache] version is good if you already have PHP/Apache on your Pi or if you plan to use it, but requires some common configuration.
