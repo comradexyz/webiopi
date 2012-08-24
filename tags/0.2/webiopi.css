@@ -1,0 +1,63 @@
+@CHARSET "UTF-8";
+
+input {
+	-webkit-appearance: none;
+	font-size: 14pt;
+	font-weight: bold;
+	color: white;
+	border: black 3px solid;
+	width: 40px;
+	height: 30px;
+	padding: 0 0 0 0;
+}
+
+.DNC {
+	background-color: Gray;
+}
+
+.GND {
+	background-color: Black;
+}
+
+.V33 {
+	background-color: Orange;
+}
+
+.V50 {
+	background-color: Red;
+}
+
+.LOW {
+	background-color: Black;
+}
+
+.HIGH {
+	background-color: Orange;
+}
+
+.UART {
+	background-color: DarkBlue;
+}
+
+.SPI {
+	background-color: Purple;
+}
+
+.I2C {
+	background-color: LightBlue;
+}
+
+.pinDirection_Enabled {
+	width: 50px;
+	background-color: Gray;
+}
+
+.pinDirection_Disabled {
+	visibility: hidden;
+}
+
+.pinName {
+	font-size: 12pt;
+	font-weight: bold;
+	width: 75px;
+}
