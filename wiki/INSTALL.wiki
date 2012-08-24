@@ -26,7 +26,7 @@ Find the <Directory /var/www/> section and change the line "AllowOverride None" 
     allow from all
 </Directory>
 }}}
-﻿  
+
 You will also need to add Apache's user (www-data) to the sudoers :
 {{{
 $ sudo visudo
