@@ -4,7 +4,9 @@
 
 ==trunk==
   * Fixed security issue in the Python server
+  * Python server general improvement and refactor
   * Allow PHP5 < 5.4
+
 
 ==0.2 (08/21/12)==
   * Initial release
