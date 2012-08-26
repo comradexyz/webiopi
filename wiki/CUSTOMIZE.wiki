@@ -90,7 +90,7 @@ $(document).ready(function() {
 </html>
 }}}
 
-You can also create buttons directly whereas using the default header :
+You can also create buttons directly instead of using the RPiHeader :
 {{{
 $(document).ready(function() {
 	var sw = webiopi().createGPIOButton(0, "SW"); // create a "SW" button for GPIO 0
