@@ -65,6 +65,8 @@ will display the GPIOs 0 and 7, with two bigs buttons in the upper-left corner. 
 
 In your HTML file, you also have to add some Javascript next to the CSS link. For example, you can use the default header table :
 {{{
+<html>
+<head>
 <title>WebIOPi | Example</title>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../webiopi.js"></script>
@@ -72,28 +74,33 @@ In your HTML file, you also have to add some Javascript next to the CSS link. Fo
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script type="text/javascript">
 $(document).ready(function() {
-	webiopi().createHeader();
+	webiopi().createHeader(); // create default header pinout
 
-	webiopi().setDirection(0, "in");
-	webiopi().setLabel(0, "SW");
+	webiopi().setDirection(0, "in"); // set GPIO 0 as input
+	webiopi().setLabel(0, "SW"); // set GPIO 0 label
 
-	webiopi().setDirection(7, "out");
-	webiopi().setLabel(7, "LED");
+	webiopi().setDirection(7, "out"); // set GPIO 7 as output
+	webiopi().setLabel(7, "LED"); // set GPIO 7 label
 });
 </script>
+</head>
+<body>
+<div id="webiopi"></div>
+</body>
+</html>
 }}}
 
 You can also create buttons directly whereas using the default header :
 {{{
 $(document).ready(function() {
-	var sw = webiopi().getGPIOButton(0, "SW");
-	$("#webiopi").append(sw);
+	var sw = webiopi().getGPIOButton(0, "SW"); // create a "SW" button for GPIO 0
+	$("#webiopi").append(sw); // append button to webiopi div
 		
-	var led = webiopi().getGPIOButton(7, "LED");
-	$("#webiopi").append(led);
+	var led = webiopi().getGPIOButton(7, "LED"); // create a "SW" button for GPIO 7
+	$("#webiopi").append(led); // append button to webiopi div
 
-	webiopi().setDirection(0, "in");
-	webiopi().setDirection(7, "out");
+	webiopi().setDirection(0, "in"); // set GPIO 0 as input
+	webiopi().setDirection(7, "out"); // set GPIO 7 as output
 });
 }}}
 
