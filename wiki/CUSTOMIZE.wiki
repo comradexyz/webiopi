@@ -63,7 +63,7 @@ Included style.css in skeleton contains what you need to hide existing controls.
 }}}
 will display the GPIOs 0 and 7, with two bigs buttons in the upper-left corner. It also changes the background color of the GPIO 7 for both low and high states.
 
-In your HTML file, you also have to add some Javascript next to the CSS link :
+In your HTML file, you also have to add some Javascript next to the CSS link. For example, you can use the default header table :
 {{{
 <title>WebIOPi | Example</title>
 <script type="text/javascript" src="../../jquery.js"></script>
@@ -81,6 +81,20 @@ $(document).ready(function() {
 	webiopi().setLabel(7, "LED");
 });
 </script>
+}}}
+
+You can also create buttons directly whereas using the default header :
+{{{
+$(document).ready(function() {
+	var sw = webiopi().getGPIOButton(0, "SW");
+	$("#webiopi").append(sw);
+		
+	var led = webiopi().getGPIOButton(7, "LED");
+	$("#webiopi").append(led);
+
+	webiopi().setDirection(0, "in");
+	webiopi().setDirection(7, "out");
+});
 }}}
 
 Then open a browser by appending mypage.html to the usual URL (http://raspberrypi/webiopi/mypage.html) and you will see 2 big controls :
