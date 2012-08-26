@@ -1,7 +1,5 @@
 =Current version : 0.2 (08/21/12)=
 
-==waiting==
-
 ==trunk==
   * Fixed security issue in the Python server
   * Python server general improvements
