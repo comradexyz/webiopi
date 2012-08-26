@@ -74,7 +74,7 @@ In your HTML file, you also have to add some Javascript next to the CSS link. Fo
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script type="text/javascript">
 $(document).ready(function() {
-	webiopi().createHeader(); // create default header pinout
+	var table = webiopi().RPiHeader().createTable("content"); // create RPiHeader Table and append it to content div
 
 	webiopi().setDirection(0, "in"); // set GPIO 0 as input
 	webiopi().setLabel(0, "SW"); // set GPIO 0 label
