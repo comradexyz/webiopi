@@ -5,6 +5,7 @@
 ==trunk==
   * Fixed security issue in the Python server
   * Python server general improvements
+  * Python server try to bind to one IP and display it
   * Allow PHP5 < 5.4
   * Works on Debian wheezy
   * Added update tracking
