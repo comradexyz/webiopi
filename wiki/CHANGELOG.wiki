@@ -6,8 +6,7 @@
   * Fixed security issue in the Python server
   * Python server general improvements
   * Python server try to bind to one IP and display it
-  * Allow PHP5 < 5.4
-  * Works on Debian wheezy
+  * Allow PHP5 < 5.4 (Works on Debian wheezy)
   * Added update tracking
   * Refactored Javascript code to be used as a library
   * Changed IDs and CSS naming
