@@ -93,10 +93,10 @@ $(document).ready(function() {
 You can also create buttons directly whereas using the default header :
 {{{
 $(document).ready(function() {
-	var sw = webiopi().getGPIOButton(0, "SW"); // create a "SW" button for GPIO 0
+	var sw = webiopi().createGPIOButton(0, "SW"); // create a "SW" button for GPIO 0
 	$("#content").append(sw); // append button to content div
 		
-	var led = webiopi().getGPIOButton(7, "LED"); // create a "LED" button for GPIO 7
+	var led = webiopi().createGPIOButton(7, "LED"); // create a "LED" button for GPIO 7
 	$("#content").append(led); // append button to content div
 
 	webiopi().setDirection(0, "in"); // set GPIO 0 as input
