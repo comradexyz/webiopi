@@ -10,7 +10,7 @@ http://trouch.com/wp-content/uploads/2012/08/webiopi-cssnaming.png
 
 All the *UI* is included in a single div, with the *id _webiopi_*. This box then contains a 6 cols x 13 rows table which is dynamically buit. Each cell has a single control.
 
-RPi pins *buttons* are html inputs (type=submit), and inherit the _input_ CSS style. Their *id are from _pin1_ to _pin26_*. There is also two classes for both low and high states, and also somes for non GPIO pins :
+RPi pins *buttons* are html inputs (type=submit), and inherit the _input_ CSS style. Their *id are from _gpio0_ to _gpio25_*. There is also two classes for both low and high states, and also somes for non GPIO pins :
   * *.LOW* : GPIO in low state
   * *.HIGH* : GPIO in high state
   * .DNC : Do not connect
@@ -21,12 +21,12 @@ RPi pins *buttons* are html inputs (type=submit), and inherit the _input_ CSS st
   * .SPI
   * .I2C
 
-RPi pins *direction buttons* are also html inputs, with *id from _direction1_ to _direction26_*. Two classes are also used :
-  * .pinDirection_Enabled : Direction button for enabled GPIOs
-  * .pinDirection_Disabled : Direction button for disabled GPIOs
+RPi pins *direction buttons* are also html inputs, with *id from _direction0_ to _direction25_*. Two classes are also used :
+  * .DirectionEnabled : Direction button for enabled GPIOs
+  * .DirectionDisabled : Direction button for disabled GPIOs
 
 RPi pins *descriptions* are made of html div, *id from _name1_ to _name26_*, with a single class :
-  * .pinName : Name on the left/right of each pin
+  * .Description : Text on the left/right of each pin
 
 =Example=
 To hide all controls open your CSS file, override and add "visibility: hidden" to the _#webiopi_ selector. Then set absolute positionning and any property that will be shared between all _input_ controls.
@@ -46,7 +46,7 @@ input {
 
 Then, you can use a selector to show and modify each desired pin by using their IDs :
 {{{
-#pin3 {
+#gpio0 {
         visibility: visible;
         top: 20px;
         left: 20px;
@@ -56,7 +56,7 @@ Then, you can use a selector to show and modify each desired pin by using their 
         font-weight: bold;
 }
 
-#pin26 {
+#gpio7 {
         visibility: visible;
         top: 120px;
         left: 20px;
@@ -67,38 +67,40 @@ Then, you can use a selector to show and modify each desired pin by using their 
         color: black;
 }
 
-#pin26.LOW {
+#gpio7.LOW {
         background-color: white;
 }
 
-#pin26.HIGH {
+#gpio7.HIGH {
         background-color: red;
 }
 
 }}}
-will display the RPi pin 3 (GPIO 0) and 26 (GPIO 7), with two bigs buttons in the upper-left corner. It also changes the background color of the PIN 26 for both low and high states.
+will display the GPIOs 0 and 7, with two bigs buttons in the upper-left corner. It also changes the background color of the GPIO 7 for both low and high states.
 
-In your HTML file, replace the title, and add a link to your CSS. You also have to add some Javascript next to the CSS link :
+In your HTML file, you also have to add some Javascript next to the CSS link :
 {{{
-<title>My Page</title>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="webiopi.js"></script>
-<link rel="stylesheet" type="text/css" href="webiopi.css" />
-<link rel="stylesheet" type="text/css" href="mypage.css" />
+<title>WebIOPi | Example</title>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../webiopi.js"></script>
+<link rel="stylesheet" type="text/css" href="../../webiopi.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
 <script type="text/javascript">
 $(document).ready(function() {
-	setPinDirection(3, "in"); // set RPi pin 3 (GPIO 0) to input
-	setPinLabel(3, "SW");  // change the label
+	webiopi().createHeader();
 
-	setPinDirection(26, "out"); // set RPi pin 3 (GPIO 7) to output
-	setPinLabel(26, "LED");  // change the label
+	webiopi().setDirection(0, "in");
+	webiopi().setLabel(0, "SW");
+
+	webiopi().setDirection(7, "out");
+	webiopi().setLabel(7, "LED");
 });
 </script>
 }}}
 
 Then open a browser by appending mypage.html to the usual URL (http://raspberrypi/webiopi/mypage.html) and you will see 2 big controls :
-  * The first one allows you to see the input state on the RPi pin 3 : connect it to the ground (using a switch), and the control will become black.
-  * The second, will allow you to control a led on RPi pin 26, connected in serial with a resistor to the ground.
+  * The first one allows you to see the input state on the GPIO 0 : connect it to the ground (using a switch), and the control will become black.
+  * The second, will allow you to control a led on GPIO 7, connected in serial with a resistor to the ground.
 
 http://trouch.com/wp-content/uploads/2012/08/webiopi-mypage.png
 
