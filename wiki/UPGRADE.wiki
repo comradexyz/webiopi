@@ -1,8 +1,8 @@
-# Save your custom HTML and CSS files
-# Delete the old webiopi directory
-# Extract the new version to replace the old one
-# Copy your custom HTML and CSS files in the new directory
-# Follow additional instruction bellow matching your versions
+  # Save your custom HTML and CSS files
+  # Delete the old webiopi directory
+  # Extract the new version to replace the old one
+  # Copy your custom HTML and CSS files in the new directory
+  # Follow additional instruction bellow matching your versions
 
 =0.2 => 0.X=
 ==PHP==
