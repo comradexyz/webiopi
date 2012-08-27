@@ -30,7 +30,7 @@ _WebIOPi has been developed on a Raspbian wheezy, but should work on others dist
 Check the [ROADMAP] for the upcoming features
 
 =Usage=
-First of all, follow [INSTALL] instructions.
+If not already done, follow [INSTALL] instructions.
 
 If your are directly using your Raspberry Pi with keyboard/mouse/display plugged,  open a browser to http://localhost/webiopi/ _Don't forget to add :port right after localhost if you use a different port._
 
