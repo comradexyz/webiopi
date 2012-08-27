@@ -17,6 +17,8 @@ url.rewrite += (
 
 ==Customized UI==
 CSS naming has changed to to use GPIO number instead of RPi pin :
+  * customized apps go to app folder, each in a separate subfolder
+  * add the "../../" prefix in each script and link tag's src.
   * #webiopi => #content
   * added #RPiHeader for the header table
   * #pin2 => #gpio0 and so on
@@ -24,3 +26,4 @@ CSS naming has changed to to use GPIO number instead of RPi pin :
   * .pinDirection_Enabled => .DirectionEnabled
   * .pinDirection_Disabled => .DirectionDisabled
   * .pinName => .Description
+  
