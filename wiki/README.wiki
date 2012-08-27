@@ -44,6 +44,6 @@ You can even add a port redirection on your router (and/or use IPv6) to control 
 
 http://trouch.com/wp-content/uploads/2012/08/webiopi-chrome.png
 
-You can also use the expert app, which gives you an ordered list of GPIOs.
+You can also use the expert app, which gives you an ordered list of GPIOs. It's located at http://localhost/webiopi/app/expert/ (or http://raspberrypi/webiopi/app/expert/)
 
 http://trouch.com/wp-content/uploads/2012/08/webiopi-chrome-expert.png
