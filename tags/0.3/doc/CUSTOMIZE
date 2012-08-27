@@ -1,0 +1,104 @@
+WebIOPi UI customization is easy but requires some CSS knowledge. The basic technique is to hide all controls, then show and move wanted controls. You will also need to add a Javascript line for each button you want to change the label.
+
+Before starting, make a copy of skeleton in the app directory
+
+=CSS naming=
+http://trouch.com/wp-content/uploads/2012/08/webiopi-cssnaming.png
+
+All the UI is included in a single div, with the id webiopi. This box then contains a 6 cols x 13 rows table which is dynamically buit. Each cell has a single control.
+
+RPi pins buttons are html inputs (type=submit), and inherit the input CSS style. Their id are from gpio0 to gpio25. There is also two classes for both low and high states, and also somes for non GPIO pins :
+   .LOW : GPIO in low state
+   .HIGH : GPIO in high state
+   .DNC : Do not connect
+   .GND : Ground
+   .V33 : 3.3V
+   .V50 : 5.0V
+   .UART
+   .SPI
+   .I2C
+
+RPi pins direction buttons are also html inputs, with id from direction0 to direction25. Two classes are also used :
+   .DirectionEnabled : Direction button for enabled GPIOs
+   .DirectionDisabled : Direction button for disabled GPIOs
+
+RPi pins descriptions are made of html div, id from name1 to name26, with a single class :
+   .Description : Text on the left/right of each pin
+
+=Example=
+Included style.css in skeleton contains what you need to hide existing controls. Just add some lines in the CSS file to display wanted controls :
+#gpio0 {
+        visibility: visible;
+        top: 20px;
+        left: 20px;
+        width: 80px;
+        height: 80px;
+        font-size: 24pt;
+        font-weight: bold;
+}
+
+#gpio7 {
+        visibility: visible;
+        top: 120px;
+        left: 20px;
+        width: 80px;
+        height: 80px;
+        font-size: 24pt;
+        font-weight: bold;
+        color: black;
+}
+
+#gpio7.LOW {
+        background-color: white;
+}
+
+#gpio7.HIGH {
+        background-color: red;
+}
+
+will display the GPIOs 0 and 7, with two bigs buttons in the upper-left corner. It also changes the background color of the GPIO 7 for both low and high states.
+
+In your HTML file, you also have to add some Javascript next to the CSS link. For example, you can use the default header table :
+<html>
+<head>
+<title>WebIOPi | Example</title>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../webiopi.js"></script>
+<link rel="stylesheet" type="text/css" href="../../webiopi.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript">
+$(document).ready(function() {
+	webiopi().RPiHeader().createTable("content"); // create RPiHeader Table and append it to content div
+
+	webiopi().setDirection(0, "in"); // set GPIO 0 as input
+	webiopi().setLabel(0, "SW"); // set GPIO 0 label
+
+	webiopi().setDirection(7, "out"); // set GPIO 7 as output
+	webiopi().setLabel(7, "LED"); // set GPIO 7 label
+});
+</script>
+</head>
+<body>
+<div id="content"></div>
+</body>
+</html>
+
+You can also create buttons directly instead of using the RPiHeader :
+$(document).ready(function() {
+	var sw = webiopi().createGPIOButton(0, "SW"); // create a "SW" button for GPIO 0
+	$("#content").append(sw); // append button to content div
+		
+	var led = webiopi().createGPIOButton(7, "LED"); // create a "LED" button for GPIO 7
+	$("#content").append(led); // append button to content div
+
+	webiopi().setDirection(0, "in"); // set GPIO 0 as input
+	webiopi().setDirection(7, "out"); // set GPIO 7 as output
+});
+
+Then open a browser by appending mypage.html to the usual URL (http://raspberrypi/webiopi/mypage.html) and you will see 2 big controls :
+   The first one allows you to see the input state on the GPIO 0 : connect it to the ground (using a switch), and the control will become black.
+   The second, will allow you to control a led on GPIO 7, connected in serial with a resistor to the ground.
+
+http://trouch.com/wp-content/uploads/2012/08/webiopi-mypage.png
+
+http://trouch.com/wp-content/uploads/2012/08/WebIOPi-demo.png
