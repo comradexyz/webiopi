@@ -4,4 +4,4 @@
   * Long-polling/Bayeux/Cometd and/or WebSocket
   * Logic analyzer
   * Java server version ?
-  * Restart PHP server version development ?
+  * Resume PHP server version development ?
