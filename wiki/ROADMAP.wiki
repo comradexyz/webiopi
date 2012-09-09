@@ -1,3 +1,4 @@
+  * REV2 board support
   * Server side as lib
   * Momentary Button
   * UART/SPI/I2C support
