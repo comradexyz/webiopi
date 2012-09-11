@@ -1,10 +1,13 @@
 =Current version : 0.3 (08/27/12)=
 
 ==in progress==
+  * REV 2 board support
   * UART support
 
 ==trunk==
   * Removed PHP server
+  * Use experimental RPi.GPIO Python library
+  * Python server usable as a library
 
 ==0.3 (08/27/12)==
   * Fixed security issue in the Python server
