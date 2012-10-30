@@ -12,6 +12,8 @@
   * Added setup.sh script
     * Compile and install python library
     * Copy ressources to /usr/share/webiopi
+  * Added URL callback
+  * Added bit sequence function
   
 
 ==0.3 (08/27/12)==
