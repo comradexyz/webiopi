@@ -1,5 +1,3 @@
-  * REV2 board support
-  * Momentary Button
   * UART/SPI/I2C support
   * Parallel BUS helper
   * Edge detection
