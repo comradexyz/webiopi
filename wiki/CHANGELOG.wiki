@@ -1,19 +1,20 @@
 =Current version : 0.3 (08/27/12)=
 
-==in progress==
-  * REV 2 board support
-  * UART support
-
 ==trunk==
+  * REV 2 boards support
+    * Added REST header map
   * Removed PHP server
   * Python server usable as a library
   * Removed RPi.GPIO library dependency
-    * Added native code
+    * Merged required native code into WebIOPi
+    * GPIO full access from the Server
   * Added setup.sh script
     * Compile and install python library
     * Copy ressources to /usr/share/webiopi
-  * Added URL callback
+  * Improved HTTP server file handling
   * Added bit sequence function
+  * Added ability to create custom REST function
+  * JS library improvements
   
 
 ==0.3 (08/27/12)==
