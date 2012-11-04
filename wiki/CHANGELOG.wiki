@@ -6,14 +6,14 @@
   * Removed PHP server
   * Python server usable as a library
   * Removed RPi.GPIO library dependency
-    * Merged required native code into WebIOPi
+    * Merged and improved required native code into WebIOPi
     * GPIO full access from the Server
   * Added setup.sh script
     * Compile and install python library
     * Copy ressources to /usr/share/webiopi
   * Improved HTTP server file handling
   * Added bit sequence function
-  * Added ability to create custom REST function
+  * Added ability to create custom REST macro
   * JS library improvements
   
 
