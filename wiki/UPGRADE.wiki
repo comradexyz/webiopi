@@ -5,6 +5,7 @@
   # Follow additional instruction bellow matching your versions
 
 =0.3 => 0.5=
+  * PHP Server removed, so delete all old files (/var/www/webiopi for instance)
   * "Direction" has been replaced by "Function" everywhere in REST API and  Javascript.
     * Correct Javascript call (setDirection->setFunction for instance)
   * CSS class "DirectionEnabled" become "FunctionBasic" (IN and OUT functions)
