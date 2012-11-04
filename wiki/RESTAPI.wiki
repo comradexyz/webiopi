@@ -48,7 +48,7 @@ Errors returned by the WebAPI are understandable when the HTTP call is not valid
   * HTTP GET /`*`
     * Returns full GPIO state in JSON :
 {{{
-{"UART": 1, "I2C": 0, "SPI": 0, "GPIO":{
+{"UART0": 1, "I2C0": 0, "I2C1": 1, "SPI0": 0, "GPIO":{
 "0": {"mode": "GPIO", "direction": "in", "value": 1}, 
 "1": {"mode": "GPIO", "direction": "in", "value": 1}, 
 "4": {"mode": "GPIO", "direction": "out", "value": 1}, 
@@ -68,6 +68,6 @@ Errors returned by the WebAPI are understandable when the HTTP call is not valid
 "25": {"mode": "GPIO", "direction": "out", "value": 0}
 }}
 }}}
-"UART": 1, "I2C": 0, "SPI": 0 mean that UART is enabled, whereas both I2C and SPI are disabled. So GPIOs used by the UART (14 and 15) are disabled and unusable.
+"UART0": 1, "I2C0": 0, "I2C1": 1, "SPI0": 0 mean that both UART0 and I2C1 are enabled, whereas both I2C0 and SPI0 are disabled. So GPIOs used by UART0 (14 and 15) and I2C1 (2 and 3) are disabled and unusable.
 
   
