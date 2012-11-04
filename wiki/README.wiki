@@ -17,10 +17,10 @@ _WebIOPi has been developed on a Raspbian wheezy, but should work on others dist
   * Auto-refresh
 
   * Login/Password protection
-  * Easily [CUSTOMIZE] UI
-  * REST/JSON [RESTAPI]
-  * [JAVASCRIPT] helper API
-  * Server usable as a [PYTHON] lib
+  * [CUSTOMIZE Easily customize UI]
+  * [RESTAPI REST/JSON API]
+  * [JAVASCRIPT Javascript library]
+  * [PYTHON Server usable as a Python library]
 
 =Restrictions=
   * GPIOs 0 and 1 have input pull-up resistor enabled.
