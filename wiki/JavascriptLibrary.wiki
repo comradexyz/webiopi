@@ -11,7 +11,7 @@ Set the function on the GPIO.
 - func : "IN" or "OUT"
 - callback (optional) : callback function
 
-==WebIOPi.setValue(gpio, value, callback)==
+==WebIOPi.setValue(gpio, value[, callback])==
 Set the output value of a GPIO.
 - gpio : GPIO number from 0 to 53
 - value : 0 or 1
@@ -21,20 +21,20 @@ Set the output value of a GPIO.
 Toggle value of a GPIO.
 - gpio : GPIO number from 0 to 53
 
-==WebIOPi.callMacro(macro, args, callback)==
+==WebIOPi.callMacro(macro, args[, callback])==
 Call a macro on the server.
 - macro : name of the macro to call
 - args : string arguments
 - callback (optional) : callback function
 
-==WebIOPi.outputSequence(gpio, period, sequence, callback)==
+==WebIOPi.outputSequence(gpio, period, sequence[, callback])==
 Output a bit sequence on a GPIO.
 - gpio : GPIO number from 0 to 53
 - period : time in ms between each bit
 - sequence : bit sequence
 - callback (optional) : callback function
 
-==WebIOPi.createButton(id, label, callback, callbackUp)==
+==WebIOPi.createButton(id, label[, callback[, callbackUp]])==
 Returs a simple button without predefined behavior.
 - id : id of the button to create
 - label : label of the button
