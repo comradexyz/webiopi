@@ -16,6 +16,7 @@ _WebIOPi has been developed on a Raspbian wheezy, but should work on others dist
   * Smartphone compatible
   * Auto-refresh
 
+  * Login/Password protection
   * Easily [CUSTOMIZE] UI
   * REST/JSON [RESTAPI]
   * [JAVASCRIPT] helper API
