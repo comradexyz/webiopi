@@ -1,11 +1,13 @@
 *<font color="red">This page is being updated for the upcoming release. Please refer to the doc included in the WebIOPi 0.3 archive</font>*
 
-WebIOPi UI customization is easy but requires some CSS knowledge. The basic technique is to hide all controls, then show and move wanted controls. You will also need to add a Javascript line for each button you want to change the label.
+WebIOPi UI customization is easy but requires some JS and CSS knowledge. 
 
 =HTML/Javascript=
 The WebIOPi Javascript library allows you to make your own interface easily, only requiring one single script tag to include /webiopi.js
+
 WebIOPi will automatically load and add required jquery.js and webiopi.css into your HTML file at runtime !
 Then you can use the [JAVASCRIPT] library to build the interface, creating buttons and registering callbacks. Check [PYTHON] for the related demo.py server script example.
+
 {{{
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
