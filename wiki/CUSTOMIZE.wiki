@@ -139,4 +139,4 @@ input {
 will display the GPIOs 0 and 7, with two bigs buttons in the upper-left corner. It also changes the background color of the GPIO 7 for both low and high states.
 
 
-Then open a browser to http://raspberrypi/webiopi/demo/demo.html
+Start the associated demo.py script then open a browser to http://raspberrypi/webiopi/demo.html
