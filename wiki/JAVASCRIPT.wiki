@@ -1,3 +1,5 @@
+*<font color="red">This page is being updated for the upcoming release. Please refer to the doc included in the WebIOPi 0.3 archive</font>*
+
 <wiki:toc max_depth="3" />
 
 =webiopi()=
