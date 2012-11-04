@@ -8,34 +8,44 @@ Errors returned by the WebAPI are understandable when the HTTP call is not valid
   * 404 `[something]` Not Found
 
 
-=Get GPIO direction=
-  * HTTP GET /webiopi/GPIO/(pinNumber)/direction
+=Get GPIO function=
+  * HTTP GET /GPIO/(gpioNumber)/function
     * Returns "in" or "out"
   * Example :
-    * To get GPIO 0 direction : HTTP GET /webiopi/GPIO/0/direction
+    * To get GPIO 0 function : HTTP GET /GPIO/0/function
 
-=Set GPIO direction=
-  * HTTP POST /webiopi/GPIO/(pinNumber)/direction/("in" or "out")
+=Set GPIO function=
+  * HTTP POST /GPIO/(gpioNumber)/function/("in" or "out")
     * Returns new setup : "in" or "out"
   * Examples:
-    * To set GPIO 0 as input : HTTP POST /webiopi/GPIO/0/direction/in
-    * To set GPIO 1 as output : HTTP POST /webiopi/GPIO/1/direction/out
+    * To set GPIO 0 as input : HTTP POST /GPIO/0/function/in
+    * To set GPIO 1 as output : HTTP POST /GPIO/1/function/out
 
 =Get GPIO value=
-  * HTTP GET /webiopi/GPIO/(pinNumber)/value
+  * HTTP GET /GPIO/(gpioNumber)/value
     * Returns 0 or 1
   * Example :
-    * To get GPIO 0 value : HTTP GET /webiopi/GPIO/0/value
+    * To get GPIO 0 value : HTTP GET /GPIO/0/value
 
 =Set GPIO value=
-  * HTTP POST /webiopi/GPIO/(pinNumber)/value/(0 or 1)
-    * Return new value : 0 or 1
+  * HTTP POST /GPIO/(gpioNumber)/value/(0 or 1)
+    * Returns new value : 0 or 1
   * Examples:
-    * To raise GPIO 0 : HTTP POST /webiopi/GPIO/0/value/1
-    * To fall GPIO 1 : HTTP POST /webiopi/GPIO/1/value/0
+    * To raise GPIO 0 : HTTP POST /GPIO/0/value/1
+    * To fall GPIO 1 : HTTP POST /GPIO/1/value/0
+
+=Output bit sequence=
+  * HTTP POST /GPIO/(gpioNumber)/sequence/(delay),(sequence)
+    * Returns last bit
+  * Examples :
+    * To output a pulse on GPIO 0 with a 10ms delay : HTTP POST /GPIO/0/sequence/10,010
+
+=Call a macro on the server=
+  * HTTP POST /macros/(macro)/(args)
+    * Returns the value returned by the macro
 
 =Get full GPIO state/configuration=
-  * HTTP GET /webiopi/`*`
+  * HTTP GET /`*`
     * Returns full GPIO state in JSON :
 {{{
 {"UART": 1, "I2C": 0, "SPI": 0, "GPIO":{
