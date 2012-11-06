@@ -14,7 +14,6 @@
   * Added setup script to ease WebIOPi install
     * Compile and install python library
     * Copy HTML/JS/CSS ressources to /usr/share/webiopi/htdocs
-    * Copy documentation to /usr/share/webiopi/doc
   * Improved REST API
   * Added ability to create custom REST macro
   * Added ability to output a bit sequence
