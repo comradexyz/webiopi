@@ -6,6 +6,7 @@
     * Added REST header map
   * Removed PHP server
   * Python server usable as a library
+  * Python 3 support
   * Removed RPi.GPIO library dependency
     * Merged and improved native code into WebIOPi
     * Allows GPIO full access from the Server
