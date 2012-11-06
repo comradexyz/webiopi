@@ -11,8 +11,7 @@
     * Merged and improved native code into WebIOPi
     * Allows GPIO full access from the Server
     * Remove RPi.GPIO mode conflict (RPi or BCM)
-  * Added setup.sh script
-    * Ease WebIOPi install
+  * Added setup script to ease WebIOPi install
     * Compile and install python library
     * Copy HTML/JS/CSS ressources to /usr/share/webiopi/htdocs
     * Copy documentation to /usr/share/webiopi/doc
