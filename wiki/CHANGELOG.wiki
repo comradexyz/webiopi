@@ -9,19 +9,17 @@
   * Software PWM/Servo
 
 ===Python Server & REST API===
-  * Python server usable as a library
   * Python 3 support
+  * Python server usable as a library
   * Removed RPi.GPIO library dependency
-    * Merged and improved native code into WebIOPi
-    * Allows GPIO full access from the Server
-    * Removed RPi.GPIO mode conflict (BOARD or BCM)
-  * Improved file handling
+  * Improved file serving
   * Improved REST API
   * Added ability to create custom REST macro
   * Added ability to output a bit sequence
 
 ===Javascript Library===
-  * Added ability to create button with one or two callback (mousedown and mouseup)
+  * Improved and simplified
+  * Added ability to create custom buttons with one or two callbacks (mousedown and mouseup)
 
 ===Other changes===  
   * PHP Server discontinued
