@@ -6,20 +6,24 @@
   * Added setup script to ease WebIOPi install
   * Use WebIOPi in your own Python scripts
   * Login/Password protection
-  * Software PWM/Servo
+  * Software PWM
+  * Binary sequence output
 
 ===Python Server & REST API===
   * Usable as a library
   * Added Python 3 support
   * Removed RPi.GPIO library dependency
+  * Improved security
   * Improved file serving
   * Improved REST API
-  * Added ability to create custom REST macro
-  * Added ability to output a bit sequence
+  * Added URL to create custom REST macro
+  * Added URL to output a binary sequence
+  * Added URL to use the software PWM output
 
 ===Javascript Library===
   * Improved and simplified
   * Added ability to create custom buttons with one or two callbacks (mousedown and mouseup)
+  * Added helpers for new REST functions (macro, sequence, pwm, ...)
 
 ===Other changes===  
   * PHP Server discontinued
