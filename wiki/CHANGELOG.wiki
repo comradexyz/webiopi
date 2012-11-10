@@ -9,17 +9,17 @@
   * Software PWM
   * Binary sequence output
 
-===Python Server & REST API===
+===Python Library/Server & REST API===
   * Usable as a library
   * Added Python 3 support
   * Removed RPi.GPIO library dependency
   * Improved security
   * Improved file serving
   * Improved REST API
-  * Added URL to use custom REST macro
-  * Added URL to output a single pulse
-  * Added URL to output a binary sequence
-  * Added URL to use the software PWM output
+  * Added ability to use custom REST macro
+  * Added ability to output a single pulse
+  * Added ability to output a binary sequence
+  * Added software PWM
 
 ===Javascript Library===
   * Improved and simplified
