@@ -9,8 +9,8 @@
   * Software PWM/Servo
 
 ===Python Server & REST API===
-  * Python 3 support
-  * Python server usable as a library
+  * Usable as a library
+  * Added Python 3 support
   * Removed RPi.GPIO library dependency
   * Improved file serving
   * Improved REST API
