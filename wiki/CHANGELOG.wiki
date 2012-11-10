@@ -16,7 +16,7 @@
   * Improved security
   * Improved file serving
   * Improved REST API
-  * Added URL to create custom REST macro
+  * Added URL to use custom REST macro
   * Added URL to output a binary sequence
   * Added URL to use the software PWM output
 
