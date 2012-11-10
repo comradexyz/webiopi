@@ -9,7 +9,7 @@
   * Software PWM
   * Binary sequence output
 
-===Python Library/Server & REST API===
+===Python Server & REST API===
   * Usable as a library
   * Added Python 3 support
   * Removed RPi.GPIO library dependency
