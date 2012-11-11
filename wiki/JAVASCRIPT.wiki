@@ -40,6 +40,11 @@ Output a bit sequence on a GPIO.
   * (string) sequence : bit sequence
   * (function) callback (optional) : function called when result received from the server
 
+=WebIOPi.pulse(gpio[, callback])=
+Output a single pulse on a GPIO.
+  * (int) gpio : GPIO number from 0 to 53
+  * (function) callback (optional) : function called when result received from the server
+
 =WebIOPi.pulseRatio(gpio, ratio[, callback])=
 Output a PWM duty cycle ratio on a GPIO.
   * (int) gpio : GPIO number from 0 to 53
@@ -53,7 +58,7 @@ Output a PWM angle on a GPIO.
   * (function) callback (optional) : function called when result received from the server
 
 =WebIOPi.createButton(id, label[, mousedown[, mouseup]])=
-Returs a simple button without predefined behavior.
+Returns a simple button without predefined behavior.
   * (string) id : id of the button to create
   * (string) label : label of the button
   * (function) mousedown (optional) : function called on mousedown/click event
