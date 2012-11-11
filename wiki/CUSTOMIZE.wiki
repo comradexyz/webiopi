@@ -82,7 +82,6 @@ Pin *function buttons (IN/OUT/...)* are also HTML input[type="submit"], with *id
 Pin *descriptions* are made of hTMl div, with *id from _name0_ to _name53_*, with a single class :
   * .Description : Text on the left/right of each pin
 
-=Example=
 Included demo/demo.css :
 {{{
 @CHARSET "UTF-8";
