@@ -11,7 +11,7 @@ You can also [CUSTOMIZE create] your own web interface using the included [JAVAS
 _WebIOPi has been developed on a Raspbian wheezy, but should work on others distribs._
 
 =Features=
-  * HTML/Javascript/CSS client and Python server
+  * HTML/Javascript client and Python server
   * Supports binary GPIOs, in both input and output.
   * Software PWM
   * Smartphone compatible
