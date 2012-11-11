@@ -106,7 +106,7 @@ This is the included demo/demo.html :
 =CSS styling=
 Once you wrote your HTML file with your Javascript code, you may want to add some CSS rules, in order change colors, size, positioning... It's very simple as you follow the naming convention to write your CSS file.
 
-Pin *state buttons (LOW/HIGH)* are HTML <button>, and inherit the _input_ CSS style. Their *id are from _gpio0_ to _gpio53_*. There is also two classes for both low and high states, and also somes for non GPIO pins :
+Pin *state buttons (LOW/HIGH)* are HTML `<button>`, and inherit the _input_ CSS style. Their *id are from _gpio0_ to _gpio53_*. There is also two classes for both low and high states, and also somes for non GPIO pins :
   * Default : Generic buttons
   * *LOW* : GPIO in low state
   * *HIGH* : GPIO in high state
@@ -120,7 +120,7 @@ Pin *state buttons (LOW/HIGH)* are HTML <button>, and inherit the _input_ CSS st
 
 With the included RPi header and expert webapps, you can also customize function button and descriptions :
 
-Pin *function buttons (IN/OUT/...)* are also HTML <input type="submit">, with *id from _function0_ to _function53_*. Two classes are also used :
+Pin *function buttons (IN/OUT/...)* are also HTML `<input type="submit">`, with *id from _function0_ to _function53_*. Two classes are also used :
   * .FunctionBasic : Used when GPIO is Input or Output
   * .FunctionSpecial : Used when GPIO is in ALTx (default is hidden)
 
