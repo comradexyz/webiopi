@@ -6,7 +6,7 @@ WebIOPi UI customization is easy but requires some Javascript and CSS knowledge.
 The WebIOPi Javascript library allows you to make your own interface easily, only requiring one single script tag to include /webiopi.js
 
 WebIOPi will automatically load and add required jquery.js and webiopi.css into your HTML file at runtime !
-Then you can use the [JAVASCRIPT] library to build the interface, creating buttons and registering callbacks. Check [PYTHON] for the related python script with server macro example.
+Then you can use the [JAVASCRIPT Javascript library] to build the interface, creating buttons and registering callbacks. Check [PYTHON Python example] for the related server script.
 
 This is the included demo/demo.html :
 {{{
