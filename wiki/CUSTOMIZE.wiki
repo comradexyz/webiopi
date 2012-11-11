@@ -116,8 +116,11 @@ Pin *state buttons (LOW/HIGH)* are HTML input[type="submit"], and inherit the _i
   * SPI0
   * I2C0
   * I2C1
+  * Button : Generic buttons
 
-Pin *functions buttons (IN/OUT/...)* are also HTML input[type="submit"], with *id from _function0_ to _function53_*. Two classes are also used :
+With the included RPi header and expert webapps, you can also customize function button and descriptions :
+
+Pin *function buttons (IN/OUT/...)* are also HTML input[type="submit"], with *id from _function0_ to _function53_*. Two classes are also used :
   * .FunctionBasic : Used when GPIO is Input or Output
   * .FunctionSpecial : Used when GPIO is in ALTx (default is hidden)
 
