@@ -1,4 +1,4 @@
-*<font color="red">WebIOPi 0.5 install instructions</font>*
+*<font color="red">WebIOPi 0.5 javascript library</font>*
 
 You can use the included Javascript library to build your own interface. You will find an example on the [CUSTOMIZE] page.
 
