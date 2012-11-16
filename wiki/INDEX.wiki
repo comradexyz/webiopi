@@ -3,7 +3,7 @@
   * [INSTALL Install instructions]
   * [CHANGELOG Changelog]
   * Customization
-    * [CUSTOMIZE ]
+    * [CUSTOMIZE Example]
     * [JAVASCRIPT Javascript Library]
     * [RESTAPI REST API]
     * [PYTHON Python Server Library]
