@@ -5,8 +5,6 @@
   # Follow additional instruction bellow matching your versions
 
 =0.3 => 0.5=
-  * Save your custom HTML/CSS/JS files
-  * PHP Server removed, so delete all old files (/var/www/webiopi for instance)
   * Remove www-data from sudoers (sudo visudo)
   * Remove webiopi rewrite rules in /etc/lighttpd/lighttpd.conf
   * `<input type="submit">` have been replaced by `<button>`
