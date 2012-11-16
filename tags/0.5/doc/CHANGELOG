@@ -1,0 +1,45 @@
+=Current version : 0.3 (08/27/12)=
+
+==0.5 (11/XX/12)==
+===New Features===
+   REV 2 boards support
+   Added setup script to ease WebIOPi install
+   Use WebIOPi in your own Python scripts
+   Login/Password protection
+   Software PWM
+   Binary sequence output
+
+===Python Server & REST API===
+   Usable as a library
+   Added Python 3 support
+   Removed RPi.GPIO library dependency
+   Improved security
+   Improved file serving
+   Improved REST API
+   Added ability to use custom REST macro
+   Added ability to output a single pulse
+   Added ability to output a binary sequence
+   Added software PWM
+
+===Javascript Library===
+   Improved and simplified
+   Added ability to create custom buttons with one or two callbacks (mousedown and mouseup)
+   Added helpers for new REST functions (macro, pulse, sequence, PWM, ...)
+
+===Other changes===  
+   PHP Server discontinued
+
+
+==0.3 (08/27/12)==
+   Fixed security issue in the Python server
+   Python server general improvements
+   Python server display real IP
+   Allow PHP5 < 5.4 (Works on Debian wheezy)
+   Added update tracking
+   Refactored Javascript code to be used as a library
+   Changed IDs and CSS naming
+   Added expert app
+
+
+==0.2 (08/21/12)==
+   Initial release
