@@ -153,3 +153,5 @@ Pin *function buttons (IN/OUT/...)* are also HTML `<button>`, with *id from _fun
 
 Pin *descriptions* are made of HTML div, with *id from _name0_ to _name53_*, with a single class :
   * .Description : Text on the left/right of each pin
+
+<p align="center">http://trouch.com/wp-content/uploads/2012/11/webiopi-0.5-demo.png</p>
