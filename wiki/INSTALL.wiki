@@ -1,8 +1,5 @@
 *<font color="red">WebIOPi 0.5.1 install instructions</font>*
 
-Thanks to RaspberryPiBeginners, a video tutorial is available for the install process :
-<wiki:video url="http://www.youtube.com/watch?v=wGahWkjettw"/>
-
 Please check [UPGRADE upgrade instructions] if you are upgrading from a previous WebIOPi version.
 
 You will need Python development headers. On Raspbian, open a terminal.
