@@ -4,8 +4,8 @@
   * Added revision board URI
 
 ==0.5.2 (12/21/12 - PiStore only)==
-  * Fixed file handling when server start at boot
-  * Improved macros handling to allow 0, 1 or more args
+  * Fixed blank page and file handling when server start at boot
+  * Improved macros handling to allow zeo, one or more args
   * Added server loop helper
   * Improved setup.sh for the PiStore
   * Added play.sh for the PiStore to open the browser
