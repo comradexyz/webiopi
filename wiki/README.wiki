@@ -8,7 +8,7 @@ It also allows to control your Pi's GPIOs over Internet, so it's a good starting
 
 You can also [CUSTOMIZE create your own web interface] using the included [JAVASCRIPT Javascript library], or the [RESTAPI REST API]. And you can even use the WebIOPi power inside your own Python script using the [PYTHON Server Library].
 
-_WebIOPi has been developed on a Raspbian wheezy, but should work on others distribs._
+_WebIOPi has been developed on Raspbian wheezy, but should work on others distribs._
 
 =Features=
   * HTML/Javascript client and Python server
