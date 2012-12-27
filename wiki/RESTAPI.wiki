@@ -1,4 +1,4 @@
-*<font color="red">WebIOPi 0.5.2 REST API</font>*
+*<font color="red">WebIOPi 0.5.1 REST API</font>*
 
 The included REST API allows you to make you own client, using HTTP REST calls. You can you use it to achieve several tasks :
 <wiki:toc max_depth="3" />
