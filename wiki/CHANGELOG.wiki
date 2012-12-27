@@ -1,6 +1,6 @@
 =Current version : 0.5.2 (12/21/12)=
 
-==trunk==
+==svn repository trunk==
   * Added board revision URI
   * Added a password encrypted file support
   * Added a webiopi-passwd command-line program to generate passwd file
