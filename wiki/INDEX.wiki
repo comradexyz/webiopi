@@ -1,4 +1,4 @@
-  * [README Features, Restrictions, Usage]
+  * [README README (Features, Usage)]
   * [UPGRADE Upgrade instructions]
   * [INSTALL Install instructions]
   * [CHANGELOG Changelog]
