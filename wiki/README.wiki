@@ -23,13 +23,6 @@ _WebIOPi has been developed on a Raspbian wheezy, but should work on others dist
   * [JAVASCRIPT Javascript library]
   * [RESTAPI REST API]
 
-=Restrictions=
-  * GPIOs 0 and 1 have input pull-up resistor enabled.
-  * UART0 and I2C1 are enabled but unusable for now.
-    * GPIOs 2, 3, 14 and 15 are disabled
-  * UART, SPI and I2C support will be added as soon as possible.
-  * Don't forget that GPIOs support only 3.3V, don't plug them to 5V !!!
-
 Check the [ROADMAP roadmap] for the upcoming features
 
 =Usage=
