@@ -5,6 +5,7 @@
   * Added a password encrypted file support
   * Added a webiopi-passwd command-line program to generate passwd file
   * Changed /dev/mem access to allow webiopi import without root when not using GPIOs
+  * Added Serial class
   * Fixed encoding issue with python 2.x giving a blank page
   * Fixed setup script
  
