@@ -1,7 +1,7 @@
 =Current version : 0.5.2 (12/21/12)=
 
 ==svn repository trunk==
-  * Added board revision URI
+  * Added board revision REST URI
   * Added a password encrypted file support
   * Added a webiopi-passwd command-line program to generate passwd file
   * Changed /dev/mem access to allow webiopi import without root when not using GPIOs
