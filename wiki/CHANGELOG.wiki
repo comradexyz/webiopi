@@ -8,6 +8,7 @@
   * Added Serial class (experimental)
   * Fixed encoding issue with python 2.x giving a blank page
   * Fixed setup script
+  * Improved GPIO error handling
  
 
 ==0.5.2 (12/21/12 - PiStore only)==
