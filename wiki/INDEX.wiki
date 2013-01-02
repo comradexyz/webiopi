@@ -1,6 +1,6 @@
+  * [README Usage]
   * [UPGRADE Upgrade instructions]
   * [INSTALL Install instructions]
-  * [README Usage]
   * [CHANGELOG Changelog]
   * Customization
     * [CUSTOMIZE Example]
