@@ -1,8 +1,8 @@
   * [README Usage]
-  * [UPGRADE Upgrade instructions]
-  * [INSTALL Install instructions]
+  * [UPGRADE Upgrade]
+  * [INSTALL Install]
   * [CHANGELOG Changelog]
-  * Customization
+  * Customize
     * [CUSTOMIZE Example]
     * [JAVASCRIPT Javascript Library]
     * [RESTAPI REST API]
