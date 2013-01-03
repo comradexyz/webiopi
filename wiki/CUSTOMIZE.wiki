@@ -8,7 +8,7 @@ The WebIOPi Javascript library allows you to make your own interface easily, onl
 WebIOPi will automatically load and add required jquery.js and webiopi.css into your HTML file at runtime !
 Then you can use the [JAVASCRIPT Javascript library] to build the interface, creating buttons and registering callbacks.
 
-This example displays big buttons arranged in a column. It also changes the background color of the GPIO 7 for both low and high states. There is two buttons which call a macro and requires to use the associated [PYTHON _demo.py_] server script. You can use the pre-installed WebIOPi service if you don't plan to use macros.
+This example displays big buttons arranged in a column. It also changes the background color of the GPIO 7 for both low and high states. There is two buttons which call a macro and requires to use the associated [PYTHON demo.py] server script. You can use the pre-installed WebIOPi service if you don't plan to use macros.
 
 You have to put both HTML file and Python server script in the same folder and execute the script in that folder to ensure your server will found your HTML file. You can also put your HTML file in /usr/share/webiopi/htdocs
 
