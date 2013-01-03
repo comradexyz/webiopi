@@ -10,7 +10,7 @@ Then you can use the [JAVASCRIPT Javascript library] to build the interface, cre
 
 This is the included demo/demo.html, which display big buttons arranged in a column. It also changes the background color of the GPIO 7 for both low and high states.
 
-Start the associated _demo.py_ script *in the demo folder* then open a browser to http://raspberrypi/webiopi/demo.html
+Start the associated _demo.py_ script *in the demo folder* then open a browser to http://raspberrypi:8080/webiopi/demo.html
 
 {{{
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
