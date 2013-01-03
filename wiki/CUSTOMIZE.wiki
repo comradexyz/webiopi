@@ -1,6 +1,6 @@
 *<font color="red">WebIOPi 0.5 customization example</font>*
 
-WebIOPi UI customization is easy but requires some Javascript and CSS knowledge. 
+WebIOPi UI customization is easy but requires some Javascript and CSS knowledge. You can also create your own Python script to change the server behavior.
 
 http://trouch.com/wp-content/uploads/2012/11/webiopi-architecture.png
 
