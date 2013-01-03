@@ -2,6 +2,8 @@
 
 WebIOPi UI customization is easy but requires some Javascript and CSS knowledge. 
 
+http://trouch.com/wp-content/uploads/2012/11/webiopi-architecture.png
+
 =HTML/Javascript=
 The WebIOPi Javascript library allows you to make your own interface easily, only requiring one single script tag to include /webiopi.js
 
