@@ -7,5 +7,4 @@
     * [JAVASCRIPT Javascript Library]
     * [RESTAPI REST API]
     * [PYTHON Python Server Library]
-  * [ROADMAP Roadmap]
   * [LICENSE License]
