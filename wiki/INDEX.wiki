@@ -7,4 +7,5 @@
     * [JAVASCRIPT Javascript Library]
     * [RESTAPI REST API]
     * [PYTHON Python Server Library]
+    * [CSS CSS Styling]
   * [LICENSE License]
