@@ -23,8 +23,6 @@ _WebIOPi has been developed on Raspbian wheezy, but should work on others distri
   * [JAVASCRIPT Javascript library]
   * [RESTAPI REST API]
 
-Check the [ROADMAP roadmap] for the upcoming features
-
 =Usage=
 If not already done, follow [INSTALL install instructions].
 
