@@ -10,7 +10,7 @@ The WebIOPi Javascript library allows you to make your own interface easily, onl
 WebIOPi will automatically load and add required jquery.js and webiopi.css into your HTML file at runtime !
 Then you can use the [JAVASCRIPT Javascript library] to build the interface, creating buttons and registering callbacks.
 
-This example displays big buttons arranged in a column. It also changes the background color of the GPIO 7 for both low and high states. There is two buttons which call a macro and requires to use the associated [PYTHON demo.py] server script. You can use the pre-installed WebIOPi service if you don't plan to use macros.
+This example displays big buttons arranged in a column. It also changes the background color of the GPIO 7 for both low and high states. There is two buttons which call a macro and requires to use the associated  server script you'll found below. You can use the pre-installed WebIOPi service if you don't plan to use macros.
 
 You have to put both HTML file and Python server script in the same folder and execute the script in that folder to ensure your server will found your HTML file. You can also put your HTML file in /usr/share/webiopi/htdocs
 
@@ -134,28 +134,52 @@ When your WebIOPi service or server script is started, open a browser to http://
 }}}
 
 
-=CSS styling=
-Once you wrote your HTML file with your Javascript code, you may want to add some CSS rules, in order change colors, size, positioning... It's very simple as you follow the naming convention to write your CSS file.
+=Python Server script=
+{{{
+# First import webiopi
+import webiopi
+import time
 
-Pin *state buttons (LOW/HIGH)* are HTML `<button>`, and inherit the _button_ CSS style. Their *id are from _gpio0_ to _gpio53_*. There is also two classes for both low and high states, and also somes for non GPIO pins :
-  * Default : Generic buttons
-  * *LOW* : GPIO in low state
-  * *HIGH* : GPIO in high state
-  * GND : Ground
-  * V33 : 3.3V
-  * V50 : 5.0V
-  * UART0
-  * SPI0
-  * I2C0
-  * I2C1
+# I use the integrated GPIO lib, but you can use RPi.GPIO
+GPIO = webiopi.GPIO
 
-With the included RPi header and expert webapps, you can also customize function button and descriptions :
+# A custom macro which prints out the arg received and return OK
+def myMacro(arg1, arg2, arg3):
+    print("myMacro(%s, %s, %s)" % (arg1, arg2, arg3))
+    return "OK"
 
-Pin *function buttons (IN/OUT/...)* are also HTML `<button>`, with *id from _function0_ to _function53_*. Two classes are also used :
-  * .FunctionBasic : Used when GPIO is Input or Output
-  * .FunctionSpecial : Used when GPIO is in ALTx (default is hidden)
+# Example loop which toggle GPIO 7 each 5 seconds
+def loop():
+    GPIO.output(7, not GPIO.input(7))
+    time.sleep(5)        
+    
 
-Pin *descriptions* are made of HTML div, with *id from _name0_ to _name53_*, with a single class :
-  * .Description : Text on the left/right of each pin
+# Instantiate the server on the port 8000, it starts immediately in its own thread
+server = webiopi.Server(port=8000, login="webiopi", password="raspberry")
+
+# Register the macro so you can call it through the [RESTAPI] or [JAVASCRIPT]
+server.addMacro(myMacro)
+
+# Setup GPIOs
+GPIO.setFunction(1, GPIO.IN)
+GPIO.setFunction(7, GPIO.OUT)
+GPIO.setFunction(8, GPIO.PWM)
+GPIO.setFunction(9, GPIO.PWM)
+
+GPIO.pulseRatio(8, 0.5) # init to 50% duty cycle ratio
+GPIO.pulseAngle(9, 0)   # init to neutral
+
+# run our loop until CTRL-C is pressed
+webiopi.runLoop(loop)
+
+# Stop the server
+server.stop()
+
+# Reset GPIO functions
+GPIO.setFunction(1, GPIO.IN)
+GPIO.setFunction(7, GPIO.IN)
+GPIO.setFunction(8, GPIO.IN)
+GPIO.setFunction(9, GPIO.IN)
+}}}
 
 <p align="center">http://trouch.com/wp-content/uploads/2012/11/webiopi-0.5-demo.png</p>
