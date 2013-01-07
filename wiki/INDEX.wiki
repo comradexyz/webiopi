@@ -1,11 +1,8 @@
-  * [README Usage]
-  * [UPGRADE Upgrade]
-  * [INSTALL Install]
+  * [README Introduction]
   * [CHANGELOG Changelog]
-  * Customize
-    * [CUSTOMIZE Example]
-    * [JAVASCRIPT Javascript Library]
+  * [CUSTOMIZE Customize]
+  * Libraries
     * [RESTAPI REST API]
     * [PYTHON Python Server Library]
+    * [JAVASCRIPT Javascript Library]
     * [CSS CSS Styling]
-  * [LICENSE License]
