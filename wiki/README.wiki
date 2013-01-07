@@ -66,8 +66,6 @@ $ sudo update-rc.d webiopi defaults
 
 
 =Usage=
-If not already done, follow [INSTALL install instructions].
-
 If your are directly using your Raspberry Pi with keyboard/mouse/display plugged,  open a browser to http://localhost:8000/webiopi/
 
 If your Raspberry Pi is connected to your network, you can open a browser to http://raspberrypi:8000/webiopi/ with any device of your network. _Replace raspberrypi by its IP._
