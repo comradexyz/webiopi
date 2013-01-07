@@ -1,8 +1,7 @@
   * [README Introduction]
-  * [CHANGELOG Changelog]
   * [CUSTOMIZE Customize]
-  * Libraries
-    * [RESTAPI REST API]
-    * [PYTHON Python Server Library]
-    * [JAVASCRIPT Javascript Library]
-    * [CSS CSS Styling]
+  * [RESTAPI REST API]
+  * [PYTHON Python Server Library]
+  * [JAVASCRIPT Javascript Library]
+  * [CSS CSS Styling]
+  * [CHANGELOG Changelog]
