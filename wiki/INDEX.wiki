@@ -2,6 +2,6 @@
   * [CUSTOMIZE Customize]
   * [RESTAPI REST API]
   * [PYTHON Python Server Library]
-  * [JAVASCRIPT Javascript Library]
+  * [JAVASCRIPT Javascript Client Library]
   * [CSS CSS Styling]
   * [CHANGELOG Changelog]
