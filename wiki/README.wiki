@@ -1,4 +1,4 @@
-WebIOPi is a web application which allows you to control your Raspberry Pi's GPIO. Just install it on your Pi, and use any browser from your network. Click/tap the in/out buttons to change GPIO direction, and click/tap on each output pin button to change their state. 
+WebIOPi is a REST framework and a webapp which allows you to control your Raspberry Pi's GPIO. Just install it on your Pi, and use any browser from your network. Click/tap the in/out buttons to change GPIO direction, and click/tap on each output pin button to change their state. 
 
 It's useful to start enjoying GPIOs and also to debug some circuits without writing any line of code.
 
@@ -6,7 +6,13 @@ It also allows to control your Pi's GPIOs over Internet, so it's a good starting
 
 You can also [CUSTOMIZE create your own web interface] using the included [JAVASCRIPT Javascript library], or the [RESTAPI REST API]. And you can even use the WebIOPi power inside your own Python script using the [PYTHON Server Library].
 
-_WebIOPi has been developed on Raspbian wheezy, but should work on others distribs._
+WebIOPI is developed by Eric PTAK, also known as trouch, french R&D engineer in networks, software, mobility and internet of things. 
+
+  * [README Install, Usage]
+  * [CHANGELOG Changelog]
+  * [http://groups.google.com/group/webiopi Support & Discussion]
+  * [http://trouch.com Eric's blog]
+  * [http://www.youtube.com/watch?v=wGahWkjettw Video tutorial] by RaspberryPiBeginners
 
 =Features=
   * HTML/Javascript client and Python server
@@ -20,6 +26,7 @@ _WebIOPi has been developed on Raspbian wheezy, but should work on others distri
   * [CUSTOMIZE Easily customize UI]
   * [JAVASCRIPT Javascript library]
   * [RESTAPI REST API]
+
 
 =Install=
 You will need Python development headers. On Raspbian, open a terminal.
@@ -82,6 +89,9 @@ You can also use the expert app, which gives you an ordered list of GPIOs. It's 
 
 http://trouch.com/wp-content/uploads/2012/08/webiopi-chrome-expert.png
 
-You can also create you own server script, to fully customize the behavior, add computing... Check the [PYTHON Python library] and [CUSTOMIZE customization page] for more informations.
+You can also create you own server script, to fully customize the behavior, add computing... Check the [CUSTOMIZE customization page] for more informations.
 
 http://trouch.com/wp-content/uploads/2012/11/webiopi-architecture.png
+
+<p></p>
+<p align="center"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=79EM7ZV9FQ4HU">https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif</a></p>
