@@ -6,9 +6,8 @@ It also allows to control your Pi's GPIOs over Internet, so it's a good starting
 
 You can also [CUSTOMIZE create your own web interface] using the included [JAVASCRIPT Javascript library], or the [RESTAPI REST API]. And you can even use the WebIOPi power inside your own Python script using the [PYTHON Server Library].
 
-WebIOPI is developed by Eric PTAK, also known as trouch, french R&D engineer in networks, software, mobility and internet of things. 
+WebIOPI is developed by Eric PTAK, also known as trouch, french R&D engineer in networks, software, mobility and Internet of Things. 
 
-  * [README Install, Usage]
   * [CHANGELOG Changelog]
   * [http://groups.google.com/group/webiopi Support & Discussion]
   * [http://trouch.com Eric's blog]
@@ -22,11 +21,10 @@ WebIOPI is developed by Eric PTAK, also known as trouch, french R&D engineer in 
   * Auto-refresh
 
   * Login/Password protection
-  * [PYTHON Server usable as a Python library]
   * [CUSTOMIZE Easily customize UI]
+  * [PYTHON Server usable as a Python library]
   * [JAVASCRIPT Javascript library]
   * [RESTAPI REST API]
-
 
 =Install=
 You will need Python development headers. On Raspbian, open a terminal.
