@@ -23,8 +23,8 @@ WebIOPI is developed by Eric PTAK, also known as trouch, french R&D engineer in 
   * Login/Password protection
   * [CUSTOMIZE Easily customize UI]
   * [RESTAPI REST API]
-  * [PYTHON Python Server library]
-  * [JAVASCRIPT Javascript Client library]
+  * [PYTHON Python Server Library]
+  * [JAVASCRIPT Javascript Client Library]
 
 =Install=
 You will need Python development headers. On Raspbian, open a terminal.
