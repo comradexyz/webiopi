@@ -48,13 +48,17 @@ When your WebIOPi service or server script is started, open a browser to http://
 		button = webiopi().createButton("sos2", "S.O.S 2", outputSequence);
 		content.append(button); // append button to content div
 		
-		// create a button which call myMacro with "1,2,3" as argument
-		button = webiopi().createMacroButton("macro", "Macro 1", "myMacro", [1,2,3]);
+		// create a button which call myMacroWithoutArgs
+		button = webiopi().createMacroButton("macro", "Macro 1", "myMacroWithoutArgs");
 		content.append(button); // append button to content div
 		
-		// the previous button will always call myMacro with the same "1,2,3" argument
+		// create a button which call myMacroWithArgs with "1,2,3" as argument
+		button = webiopi().createMacroButton("macro", "Macro 2", "myMacroWithArgs", [1,2,3]);
+		content.append(button); // append button to content div
+		
+		// the previous button will always call myMacroWithArgs with the same "1,2,3" argument
 		// you can also create a simple button with your own function 
-		button = webiopi().createButton("macro2", "Macro 2", callMacro);
+		button = webiopi().createButton("macro2", "Macro 3", callMacro);
 		content.append(button); // append button to content div
 		
 		// you can also create a button which calls a different function for mouse down and up events
@@ -90,8 +94,8 @@ When your WebIOPi service or server script is started, open a browser to http://
 	
 	function callMacro() {
 		var args = [1,2,3] // or whatever you want
-		// call myMacro(arg)
-		webiopi().callMacro("myMacro", args, macroCallback);
+		// call myMacroWithArgs(arg)
+		webiopi().callMacro("myMacroWithArgs", args, macroCallback);
 	}
 	
 	function macroCallback(macro, args, data) {
@@ -134,29 +138,34 @@ When your WebIOPi service or server script is started, open a browser to http://
 
 =Python Server script=
 {{{
-# First import webiopi
+# Imports
 import webiopi
 import time
 
-# I use the integrated GPIO lib, but you can use RPi.GPIO
+# Retrieve GPIO lib
 GPIO = webiopi.GPIO
 
+# -------------------------------------------------- #
+# Macro definition part                              #
+# -------------------------------------------------- #
+
 # A custom macro which prints out the arg received and return OK
-def myMacro(arg1, arg2, arg3):
-    print("myMacro(%s, %s, %s)" % (arg1, arg2, arg3))
+def myMacroWithArgs(arg1, arg2, arg3):
+    print("myMacroWithArgs(%s, %s, %s)" % (arg1, arg2, arg3))
     return "OK"
+
+# A custom macro without args which return nothing
+def myMacroWithoutArgs():
+    print("myMacroWithoutArgs()")
 
 # Example loop which toggle GPIO 7 each 5 seconds
 def loop():
     GPIO.output(7, not GPIO.input(7))
     time.sleep(5)        
-    
 
-# Instantiate the server on the port 8000, it starts immediately in its own thread
-server = webiopi.Server(port=8000, login="webiopi", password="raspberry")
-
-# Register the macro so you can call it through the [RESTAPI] or [JAVASCRIPT]
-server.addMacro(myMacro)
+# -------------------------------------------------- #
+# Initialization part                                #
+# -------------------------------------------------- #
 
 # Setup GPIOs
 GPIO.setFunction(1, GPIO.IN)
@@ -164,13 +173,39 @@ GPIO.setFunction(7, GPIO.OUT)
 GPIO.setFunction(8, GPIO.PWM)
 GPIO.setFunction(9, GPIO.PWM)
 
+GPIO.output(7, GPIO.HIGH)
 GPIO.pulseRatio(8, 0.5) # init to 50% duty cycle ratio
 GPIO.pulseAngle(9, 0)   # init to neutral
 
-# run our loop until CTRL-C is pressed
+# -------------------------------------------------- #
+# Main server part                                   #
+# -------------------------------------------------- #
+
+# Instantiate the server on the port 8000, it starts immediately in its own thread
+server = webiopi.Server(port=8000, login="webiopi", password="raspberry")
+# or     webiopi.Server(port=8000, passwdfile="/etc/webiopi/passwd")
+
+# Register the macros so you can call it with Javascript and/or REST API
+server.addMacro(myMacroWithArgs)
+server.addMacro(myMacroWithoutArgs)
+
+
+# -------------------------------------------------- #
+# Loop execution part                                #
+# -------------------------------------------------- #
+
+# Run our loop until CTRL-C is pressed or SIGTERM received
 webiopi.runLoop(loop)
 
-# Stop the server
+# If no specific loop is needed and defined above, just use 
+# webiopi.runLoop()
+# here instead
+
+# -------------------------------------------------- #
+# Termination part                                   #
+# -------------------------------------------------- #
+
+# Cleanly stop the server
 server.stop()
 
 # Reset GPIO functions
