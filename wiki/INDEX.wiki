@@ -1,4 +1,5 @@
   * [README Introduction]
+  * [PASSWORD Change password]
   * [CUSTOMIZE Customize]
   * [RESTAPI REST API]
   * [PYTHON Python Server Library]
