@@ -12,8 +12,7 @@ This example displays big buttons arranged in a column. It also changes the back
 
 You have to put both HTML file and Python server script in the same folder and execute the script in that folder to ensure your server will found your HTML file. You can also put your HTML file in /usr/share/webiopi/htdocs
 
-When your WebIOPi service or server script is started, open a browser to http://raspberrypi:8000/webiopi/demo.html
-
+You'll find the following code in examples/custom/index.html :
 {{{
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
