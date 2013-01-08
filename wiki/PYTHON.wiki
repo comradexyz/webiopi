@@ -1,5 +1,16 @@
 WebIOPi can be used as a Python library. It offers both Server and GPIO class.
 
+After unpacking WebIOPi, you'll find the following code in examples/custom/webiopi_custom.py, you can execute from two ways :
+  * Foreground (debugging):
+{{{
+$ sudo python webiopi_custom.py
+}}}
+
+  * Background (production)
+{{{
+$ sudo ./webiopi_custom.daemon start
+}}}
+
 {{{
 # Imports
 import webiopi
