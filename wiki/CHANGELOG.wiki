@@ -4,11 +4,21 @@
   * Added CoAP (draft-13) implementation (Server and Client)
   * Added Python WebIOPi Client class (HTTP or CoAP with HTTP fallback)
   * Added Python WebIOPi MulticastClient class (CoAP)
-  * Added Python lightweight Serial class
-  * Added REST API Serial mapping
-  * Added Javascript Serial class
-  * Added Serial monitor web app
+  * Added Serial support : 
+    * Python lightweight Serial class
+    * REST API Serial mapping
+    * Javascript Serial class
+    * Serial monitor web app
+  * Added I2C support :
+    * Python lightweight raw I2C class
+    * Device specific classes: TMP102 
   * Added /etc/webiopi/config file
+    * HTTP server config
+    * CoAP server config
+    * Serial lines config
+    * Device specific config
+  * Added getValue and getFunction Javascript methods
+  * Added logging facility
   * Fixed error fetching python-dev package during setup
   * Fixed webiopi-passwd missing execution flag when installing with PiStore
   * Fixed binary file serving
