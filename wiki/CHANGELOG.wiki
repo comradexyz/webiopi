@@ -10,7 +10,7 @@
     * Javascript Serial class
     * Serial monitor web app
   * Added I2C support :
-    * Python lightweight raw I2C class
+    * Python lightweight I2C class
     * Added webiopi.devices.temp.TMP102
     * Added webiopi.devices.digital.PCF8574
   * Added /etc/webiopi/config file
