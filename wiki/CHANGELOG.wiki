@@ -17,11 +17,12 @@
     * CoAP server config
     * Serial lines config
     * Device specific config
-  * Added getValue and getFunction Javascript methods
+  * Added GPIO getValue and getFunction Javascript methods
   * Added logging facility
   * Fixed error fetching python-dev package during setup
   * Fixed webiopi-passwd missing execution flag when installing with PiStore
   * Fixed binary file serving
+  * Fixed iOS6 Safari Mobile bug
 
 
 ==0.5.3 (01/07/13)==
