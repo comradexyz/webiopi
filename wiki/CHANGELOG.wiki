@@ -11,8 +11,14 @@
     * Serial monitor web app
   * Added I2C support :
     * Python lightweight I2C class
-    * Added webiopi.devices.temp.TMP102
-    * Added webiopi.devices.digital.PCF8574
+    * Added webiopi.devices.temp.TMP102 driver
+    * Added webiopi.devices.digital.PCF8574 driver
+  * Added SPI support :
+    * Python lightweight SPI class
+    * Added webiopi.devices.analog.MCP3004 driver
+    * Added webiopi.devices.analog.MCP3008 driver
+    * Added webiopi.devices.analog.MCP3204 driver
+    * Added webiopi.devices.analog.MCP3208 driver
   * Added /etc/webiopi/config file
     * HTTP server config
     * CoAP server config
