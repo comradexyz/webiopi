@@ -4,7 +4,7 @@
   * Added CoAP (draft-13) implementation (Server and Client)
   * Added Python WebIOPi Client class (HTTP or CoAP with HTTP fallback)
   * Added Python WebIOPi MulticastClient class (CoAP)
-  * Added Serial support : 
+  * Added Serial support
     * Python lightweight Serial driver
     * REST API Serial mapping
     * Javascript Serial class
