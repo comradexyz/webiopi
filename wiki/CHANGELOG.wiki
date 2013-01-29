@@ -26,7 +26,7 @@
     * Device specific config
   * Automatic REST mapping
   * Added Javascript GPIO getValue and getFunction methods
-  * Added logging facility
+  * Added Server logging facility
   * Fixed error fetching python-dev package during setup
   * Fixed webiopi-passwd missing execution flag when installing with PiStore
   * Fixed binary file serving
