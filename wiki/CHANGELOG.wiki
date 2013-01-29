@@ -24,7 +24,8 @@
     * CoAP server config
     * Serial lines config
     * Device specific config
-  * Added GPIO getValue and getFunction Javascript methods
+  * Automatic REST mapping
+  * Added Javascript GPIO getValue and getFunction methods
   * Added logging facility
   * Fixed error fetching python-dev package during setup
   * Fixed webiopi-passwd missing execution flag when installing with PiStore
