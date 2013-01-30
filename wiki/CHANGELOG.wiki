@@ -23,8 +23,9 @@
     * webiopi.devices.analog.MCP3204 - SPI 12-bits 4-channels ADC
     * webiopi.devices.analog.MCP3208 - SPI 12-bits 8-channels ADC
   * Added /etc/webiopi/config file
-    * GPIO start/stop config
+    * GPIO setup
     * Script loading facility
+    * REST API export config
     * HTTP server config
     * CoAP server config
     * Serial lines config
