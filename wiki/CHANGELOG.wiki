@@ -5,15 +5,15 @@
   * Added Python WebIOPi Client class (HTTP or CoAP with HTTP fallback)
   * Added Python WebIOPi MulticastClient class (CoAP)
   * Added Serial support
-    * Python lightweight Serial driver
+    * Python lightweight Serial driver with no dependency
     * REST API Serial mapping
     * Javascript Serial class
     * Serial monitor web app
   * Added I2C support
-    * Python lightweight I2C driver
+    * Python lightweight I2C driver with no dependency
     * Automatically load required linux modules : i2c-bcm2808, i2c-dev
   * Added SPI support
-    * Python lightweight SPI driver
+    * Python lightweight SPI driver with no dependency
     * Automatically load required linux modules : spi-bcm2808, spidev
   * Added device drivers :
     * webiopi.devices.sensor.TMP102 - I2C Temperature sensor
