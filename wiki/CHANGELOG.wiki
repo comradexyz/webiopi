@@ -7,7 +7,7 @@
   * Added Serial, I2C, SPI and 1-Wire  support
     * Python lightweight drivers with no dependency
     * Automatically load required linux modules
-    * Added device drivers, see [DEVICES device support list]
+    * Added device drivers, see [DEVICES device support page]
   * Added /etc/webiopi/config file
     * HTTP server config
     * CoAP server config
