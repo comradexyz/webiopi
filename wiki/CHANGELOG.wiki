@@ -12,11 +12,13 @@
     * webiopi.devices.sensor.TMP102 - I2C Temperature sensor
     * webiopi.devices.sensor.TMP275 - I2C Temperature sensor
     * webiopi.devices.sensor.DS18B20 - 1-Wire Temperature sensor
-    * webiopi.devices.digital.PCF8574 - I2C IO Expander
+    * webiopi.devices.digital.PCF8574 - I2C 8-bits I/O Expander
     * webiopi.devices.analog.MCP3004 - SPI 10-bits 4-channels ADC
     * webiopi.devices.analog.MCP3008 - SPI 10-bits 8-channels ADC
     * webiopi.devices.analog.MCP3204 - SPI 12-bits 4-channels ADC
     * webiopi.devices.analog.MCP3208 - SPI 12-bits 8-channels ADC
+    * webiopi.devices.analog.MCP4921 - SPI 12-bits 1-channel DAC
+    * webiopi.devices.analog.MCP4922 - SPI 12-bits 2-channels DAC
   * Added /etc/webiopi/config file
     * GPIO setup
     * Script loading facility
