@@ -9,13 +9,16 @@
     * Automatically load required linux modules
     * Added device drivers, see [DEVICES Device support list]
   * Added /etc/webiopi/config file
-    * GPIO setup
-    * Script loading facility
-    * REST API export config
     * HTTP server config
     * CoAP server config
+    * GPIO setup
+    * Script loading facility
     * Serial lines config
     * Devices config
+    * REST API config
+      * GPIO exported to the API
+      * Automatic device mapping
+      * Manual URL routing
   * Added Serial monitor web app
   * Added Javascript GPIO getValue and getFunction methods
   * Added Server logging facility
