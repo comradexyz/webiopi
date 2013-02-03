@@ -2,13 +2,10 @@
 This list summarize device support available in the next release and on the source repository.
 
 *Submit your devices*
-Feel free to submit any component you use and/or would like to use with WebIOPi on the [https://groups.google.com/d/topic/webiopi/p1lfi0pIBFA/discussion discussion thread].<br/>
-Depending on demands, I may write the driver it if I can have one sample.<br/>
-If possible, add a link to its datasheet.<br/>
+Feel free to submit any component you use and/or would like to use with WebIOPi on the [https://groups.google.com/d/topic/webiopi/p1lfi0pIBFA/discussion discussion thread].<br/>Depending on demands, I may write the driver it if I can have one sample.<br/>If possible, add a link to its datasheet.<br/>
 
 *How to help ?*
-If you absolutely need particular one, you can send/buy me a sample or make a donation, I will write the driver required.<br/>
-If you know how the device work on it's low level interface, look on the [http://code.google.com/p/webiopi/source/checkout source repository], start with [http://webiopi.googlecode.com/svn/trunk/python/webiopi/devices/digital.py PCF8574 driver], write your own and submit it.
+If you absolutely need particular one, you can send/buy me a sample or make a donation, I will write the driver required.<br/>If you know how the device work on it's low level interface, look on the [http://code.google.com/p/webiopi/source/checkout source repository], start with [http://webiopi.googlecode.com/svn/trunk/python/webiopi/devices/digital.py PCF8574 driver], write your own and submit it.
 
 
 || *Name* || *Bus* || *Description* || *State*|| *Package* || *Comment* ||
