@@ -2,9 +2,9 @@
 Submit your proposals on [https://groups.google.com/d/topic/webiopi/p1lfi0pIBFA/discussion discussion thread].
 
 || *Name* || *Bus* || *Description* || *State*|| *Package/Family* || *Comment* ||
-|| ADS1014 || I2C || 12-bits 1-channels DAC || Planned || analog || Same as ADS1015. ||
+|| ADS1014 || I2C || 12-bits 1-channel DAC || Planned || analog || Same as ADS1015. ||
 || ADS1015 || I2C || 12-bits 4-channels DAC || Planned || analog || *Sample ordered, waiting.* ||
-|| ADS1114 || I2C || 16-bits 4-channels DAC || Planned || analog || Same as ADS1115. ||
+|| ADS1114 || I2C || 16-bits 1-channel DAC || Planned || analog || Same as ADS1115. ||
 || ADS1115 || I2C || 16-bits 4-channels DAC || Planned || analog || *Sample ordered, waiting.* ||
 || BMP085 || I2C || Pressure & temperature sensor || Planned || sensor || ||
 || DS1307 || I2C || Real time clock || Planned || ? || Bulk sample received, need to wire. ||
