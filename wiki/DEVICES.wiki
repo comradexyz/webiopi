@@ -1,7 +1,15 @@
 =Device support and plans=
 This list summarize device support available in the next release and on the source repository.
 
-Submit your proposals on [https://groups.google.com/d/topic/webiopi/p1lfi0pIBFA/discussion discussion thread].
+*Submit your devices*
+Feel free to submit any component you use and/or would like to use with WebIOPi on the [https://groups.google.com/d/topic/webiopi/p1lfi0pIBFA/discussion discussion thread].
+Depending on demands, I may write the driver it if I can have one sample.
+If possible, add a link to its datasheet.
+
+*How to help ?*
+If you absolutely need particular one, you can send/buy me a sample or make a donation, I will write the driver required.
+If you know how the device work on it's low level interface, look on the [http://code.google.com/p/webiopi/source/checkout source repository], start with [http://webiopi.googlecode.com/svn/trunk/python/webiopi/devices/digital.py PCF8574 driver], write your own and submit it.
+
 
 || *Name* || *Bus* || *Description* || *State*|| *Package* || *Comment* ||
 || ADS1014 || I2C || 12-bits 1-channel DAC || Planned || analog || Same as ADS1015. ||
