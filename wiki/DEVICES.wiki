@@ -21,7 +21,7 @@ Submit your proposals on [https://groups.google.com/d/topic/webiopi/p1lfi0pIBFA/
 || MCP3208 || SPI || 12-bits 8-channels ADC || *Tested* || analog || ||
 || MCP4921 || SPI || 12-bits 1-channel DAC || *Not tested* || analog || Should work, same as MCP4922. ||
 || MCP4922 || SPI || 12-bits 2-channels DAC || *Tested* || analog || ||
-|| MOD-IO2 || I2C || I/O Expandable board with UExt || || ? || Community proposal, may purchase. ||
+|| MOD-IO2 || I2C || I/O Expandable board with external power || || ? || Community proposal, may purchase. ||
 || PCA9685 || I2C || 16-channels PWM/Servo driver || Planned || analog || *Purchased, waiting.* ||
 || PCF8574 || I2C || 8-bits I/O Expander || *Tested* || digital || ||
 || TSL2561 || I2C || Light-to-Digital converter || || sensor || Community proposal. ||
