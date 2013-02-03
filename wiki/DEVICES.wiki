@@ -3,7 +3,7 @@ This list summarize device support available in the next release and on the sour
 
 Submit your proposals on [https://groups.google.com/d/topic/webiopi/p1lfi0pIBFA/discussion discussion thread].
 
-|| *Name* || *Bus* || *Description* || *State*|| *Package/Family* || *Comment* ||
+|| *Name* || *Bus* || *Description* || *State*|| *Package* || *Comment* ||
 || ADS1014 || I2C || 12-bits 1-channel DAC || Planned || analog || Same as ADS1015. ||
 || ADS1015 || I2C || 12-bits 4-channels DAC || Planned || analog || *Sample ordered, waiting.* ||
 || ADS1114 || I2C || 16-bits 1-channel DAC || Planned || analog || Same as ADS1115. ||
