@@ -1,4 +1,6 @@
 =Device support and plans=
+This list summarize device support available in the next release and on the source repository.
+
 Submit your proposals on [https://groups.google.com/d/topic/webiopi/p1lfi0pIBFA/discussion discussion thread].
 
 || *Name* || *Bus* || *Description* || *State*|| *Package/Family* || *Comment* ||
