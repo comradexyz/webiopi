@@ -1,6 +1,8 @@
 =Device support and plans=
 
-*With the upcoming release, you will be able to use Serial/I2C/SPI/1-Wire devices directly from the REST API without writing macros.* To do this, WebIOPi need somes drivers that use a special Python function decorator. Low level acces to I2C/SPI/... is provided by lightweights classes available in the WebIOPi core without dependencies.
+*With the upcoming release, you will be able to use Serial/I2C/SPI/1-Wire devices directly from the REST API without writing macros.*
+
+To do this, WebIOPi need somes drivers that use a special Python function decorator. Low level acces to I2C/SPI/... is provided by lightweights classes available in the WebIOPi core without dependencies.
 
 Drivers simply use those classes, and the decorator to expose functions on the REST API. Configuration is then provided with a new [http://webiopi.googlecode.com/svn/trunk/python/config /etc/webiopi/config] file.
 
