@@ -29,9 +29,9 @@ If you know how the device work on it's low level interface, look on the [http:/
 || DS1822 || 1-Wire || Temperature sensor ||  || sensor || Should be same as DS18B20. ||
 || DS18B20 || 1-Wire || Temperature sensor || *Tested* || sensor || ||
 || MCP23008 || I2C || 8-bits I/O Expander || Planned || digital || Same as MCP23017. ||
-|| MCP23017 || I2C || 16-bits I/O Expander || Planned || digital || *Sample ordered, waiting.* ||
+|| MCP23017 || I2C || 16-bits I/O Expander || Planned || digital || Sample received. ||
 || MCP3004 || SPI || 10-bits 4-channels ADC || *Not tested* || analog || Should work, quite same as MCP3208. ||
-|| MCP3008 || SPI || 10-bits 8-channels ADC || *Not tested* || analog || Should work, quite same as MCP3208. *Sample ordered, waiting.* ||
+|| MCP3008 || SPI || 10-bits 8-channels ADC || *Not tested* || analog || Should work, quite same as MCP3208. Sample received. ||
 || MCP3204 || SPI || 12-bits 4-channels ADC || *Not tested* || analog || Should work, same as MCP3208. ||
 || MCP3208 || SPI || 12-bits 8-channels ADC || *Tested* || analog || ||
 || MCP4921 || SPI || 12-bits 1-channel DAC || *Not tested* || analog || Should work, same as MCP4922. ||
