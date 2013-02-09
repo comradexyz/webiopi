@@ -34,7 +34,7 @@ If you know how the device work on it's low level interface, look on the [http:/
 || MCP3008 || SPI || 10-bits 8-channels ADC || *OK* || analog || ||
 || MCP3204 || SPI || 12-bits 4-channels ADC || *OK* || analog || ||
 || MCP3208 || SPI || 12-bits 8-channels ADC || *OK* || analog || ||
-|| MCP4921 || SPI || 12-bits 1-channel DAC || *Not tested* || analog || Should work, same as MCP4922. ||
+|| MCP4921 || SPI || 12-bits 1-channel DAC || *OK* || analog || ||
 || MCP4922 || SPI || 12-bits 2-channels DAC || *OK* || analog || ||
 || MOD-IO2 || I2C || I/O Expandable board with external power || || ? || Community proposal, may purchase. ||
 || PCA9685 || I2C || 16-channels PWM/Servo driver || Planned || analog || Purchase received. ||
