@@ -19,16 +19,16 @@ If you know how the device work on it's low level interface, look on the [http:/
 
 ==Device list==
 || *Name* || *Bus* || *Description* || *State*|| *Package* || *Comment* ||
-|| ADS1014 || I2C || 12-bits 1-channel DAC || Planned || analog || Same as ADS1015. ||
-|| ADS1015 || I2C || 12-bits 4-channels DAC || Planned || analog || Sample received. ||
-|| ADS1114 || I2C || 16-bits 1-channel DAC || Planned || analog || Same as ADS1115. ||
-|| ADS1115 || I2C || 16-bits 4-channels DAC || Planned || analog || Sample received. ||
+|| ADS1014 || I2C || 12-bits 1-channel DAC || Planned || analog || Need breakout. ||
+|| ADS1015 || I2C || 12-bits 4-channels DAC || Planned || analog || Need breakout. ||
+|| ADS1114 || I2C || 16-bits 1-channel DAC || Planned || analog || Need breakout. ||
+|| ADS1115 || I2C || 16-bits 4-channels DAC || Planned || analog || Need breakout. ||
 || BMP085 || I2C || Pressure & temperature sensor || *OK* || sensor || ||
 || DS1307 || I2C || Real time clock || Planned || ? || Sample received. Need crystal. ||
 || DS10B20 || 1-Wire || Temperature sensor ||  || sensor || Should be same as DS18B20. ||
 || DS1822 || 1-Wire || Temperature sensor ||  || sensor || Should be same as DS18B20. ||
 || DS18B20 || 1-Wire || Temperature sensor || *OK* || sensor || ||
-|| MCP23008 || I2C || 8-bits I/O Expander || Planned || digital || Almost same as MCP23017. ||
+|| MCP23008 || I2C || 8-bits I/O Expander || Planned || digital || ||
 || MCP23017 || I2C || 16-bits I/O Expander || Planned || digital || Sample received. ||
 || MCP3004 || SPI || 10-bits 4-channels ADC || *OK* || analog || ||
 || MCP3008 || SPI || 10-bits 8-channels ADC || *OK* || analog || ||
@@ -41,6 +41,6 @@ If you know how the device work on it's low level interface, look on the [http:/
 || PCF8574 || I2C || 8-bits I/O Expander || *OK* || digital || ||
 || TSL2561 || I2C || Light-to-Digital converter || || sensor || Community proposal. ||
 || VCNL4000 || I2C || Proximity and Ambient Light Sensor with IR || || sensor || Community proposal. ||
-|| TMP075 || I2C || Temperature sensor || *Not tested* || sensor || Should work, same as TMP102. ||
+|| TMP75 || I2C || Temperature sensor || *Not tested* || sensor || Should work, same as TMP102. ||
 || TMP102 || I2C || Temperature sensor || *OK* || sensor || ||
 || TMP275 || I2C || Temperature sensor || *Not tested* || sensor || Should work, same as TMP102. ||
