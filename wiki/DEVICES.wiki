@@ -25,10 +25,10 @@ If you know how the device work on it's low level interface, look on the [http:/
 || ADS1115 || I2C || 16-bits 4-channels DAC || Planned || analog || Need breakout. ||
 || BMP085 || I2C || Pressure & temperature sensor || *YES* || sensor || ||
 || DS1307 || I2C || Real time clock || Planned || ? || Sample received. Need crystal. ||
-|| DS18B20 || 1-Wire || Temperature sensor || *YES* || sensor || ||
 || DS1822 || 1-Wire || Temperature sensor || *YES* || sensor || ||
-|| DS18B20 || 1-Wire || Temperature sensor || *YES* || sensor || ||
 || DS1825 || 1-Wire || Temperature sensor || *YES* || sensor || ||
+|| DS18B20 || 1-Wire || Temperature sensor || *YES* || sensor || ||
+|| DS18S20 || 1-Wire || Temperature sensor || *YES* || sensor || ||
 || DS28EA00 || 1-Wire || Temperature sensor || *YES* || sensor || ||
 || MCP23008 || I2C || 8-bits I/O Expander || Planned || digital || ||
 || MCP23017 || I2C || 16-bits I/O Expander || Planned || digital || Sample received. ||
