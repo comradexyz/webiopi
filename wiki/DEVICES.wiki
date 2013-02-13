@@ -41,6 +41,7 @@ If you know how the device work on it's low level interface, look on the [http:/
 || MOD-IO2 || I2C || I/O Expandable board with external power || || ? || Community proposal. ||
 || PCA9685 || I2C || 16-channels PWM/Servo driver || *YES*|| analog || ||
 || PCF8574 || I2C || 8-bits I/O Expander || *YES* || digital || ||
+|| PCF8574A || I2C || 8-bits I/O Expander || *YES* || digital || ||
 || TSL2561 || I2C || Light-to-Digital converter || || sensor || Community proposal. ||
 || VCNL4000 || I2C || Proximity and Ambient Light Sensor with IR || || sensor || Community proposal. ||
 || TMP75 || I2C || Temperature sensor || *Not tested* || sensor || Should work, same as TMP102. ||
