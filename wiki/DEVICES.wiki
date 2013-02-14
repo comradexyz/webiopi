@@ -30,8 +30,10 @@ If you know how the device work on it's low level interface, look on the [http:/
 || DS18B20 || 1-Wire || Temperature sensor || *YES* || sensor || ||
 || DS18S20 || 1-Wire || Temperature sensor || *YES* || sensor || ||
 || DS28EA00 || 1-Wire || Temperature sensor || *YES* || sensor || ||
-|| MCP23008 || I2C || 8-bits I/O Expander || Planned || digital || ||
-|| MCP23017 || I2C || 16-bits I/O Expander || Planned || digital || Sample received. ||
+|| MCP23008 || I2C || 8-bits I/O Expander || *Not tested* || digital || ||
+|| MCP23009 || I2C || 8-bits I/O Expander || *Not tested* || digital || ||
+|| MCP23017 || I2C || 16-bits I/O Expander || *YES* || digital || ||
+|| MCP23018 || I2C || 16-bits I/O Expander || *Not tested* || digital || ||
 || MCP3004 || SPI || 10-bits 4-channels ADC || *YES* || analog || ||
 || MCP3008 || SPI || 10-bits 8-channels ADC || *YES* || analog || ||
 || MCP3204 || SPI || 12-bits 4-channels ADC || *YES* || analog || ||
