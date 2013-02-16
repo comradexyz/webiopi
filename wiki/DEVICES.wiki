@@ -44,8 +44,8 @@ If you know how the device work on it's low level interface, look on the [http:/
 || PCA9685 || I2C || 16-channels PWM/Servo driver || *YES*|| analog || ||
 || PCF8574 || I2C || 8-bits I/O Expander || *YES* || digital || ||
 || PCF8574A || I2C || 8-bits I/O Expander || *YES* || digital || ||
-|| TMP75 || I2C || Temperature sensor || *Not tested* || sensor || ||
+|| TMP75 || I2C || Temperature sensor || *YES* || sensor || ||
 || TMP102 || I2C || Temperature sensor || *YES* || sensor || ||
-|| TMP275 || I2C || Temperature sensor || *Not tested* || sensor || ||
+|| TMP275 || I2C || Temperature sensor || *YES* || sensor || ||
 || TSL2561 || I2C || Light sensor || || sensor || Community proposal. ||
 || VCNL4000 || I2C || Proximity and Light Sensor with IR || || sensor || Community proposal. ||
