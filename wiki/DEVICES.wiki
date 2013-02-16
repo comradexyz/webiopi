@@ -40,7 +40,7 @@ If you know how the device work on it's low level interface, look on the [http:/
 || MCP3208 || SPI || 12-bits 8-channels ADC || *YES* || analog || ||
 || MCP4921 || SPI || 12-bits 1-channel DAC || *YES* || analog || ||
 || MCP4922 || SPI || 12-bits 2-channels DAC || *YES* || analog || ||
-|| MOD-IO2 || I2C || I/O Expandable board with external power || || || Community proposal. ||
+|| MOD-IO2 || I2C || I/O Expander board with external power || || || Community proposal. ||
 || PCA9685 || I2C || 16-channels PWM/Servo driver || *YES*|| analog || ||
 || PCF8574 || I2C || 8-bits I/O Expander || *YES* || digital || ||
 || PCF8574A || I2C || 8-bits I/O Expander || *YES* || digital || ||
