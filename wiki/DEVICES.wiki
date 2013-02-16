@@ -48,4 +48,4 @@ If you know how the device work on it's low level interface, look on the [http:/
 || TMP102 || I2C || Temperature sensor || *YES* || sensor || ||
 || TMP275 || I2C || Temperature sensor || *YES* || sensor || ||
 || TSL2561 || I2C || Light sensor || || sensor || Community proposal. ||
-|| VCNL4000 || I2C || Proximity and Light Sensor with IR || || sensor || Community proposal. ||
+|| VCNL4000 || I2C || Proximity and Light sensor with IR || || sensor || Community proposal. ||
