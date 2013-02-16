@@ -24,7 +24,7 @@ If you know how the device work on it's low level interface, look on the [http:/
 || ADS1114 || I2C || 16-bits 1-channel DAC || || analog || Need breakout. ||
 || ADS1115 || I2C || 16-bits 4-channels DAC || || analog || Need breakout. ||
 || BMP085 || I2C || Pressure & Temperature sensor || *YES* || sensor || ||
-|| DS1307 || I2C || Real time clock || || || Sample received. ||
+|| DS1307 || I2C || Real Time Clock || || || Sample received. ||
 || DS1822 || 1-Wire || Temperature sensor || *YES* || sensor || ||
 || DS1825 || 1-Wire || Temperature sensor || *YES* || sensor || ||
 || DS18B20 || 1-Wire || Temperature sensor || *YES* || sensor || ||
