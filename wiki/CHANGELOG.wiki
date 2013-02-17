@@ -23,6 +23,7 @@
   * Added jQuery-mobile
   * Added Javascript GPIO getValue and getFunction methods
   * Added Server logging facility
+  * Added Cache-Control REST response header
   * Improved button up/down handling on mobile devices
   * Fixed error fetching python-dev package during setup
   * Fixed webiopi-passwd missing execution flag when installing with PiStore
