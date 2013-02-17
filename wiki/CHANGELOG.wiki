@@ -20,8 +20,10 @@
       * Automatic device mapping
       * Manual URL routing
   * Added Serial monitor web app
+  * Added jQuery-mobile
   * Added Javascript GPIO getValue and getFunction methods
   * Added Server logging facility
+  * Improved button up/down handling on mobile devices
   * Fixed error fetching python-dev package during setup
   * Fixed webiopi-passwd missing execution flag when installing with PiStore
   * Fixed binary file serving
