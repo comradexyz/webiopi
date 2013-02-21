@@ -24,11 +24,11 @@ If you know how the device work on it's low level interface, look on the [http:/
 || ADS1114 || I2C || 16-bits 1-channel DAC || [http://www.ti.com/product/ads1114 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/ads1114.pdf http://files.trouch.com/icon/pdf.gif] || || || Planned. ||
 || ADS1115 || I2C || 16-bits 4-channels DAC || [http://www.ti.com/product/ads1115 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/ads1115.pdf http://files.trouch.com/icon/pdf.gif] || || || Planned. ||
 || BMP085 || I2C || Pressure & Temperature sensor || [https://www.sparkfun.com/products/11282 http://files.trouch.com/icon/net.png] [http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Sensors/Pressure/BST-BMP085-DS000-06.pdf http://files.trouch.com/icon/pdf.gif] || *YES* || sensor || ||
-|| DS1822 || 1-Wire || Temperature sensor || || *YES* || sensor || ||
-|| DS1825 || 1-Wire || Temperature sensor || || *YES* || sensor || ||
-|| DS18B20 || 1-Wire || Temperature sensor || || *YES* || sensor || ||
-|| DS18S20 || 1-Wire || Temperature sensor || || *YES* || sensor || ||
-|| DS28EA00 || 1-Wire || Temperature sensor || || *YES* || sensor || ||
+|| DS1822 || 1-Wire || Temperature sensor || [http://www.maximintegrated.com/datasheet/index.mvp/id/2795 http://files.trouch.com/icon/net.png] || *YES* || sensor || ||
+|| DS1825 || 1-Wire || Temperature sensor || [http://www.maximintegrated.com/datasheet/index.mvp/id/4576 http://files.trouch.com/icon/net.png] || *YES* || sensor || ||
+|| DS18B20 || 1-Wire || Temperature sensor || [http://www.maximintegrated.com/datasheet/index.mvp/id/2812 http://files.trouch.com/icon/net.png] || *YES* || sensor || ||
+|| DS18S20 || 1-Wire || Temperature sensor || [http://www.maximintegrated.com/datasheet/index.mvp/id/2815 http://files.trouch.com/icon/net.png] || *YES* || sensor || ||
+|| DS28EA00 || 1-Wire || Temperature sensor || [http://www.maximintegrated.com/datasheet/index.mvp/id/5355 http://files.trouch.com/icon/net.png] || *YES* || sensor || ||
 || MCP23008 || I2C || 8-bits I/O Expander || [http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en021393 http://files.trouch.com/icon/net.png] [http://ww1.microchip.com/downloads/en/DeviceDoc/21919e.pdf http://files.trouch.com/icon/pdf.gif] || *YES* || digital || Not tested. Sample ordered. ||
 || MCP23009 || I2C || 8-bits I/O Expander with Open-Drain Output || [http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en538920 http://files.trouch.com/icon/net.png] [http://ww1.microchip.com/downloads/en/DeviceDoc/22121b.pdf http://files.trouch.com/icon/pdf.gif] || *YES* || digital || Not tested. ||
 || MCP23017 || I2C || 16-bits I/O Expander || [http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en023499 http://files.trouch.com/icon/net.png] [http://ww1.microchip.com/downloads/en/DeviceDoc/21952b.pdf http://files.trouch.com/icon/pdf.gif] || *YES* || digital || ||
