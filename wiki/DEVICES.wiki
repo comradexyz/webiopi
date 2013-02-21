@@ -48,7 +48,7 @@ If you know how the device work on it's low level interface, look on the [http:/
 || PCA9685 || I2C || 16-channels PWM/Servo driver || *YES*|| analog || ||
 || PCF8574 || I2C || 8-bits I/O Expander || *YES* || digital || ||
 || PCF8574A || I2C || 8-bits I/O Expander || *YES* || digital || ||
-|| Pi-Face || SPI || I/O Expander board with external power || || || ||
+|| Pi-Face || SPI || I/O Expander board with open drain output || || || ||
 || TMP75 || I2C || Temperature sensor || *YES* || sensor || ||
 || TMP102 || I2C || Temperature sensor || *YES* || sensor || ||
 || TMP275 || I2C || Temperature sensor || *YES* || sensor || ||
