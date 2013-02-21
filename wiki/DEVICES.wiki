@@ -18,6 +18,10 @@ If you absolutely need particular one, you can send/buy me a sample or make a [h
 If you know how the device work on it's low level interface, look on the [http://code.google.com/p/webiopi/source/checkout source repository], starting with [http://webiopi.googlecode.com/svn/trunk/python/webiopi/devices/digital/pcf8574.py PCF8574], write your own and submit it.
 
 ==RAW Interfaces==
+http://files.trouch.com/icon/python.png _Python library_
+http://files.trouch.com/icon/rest.png _REST API_
+http://files.trouch.com/icon/javascript.png _Javascript library_
+
 || *Name* || *Support * || *Comment* ||
 || Serial || http://files.trouch.com/icon/python.png http://files.trouch.com/icon/rest.png http://files.trouch.com/icon/javascript.png || ||
 || I2C || http://files.trouch.com/icon/python.png || REST API provided with component drivers below. ||
@@ -26,6 +30,12 @@ If you know how the device work on it's low level interface, look on the [http:/
 
 ==Components==
 ===Analog===
+http://files.trouch.com/icon/net.png _Product page_
+http://files.trouch.com/icon/pdf.gif _Datasheet_
+http://files.trouch.com/icon/python.png _Python library_
+http://files.trouch.com/icon/rest.png _REST API_
+http://files.trouch.com/icon/javascript.png _Javascript library_
+
 || *Name* || *Bus* || *Description* || *Links* || *Support * || *Comment* ||
 || ADS1014 || I2C || 12-bits 1-channel DAC || [http://www.ti.com/product/ads1014 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/ads1014.pdf http://files.trouch.com/icon/pdf.gif] || || Planned. ||
 || ADS1015 || I2C || 12-bits 4-channels DAC || [http://www.ti.com/product/ads1015 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/ads1015.pdf http://files.trouch.com/icon/pdf.gif] || || Planned. Purchased, waiting. ||
@@ -41,6 +51,12 @@ If you know how the device work on it's low level interface, look on the [http:/
 || PCA9685 || I2C || 16-channels PWM/Servo driver || [http://www.nxp.com/products/lighting_driver_and_controller_ics/i2c_led_display_control/series/PCA9685.html http://files.trouch.com/icon/net.png] [http://www.nxp.com/documents/data_sheet/PCA9685.pdf http://files.trouch.com/icon/pdf.gif] || http://files.trouch.com/icon/python.png http://files.trouch.com/icon/rest.png http://files.trouch.com/icon/javascript.png || ||
 
 ===Digital===
+http://files.trouch.com/icon/net.png _Product page_
+http://files.trouch.com/icon/pdf.gif _Datasheet_
+http://files.trouch.com/icon/python.png _Python library_
+http://files.trouch.com/icon/rest.png _REST API_
+http://files.trouch.com/icon/javascript.png _Javascript library_
+
 || *Name* || *Bus* || *Description* || *Links* || *Support * || *Comment* ||
 || MCP23008 || I2C || 8-bits I/O Expander || [http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en021393 http://files.trouch.com/icon/net.png] [http://ww1.microchip.com/downloads/en/DeviceDoc/21919e.pdf http://files.trouch.com/icon/pdf.gif] || http://files.trouch.com/icon/python.png http://files.trouch.com/icon/rest.png http://files.trouch.com/icon/javascript.png || Not tested. Sample ordered. ||
 || MCP23009 || I2C || 8-bits I/O Expander with Open-Drain Output || [http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en538920 http://files.trouch.com/icon/net.png] [http://ww1.microchip.com/downloads/en/DeviceDoc/22121b.pdf http://files.trouch.com/icon/pdf.gif] || http://files.trouch.com/icon/python.png http://files.trouch.com/icon/rest.png http://files.trouch.com/icon/javascript.png || Not tested. ||
@@ -53,6 +69,12 @@ If you know how the device work on it's low level interface, look on the [http:/
 || PCF8574 || I2C || 8-bits I/O Expander || [http://www.nxp.com/products/interface_and_connectivity/i2c/i2c_general_purpose_i_o/series/PCF8574.html http://files.trouch.com/icon/net.png] [http://www.nxp.com/documents/data_sheet/PCF8574.pdf http://files.trouch.com/icon/pdf.gif] || http://files.trouch.com/icon/python.png http://files.trouch.com/icon/rest.png http://files.trouch.com/icon/javascript.png || ||
 
 ===Sensors===
+http://files.trouch.com/icon/net.png _Product page_
+http://files.trouch.com/icon/pdf.gif _Datasheet_
+http://files.trouch.com/icon/python.png _Python library_
+http://files.trouch.com/icon/rest.png _REST API_
+http://files.trouch.com/icon/javascript.png _Javascript library_
+
 || *Name* || *Bus* || *Description* || *Links* || *Support * || *Comment* ||
 || BMP085 || I2C || Pressure & Temperature sensor || [https://www.sparkfun.com/products/11282 http://files.trouch.com/icon/net.png] [http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Sensors/Pressure/BST-BMP085-DS000-06.pdf http://files.trouch.com/icon/pdf.gif] || http://files.trouch.com/icon/python.png http://files.trouch.com/icon/rest.png http://files.trouch.com/icon/javascript.png || ||
 || DS1822 || 1-Wire || Temperature sensor || [http://www.maximintegrated.com/datasheet/index.mvp/id/2795 http://files.trouch.com/icon/net.png] [http://datasheets.maximintegrated.com/en/ds/DS1822.pdf http://files.trouch.com/icon/pdf.gif] || http://files.trouch.com/icon/python.png http://files.trouch.com/icon/rest.png http://files.trouch.com/icon/javascript.png || ||
@@ -67,6 +89,12 @@ If you know how the device work on it's low level interface, look on the [http:/
 || VCNL4000 || I2C || Light and Proximity sensor with IR || [http://www.vishay.com/ppg?83798 http://files.trouch.com/icon/net.png] [http://www.vishay.com/docs/83798/vcnl4000.pdf http://files.trouch.com/icon/pdf.gif] || || Community proposal. ||
 
 ==Expansion Boards==
+http://files.trouch.com/icon/net.png _Product page_
+http://files.trouch.com/icon/pdf.gif _Datasheet_
+http://files.trouch.com/icon/python.png _Python library_
+http://files.trouch.com/icon/rest.png _REST API_
+http://files.trouch.com/icon/javascript.png _Javascript library_
+
 || *Name* || *Bus* || *Description* || *Links* || *Support * || *Comment* ||
 || Arduino || || || || || Planned. ||
 || MOD-IO2 || I2C || I/O board with external power|| [https://www.olimex.com/Products/Modules/IO/MOD-IO2/ http://files.trouch.com/icon/net.png] [https://www.olimex.com/Products/Modules/IO/MOD-IO2/resources/MOD-IO2.pdf http://files.trouch.com/icon/pdf.gif] || || Community proposal. ||
