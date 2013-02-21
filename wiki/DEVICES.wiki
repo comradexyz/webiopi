@@ -17,14 +17,14 @@ If you absolutely need particular one, you can send/buy me a sample or make a [h
 
 If you know how the device work on it's low level interface, look on the [http://code.google.com/p/webiopi/source/checkout source repository], starting with [http://webiopi.googlecode.com/svn/trunk/python/webiopi/devices/digital/pcf8574.py PCF8574], write your own and submit it.
 
-==Interfaces support list==
+==Interfaces==
 || *Name* || *Support * || *Comment* ||
 || Serial || *YES* || RAW access from the Python library, REST API and  Javascript library. ||
 || I2C || *YES* || REST API provided with drivers. RAW access only with Python library. ||
 || SPI || *YES* || REST API provided with drivers. RAW access only with Python library. ||
 || 1-Wire || *YES* || REST API provided with drivers. ||
 
-==Components support list==
+==Components==
 || *Name* || *Bus* || *Description* || *Links* || *Support *|| *Package* || *Comment* ||
 || ADS1014 || I2C || 12-bits 1-channel DAC || [http://www.ti.com/product/ads1014 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/ads1014.pdf http://files.trouch.com/icon/pdf.gif] || || || Planned. ||
 || ADS1015 || I2C || 12-bits 4-channels DAC || [http://www.ti.com/product/ads1015 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/ads1015.pdf http://files.trouch.com/icon/pdf.gif] || || || Planned. Purchased, waiting. ||
@@ -59,7 +59,7 @@ If you know how the device work on it's low level interface, look on the [http:/
 || TSL2561 || I2C || Light sensor || [http://www.ams.com/eng/Products/Light-Sensors/Ambient-Light-Sensor-ALS/TSL2561 http://files.trouch.com/icon/net.png] [http://www.ams.com/eng/content/download/250093/975477/142937 http://files.trouch.com/icon/pdf.gif] || *YES* || sensor || Submitted by Andreas Riegg. ||
 || VCNL4000 || I2C || Light and Proximity sensor with IR || [http://www.vishay.com/ppg?83798 http://files.trouch.com/icon/net.png] [http://www.vishay.com/docs/83798/vcnl4000.pdf http://files.trouch.com/icon/pdf.gif] || || || Community proposal. ||
 
-==Expansion Board support list==
+==Expansion Boards==
 || *Name* || *Bus* || *Description* || *Links* || *Support *|| *Package* || *Comment* ||
 || Arduino || || || || || || Planned. ||
 || MOD-IO2 || I2C || I/O board with external power|| [https://www.olimex.com/Products/Modules/IO/MOD-IO2/ http://files.trouch.com/icon/net.png] [https://www.olimex.com/Products/Modules/IO/MOD-IO2/resources/MOD-IO2.pdf http://files.trouch.com/icon/pdf.gif] || || || Community proposal. ||
