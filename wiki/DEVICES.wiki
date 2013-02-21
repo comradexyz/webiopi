@@ -51,8 +51,8 @@ If you know how the device work on it's low level interface, look on the [http:/
 || PCF8574A || I2C || 8-bits I/O Expander || || *YES* || digital || ||
 || PCF8575 || I2C || 16-bits I/O Expander || || || || ||
 || Pi-Face || SPI || I/O Expander board with open drain output || || || || ||
-|| TMP75 || I2C || Temperature sensor || || *YES* || sensor || ||
-|| TMP102 || I2C || Temperature sensor || || *YES* || sensor || ||
-|| TMP275 || I2C || Temperature sensor || || *YES* || sensor || ||
+|| TMP75 || I2C || Temperature sensor || [http://www.ti.com/product/tmp75 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/tmp75.pdf http://files.trouch.com/icon/pdf.gif] || *YES* || sensor || ||
+|| TMP102 || I2C || Temperature sensor || [http://www.ti.com/product/tmp102 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/tmp102.pdf http://files.trouch.com/icon/pdf.gif] || *YES* || sensor || ||
+|| TMP275 || I2C || Temperature sensor || [http://www.ti.com/product/tmp275 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/tmp275.pdf http://files.trouch.com/icon/pdf.gif] || *YES* || sensor || ||
 || TSL2561 || I2C || Light sensor || || || || Community proposal. ||
 || VCNL4000 || I2C || Light and Proximity sensor with IR || || || || Community proposal. ||
