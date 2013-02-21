@@ -52,8 +52,8 @@ If you know how the device work on it's low level interface, look on the [http:/
 || TSL2561 || I2C || Light sensor || [http://www.ams.com/eng/Products/Light-Sensors/Ambient-Light-Sensor-ALS/TSL2561 http://files.trouch.com/icon/net.png] [http://www.ams.com/eng/content/download/250093/975477/142937 http://files.trouch.com/icon/pdf.gif] || *YES* || sensor || Submitted by Andreas Riegg. ||
 || VCNL4000 || I2C || Light and Proximity sensor with IR || [http://www.vishay.com/ppg?83798 http://files.trouch.com/icon/net.png] [http://www.vishay.com/docs/83798/vcnl4000.pdf http://files.trouch.com/icon/pdf.gif] || || || Community proposal. ||
 
-==Device support list==
+==Expansion Board support list==
 || *Name* || *Bus* || *Description* || *Links* || *Support *|| *Package* || *Comment* ||
-|| Arduino || || || || || || Planned. ||
-|| MOD-IO2 || I2C || I/O Expander board with external power || [https://www.olimex.com/Products/Modules/IO/MOD-IO2/ http://files.trouch.com/icon/net.png] [https://www.olimex.com/Products/Modules/IO/MOD-IO2/resources/MOD-IO2.pdf http://files.trouch.com/icon/pdf.gif] || || || Community proposal. ||
-|| Pi-Face || SPI || I/O Expander board with Open-Drain Output || [http://pi.cs.man.ac.uk/interface.htm http://files.trouch.com/icon/net.png] [https://github.com/thomasmacpherson/piface http://files.trouch.com/icon/pdf.gif] || || || Planned. Purchase required. ||
+|| Arduino || || || || || Planned. ||
+|| MOD-IO2 || I2C || I/O board with external power|| [https://www.olimex.com/Products/Modules/IO/MOD-IO2/ http://files.trouch.com/icon/net.png] [https://www.olimex.com/Products/Modules/IO/MOD-IO2/resources/MOD-IO2.pdf http://files.trouch.com/icon/pdf.gif] || || || Community proposal. ||
+|| Pi-Face || SPI || I/O board with Open-Drain Output || [http://pi.cs.man.ac.uk/interface.htm http://files.trouch.com/icon/net.png] [https://github.com/thomasmacpherson/piface http://files.trouch.com/icon/pdf.gif] || || || Planned. Purchase required. ||
