@@ -20,7 +20,7 @@ If you know how the device work on it's low level interface, look on the [http:/
 ==Device list==
 || *Name* || *Bus* || *Description* || *Support*|| *Package* || *Comment* ||
 || ADS1014 || I2C || 12-bits 1-channel DAC || || || ||
-|| ADS1015 || I2C || 12-bits 4-channels DAC || || || ||
+|| ADS1015 || I2C || 12-bits 4-channels DAC || || || Purchased, waiting. ||
 || ADS1114 || I2C || 16-bits 1-channel DAC || || || ||
 || ADS1115 || I2C || 16-bits 4-channels DAC || || || ||
 || BMP085 || I2C || Pressure & Temperature sensor || *YES* || sensor || ||
@@ -42,6 +42,7 @@ If you know how the device work on it's low level interface, look on the [http:/
 || MCP3008 || SPI || 10-bits 8-channels ADC || *YES* || analog || ||
 || MCP3204 || SPI || 12-bits 4-channels ADC || *YES* || analog || ||
 || MCP3208 || SPI || 12-bits 8-channels ADC || *YES* || analog || ||
+|| MCP4725 || I2C || 12-bits 1-channel DAC || || analog || Purchased, waiting. ||
 || MCP4921 || SPI || 12-bits 1-channel DAC || *YES* || analog || ||
 || MCP4922 || SPI || 12-bits 2-channels DAC || *YES* || analog || ||
 || MOD-IO2 || I2C || I/O Expander board with external power || || || Community proposal. ||
