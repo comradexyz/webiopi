@@ -19,10 +19,10 @@ If you know how the device work on it's low level interface, look on the [http:/
 
 ==Device list==
 || *Name* || *Bus* || *Description* || *Support*|| *Package* || *Comment* ||
-|| ADS1014 || I2C || 12-bits 1-channel DAC || || analog || Need breakout. ||
-|| ADS1015 || I2C || 12-bits 4-channels DAC || || analog || Need breakout. ||
-|| ADS1114 || I2C || 16-bits 1-channel DAC || || analog || Need breakout. ||
-|| ADS1115 || I2C || 16-bits 4-channels DAC || || analog || Need breakout. ||
+|| ADS1014 || I2C || 12-bits 1-channel DAC || || analog || ||
+|| ADS1015 || I2C || 12-bits 4-channels DAC || || analog || ||
+|| ADS1114 || I2C || 16-bits 1-channel DAC || || analog || ||
+|| ADS1115 || I2C || 16-bits 4-channels DAC || || analog || ||
 || BMP085 || I2C || Pressure & Temperature sensor || *YES* || sensor || ||
 || DS1307 || I2C || Real Time Clock || || || Sample received. ||
 || DS1822 || 1-Wire || Temperature sensor || *YES* || sensor || ||
@@ -30,10 +30,14 @@ If you know how the device work on it's low level interface, look on the [http:/
 || DS18B20 || 1-Wire || Temperature sensor || *YES* || sensor || ||
 || DS18S20 || 1-Wire || Temperature sensor || *YES* || sensor || ||
 || DS28EA00 || 1-Wire || Temperature sensor || *YES* || sensor || ||
-|| MCP23008 || I2C || 8-bits I/O Expander || *Not tested* || digital || ||
+|| MCP23008 || I2C || 8-bits I/O Expander || *Not tested* || digital || Sample ordered. ||
 || MCP23009 || I2C || 8-bits I/O Expander || *Not tested* || digital || ||
 || MCP23017 || I2C || 16-bits I/O Expander || *YES* || digital || ||
 || MCP23018 || I2C || 16-bits I/O Expander || *Not tested* || digital || ||
+|| MCP23S08 || SPI || 8-bits I/O Expander || || digital || Sample ordered. ||
+|| MCP23S09 || SPI || 8-bits I/O Expander || || digital || ||
+|| MCP23S17 || SPI || 16-bits I/O Expander || || digital || Sample ordered. ||
+|| MCP23S18 || SPI || 16-bits I/O Expander || || digital || ||
 || MCP3004 || SPI || 10-bits 4-channels ADC || *YES* || analog || ||
 || MCP3008 || SPI || 10-bits 8-channels ADC || *YES* || analog || ||
 || MCP3204 || SPI || 12-bits 4-channels ADC || *YES* || analog || ||
@@ -44,6 +48,7 @@ If you know how the device work on it's low level interface, look on the [http:/
 || PCA9685 || I2C || 16-channels PWM/Servo driver || *YES*|| analog || ||
 || PCF8574 || I2C || 8-bits I/O Expander || *YES* || digital || ||
 || PCF8574A || I2C || 8-bits I/O Expander || *YES* || digital || ||
+|| Pi-Face || SPI || I/O Expander board with external power || || || ||
 || TMP75 || I2C || Temperature sensor || *YES* || sensor || ||
 || TMP102 || I2C || Temperature sensor || *YES* || sensor || ||
 || TMP275 || I2C || Temperature sensor || *YES* || sensor || ||
