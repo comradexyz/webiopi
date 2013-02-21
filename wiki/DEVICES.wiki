@@ -96,6 +96,6 @@ http://files.trouch.com/icon/rest.png _REST API_
 http://files.trouch.com/icon/javascript.png _Javascript library_
 
 || *Name* || *Bus* || *Description* || *Links* || *Support * || *Comment* ||
-|| Arduino || || || || || Planned. ||
+|| Arduino || ALL || I/O, ADC, PWM || [http://arduino.cc http://files.trouch.com/icon/net.png] || || Planned. Arduino Firmware Required. ||
 || MOD-IO2 || I2C || I/O board with external power|| [https://www.olimex.com/Products/Modules/IO/MOD-IO2/ http://files.trouch.com/icon/net.png] [https://www.olimex.com/Products/Modules/IO/MOD-IO2/resources/MOD-IO2.pdf http://files.trouch.com/icon/pdf.gif] || || Community proposal. ||
 || Pi-Face || SPI || I/O board with Open-Drain Output || [http://pi.cs.man.ac.uk/interface.htm http://files.trouch.com/icon/net.png] [https://github.com/thomasmacpherson/piface http://files.trouch.com/icon/pdf.gif] || || Planned. Purchase required. ||
