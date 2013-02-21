@@ -17,7 +17,14 @@ If you absolutely need particular one, you can send/buy me a sample or make a [h
 
 If you know how the device work on it's low level interface, look on the [http://code.google.com/p/webiopi/source/checkout source repository], starting with [http://webiopi.googlecode.com/svn/trunk/python/webiopi/devices/digital/pcf8574.py PCF8574], write your own and submit it.
 
-==Component support list==
+==Interfaces support list==
+|| *Name* || *Support * || *Comment* ||
+|| Serial || *YES* || RAW access from the Python library, REST API and  Javascript library. ||
+|| I2C || *YES* || REST API provided with drivers. RAW access only with Python library. ||
+|| SPI || *YES* || REST API provided with drivers. RAW access only with Python library. ||
+|| 1-Wire || *YES* || REST API provided with drivers. ||
+
+==Components support list==
 || *Name* || *Bus* || *Description* || *Links* || *Support *|| *Package* || *Comment* ||
 || ADS1014 || I2C || 12-bits 1-channel DAC || [http://www.ti.com/product/ads1014 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/ads1014.pdf http://files.trouch.com/icon/pdf.gif] || || || Planned. ||
 || ADS1015 || I2C || 12-bits 4-channels DAC || [http://www.ti.com/product/ads1015 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/ads1015.pdf http://files.trouch.com/icon/pdf.gif] || || || Planned. Purchased, waiting. ||
