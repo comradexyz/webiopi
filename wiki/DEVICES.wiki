@@ -17,8 +17,8 @@ If you absolutely need particular one, you can send/buy me a sample or make a [h
 
 If you know how the device work on it's low level interface, look on the [http://code.google.com/p/webiopi/source/checkout source repository], starting with [http://webiopi.googlecode.com/svn/trunk/python/webiopi/devices/digital/pcf8574.py PCF8574], write your own and submit it.
 
-==Device list==
-|| *Name* || *Bus* || *Description* || *Links* || *Support*|| *Package* || *Comment* ||
+==Component support list==
+|| *Name* || *Bus* || *Description* || *Links* || *Support *|| *Package* || *Comment* ||
 || ADS1014 || I2C || 12-bits 1-channel DAC || [http://www.ti.com/product/ads1014 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/ads1014.pdf http://files.trouch.com/icon/pdf.gif] || || || Planned. ||
 || ADS1015 || I2C || 12-bits 4-channels DAC || [http://www.ti.com/product/ads1015 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/ads1015.pdf http://files.trouch.com/icon/pdf.gif] || || || Planned. Purchased, waiting. ||
 || ADS1114 || I2C || 16-bits 1-channel DAC || [http://www.ti.com/product/ads1114 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/ads1114.pdf http://files.trouch.com/icon/pdf.gif] || || || Planned. ||
@@ -44,12 +44,16 @@ If you know how the device work on it's low level interface, look on the [http:/
 || MCP4725 || I2C || 12-bits 1-channel DAC || [http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en532229 http://files.trouch.com/icon/net.png] [http://ww1.microchip.com/downloads/en/DeviceDoc/22039d.pdf http://files.trouch.com/icon/pdf.gif] || || analog || Planned. Purchased, waiting. ||
 || MCP4921 || SPI || 12-bits 1-channel DAC || [http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en020398 http://files.trouch.com/icon/net.png] [http://ww1.microchip.com/downloads/en/DeviceDoc/22248a.pdf http://files.trouch.com/icon/pdf.gif] || *YES* || analog || ||
 || MCP4922 || SPI || 12-bits 2-channels DAC || [http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en020399 http://files.trouch.com/icon/net.png] [http://ww1.microchip.com/downloads/en/DeviceDoc/22250A.pdf http://files.trouch.com/icon/pdf.gif] || *YES* || analog || ||
-|| MOD-IO2 || I2C || I/O Expander board with external power || [https://www.olimex.com/Products/Modules/IO/MOD-IO2/ http://files.trouch.com/icon/net.png] [https://www.olimex.com/Products/Modules/IO/MOD-IO2/resources/MOD-IO2.pdf http://files.trouch.com/icon/pdf.gif] || || || Community proposal. ||
 || PCA9685 || I2C || 16-channels PWM/Servo driver || [http://www.nxp.com/products/lighting_driver_and_controller_ics/i2c_led_display_control/series/PCA9685.html http://files.trouch.com/icon/net.png] [http://www.nxp.com/documents/data_sheet/PCA9685.pdf http://files.trouch.com/icon/pdf.gif] || *YES*|| analog || ||
 || PCF8574 || I2C || 8-bits I/O Expander || [http://www.nxp.com/products/interface_and_connectivity/i2c/i2c_general_purpose_i_o/series/PCF8574.html http://files.trouch.com/icon/net.png] [http://www.nxp.com/documents/data_sheet/PCF8574.pdf http://files.trouch.com/icon/pdf.gif] || *YES* || digital || ||
-|| Pi-Face || SPI || I/O Expander board with Open-Drain Output || [http://pi.cs.man.ac.uk/interface.htm http://files.trouch.com/icon/net.png] [https://github.com/thomasmacpherson/piface http://files.trouch.com/icon/pdf.gif] || || || Planned. Purchase required. ||
 || TMP75 || I2C || Temperature sensor || [http://www.ti.com/product/tmp75 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/tmp75.pdf http://files.trouch.com/icon/pdf.gif] || *YES* || sensor || ||
 || TMP102 || I2C || Temperature sensor || [http://www.ti.com/product/tmp102 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/tmp102.pdf http://files.trouch.com/icon/pdf.gif] || *YES* || sensor || ||
 || TMP275 || I2C || Temperature sensor || [http://www.ti.com/product/tmp275 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/tmp275.pdf http://files.trouch.com/icon/pdf.gif] || *YES* || sensor || ||
 || TSL2561 || I2C || Light sensor || [http://www.ams.com/eng/Products/Light-Sensors/Ambient-Light-Sensor-ALS/TSL2561 http://files.trouch.com/icon/net.png] [http://www.ams.com/eng/content/download/250093/975477/142937 http://files.trouch.com/icon/pdf.gif] || *YES* || sensor || Submitted by Andreas Riegg. ||
 || VCNL4000 || I2C || Light and Proximity sensor with IR || [http://www.vishay.com/ppg?83798 http://files.trouch.com/icon/net.png] [http://www.vishay.com/docs/83798/vcnl4000.pdf http://files.trouch.com/icon/pdf.gif] || || || Community proposal. ||
+
+==Device support list==
+|| *Name* || *Bus* || *Description* || *Links* || *Support *|| *Package* || *Comment* ||
+|| Arduino || || || || || || Planned. ||
+|| MOD-IO2 || I2C || I/O Expander board with external power || [https://www.olimex.com/Products/Modules/IO/MOD-IO2/ http://files.trouch.com/icon/net.png] [https://www.olimex.com/Products/Modules/IO/MOD-IO2/resources/MOD-IO2.pdf http://files.trouch.com/icon/pdf.gif] || || || Community proposal. ||
+|| Pi-Face || SPI || I/O Expander board with Open-Drain Output || [http://pi.cs.man.ac.uk/interface.htm http://files.trouch.com/icon/net.png] [https://github.com/thomasmacpherson/piface http://files.trouch.com/icon/pdf.gif] || || || Planned. Purchase required. ||
