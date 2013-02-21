@@ -17,7 +17,7 @@ If you absolutely need particular one, you can send/buy me a sample or make a [h
 
 If you know how the device work on it's low level interface, look on the [http://code.google.com/p/webiopi/source/checkout source repository], starting with [http://webiopi.googlecode.com/svn/trunk/python/webiopi/devices/digital/pcf8574.py PCF8574], write your own and submit it.
 
-==Interfaces==
+==RAW Interfaces==
 || *Name* || *Support * || *Comment* ||
 || Serial || http://files.trouch.com/icon/python.png http://files.trouch.com/icon/rest.png http://files.trouch.com/icon/javascript.png || ||
 || I2C || http://files.trouch.com/icon/python.png || REST API provided with component drivers below. ||
