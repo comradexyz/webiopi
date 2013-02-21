@@ -23,7 +23,7 @@ If you know how the device work on it's low level interface, look on the [http:/
 || ADS1015 || I2C || 12-bits 4-channels DAC || [http://www.ti.com/product/ads1015 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/ads1015.pdf http://files.trouch.com/icon/pdf.gif] || || || Purchased, waiting. ||
 || ADS1114 || I2C || 16-bits 1-channel DAC || [http://www.ti.com/product/ads1114 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/ads1114.pdf http://files.trouch.com/icon/pdf.gif] || || || ||
 || ADS1115 || I2C || 16-bits 4-channels DAC || [http://www.ti.com/product/ads1115 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/ads1115.pdf http://files.trouch.com/icon/pdf.gif] || || || ||
-|| BMP085 || I2C || Pressure & Temperature sensor || [http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Sensors/Pressure/BST-BMP085-DS000-06.pdf http://files.trouch.com/icon/pdf.gif] || *YES* || sensor || ||
+|| BMP085 || I2C || Pressure & Temperature sensor || [https://www.sparkfun.com/products/11282 http://files.trouch.com/icon/net.png] [http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Sensors/Pressure/BST-BMP085-DS000-06.pdf http://files.trouch.com/icon/pdf.gif] || *YES* || sensor || ||
 || DS1822 || 1-Wire || Temperature sensor || || *YES* || sensor || ||
 || DS1825 || 1-Wire || Temperature sensor || || *YES* || sensor || ||
 || DS18B20 || 1-Wire || Temperature sensor || || *YES* || sensor || ||
