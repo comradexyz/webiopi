@@ -18,41 +18,41 @@ If you absolutely need particular one, you can send/buy me a sample or make a [h
 If you know how the device work on it's low level interface, look on the [http://code.google.com/p/webiopi/source/checkout source repository], starting with [http://webiopi.googlecode.com/svn/trunk/python/webiopi/devices/digital/pcf8574.py PCF8574], write your own and submit it.
 
 ==Device list==
-|| *Name* || *Bus* || *Description* || *Support*|| *Package* || *Comment* ||
-|| ADS1014 || I2C || 12-bits 1-channel DAC || || || ||
-|| ADS1015 || I2C || 12-bits 4-channels DAC || || || Purchased, waiting. ||
-|| ADS1114 || I2C || 16-bits 1-channel DAC || || || ||
-|| ADS1115 || I2C || 16-bits 4-channels DAC || || || ||
-|| BMP085 || I2C || Pressure & Temperature sensor || *YES* || sensor || ||
-|| DS1307 || I2C || Real Time Clock || || || Sample received. ||
-|| DS1822 || 1-Wire || Temperature sensor || *YES* || sensor || ||
-|| DS1825 || 1-Wire || Temperature sensor || *YES* || sensor || ||
-|| DS18B20 || 1-Wire || Temperature sensor || *YES* || sensor || ||
-|| DS18S20 || 1-Wire || Temperature sensor || *YES* || sensor || ||
-|| DS28EA00 || 1-Wire || Temperature sensor || *YES* || sensor || ||
-|| MCP23008 || I2C || 8-bits I/O Expander || *Not tested* || digital || Sample ordered. ||
-|| MCP23009 || I2C || 8-bits I/O Expander || *Not tested* || digital || ||
-|| MCP23017 || I2C || 16-bits I/O Expander || *YES* || digital || ||
-|| MCP23018 || I2C || 16-bits I/O Expander || *Not tested* || digital || ||
-|| MCP23S08 || SPI || 8-bits I/O Expander || || || Sample ordered. ||
-|| MCP23S09 || SPI || 8-bits I/O Expander || || || ||
-|| MCP23S17 || SPI || 16-bits I/O Expander || || || Sample ordered. ||
-|| MCP23S18 || SPI || 16-bits I/O Expander || || || ||
-|| MCP3004 || SPI || 10-bits 4-channels ADC || *YES* || analog || ||
-|| MCP3008 || SPI || 10-bits 8-channels ADC || *YES* || analog || ||
-|| MCP3204 || SPI || 12-bits 4-channels ADC || *YES* || analog || ||
-|| MCP3208 || SPI || 12-bits 8-channels ADC || *YES* || analog || ||
-|| MCP4725 || I2C || 12-bits 1-channel DAC || || analog || Purchased, waiting. ||
-|| MCP4921 || SPI || 12-bits 1-channel DAC || *YES* || analog || ||
-|| MCP4922 || SPI || 12-bits 2-channels DAC || *YES* || analog || ||
-|| MOD-IO2 || I2C || I/O Expander board with external power || || || Community proposal. ||
-|| PCA9685 || I2C || 16-channels PWM/Servo driver || *YES*|| analog || ||
-|| PCF8574 || I2C || 8-bits I/O Expander || *YES* || digital || ||
-|| PCF8574A || I2C || 8-bits I/O Expander || *YES* || digital || ||
-|| PCF8575 || I2C || 16-bits I/O Expander || || || ||
-|| Pi-Face || SPI || I/O Expander board with open drain output || || || ||
-|| TMP75 || I2C || Temperature sensor || *YES* || sensor || ||
-|| TMP102 || I2C || Temperature sensor || *YES* || sensor || ||
-|| TMP275 || I2C || Temperature sensor || *YES* || sensor || ||
-|| TSL2561 || I2C || Light sensor || || || Community proposal. ||
-|| VCNL4000 || I2C || Light and Proximity sensor with IR || || || Community proposal. ||
+|| *Name* || *Bus* || *Description* || *Links* || *Support*|| *Package* || *Comment* ||
+|| ADS1014 || I2C || 12-bits 1-channel DAC || [http://www.ti.com/product/ads1014 http://files.trouch.com/icon/net.png] [http://www.ti.com/lit/ds/symlink/ads1015.pdf http://files.trouch.com/icon/pdf.gif] || || || ||
+|| ADS1015 || I2C || 12-bits 4-channels DAC || || || || Purchased, waiting. ||
+|| ADS1114 || I2C || 16-bits 1-channel DAC || || || || ||
+|| ADS1115 || I2C || 16-bits 4-channels DAC || || || || ||
+|| BMP085 || I2C || Pressure & Temperature sensor || || *YES* || sensor || ||
+|| DS1307 || I2C || Real Time Clock || || || || Sample received. ||
+|| DS1822 || 1-Wire || Temperature sensor || || *YES* || sensor || ||
+|| DS1825 || 1-Wire || Temperature sensor || || *YES* || sensor || ||
+|| DS18B20 || 1-Wire || Temperature sensor || || *YES* || sensor || ||
+|| DS18S20 || 1-Wire || Temperature sensor || || *YES* || sensor || ||
+|| DS28EA00 || 1-Wire || Temperature sensor || || *YES* || sensor || ||
+|| MCP23008 || I2C || 8-bits I/O Expander || || *Not tested* || digital || Sample ordered. ||
+|| MCP23009 || I2C || 8-bits I/O Expander || || *Not tested* || digital || ||
+|| MCP23017 || I2C || 16-bits I/O Expander || || *YES* || digital || ||
+|| MCP23018 || I2C || 16-bits I/O Expander || || *Not tested* || digital || ||
+|| MCP23S08 || SPI || 8-bits I/O Expander || || || || Sample ordered. ||
+|| MCP23S09 || SPI || 8-bits I/O Expander || || || || ||
+|| MCP23S17 || SPI || 16-bits I/O Expander || || || || Sample ordered. ||
+|| MCP23S18 || SPI || 16-bits I/O Expander || || || || ||
+|| MCP3004 || SPI || 10-bits 4-channels ADC || || *YES* || analog || ||
+|| MCP3008 || SPI || 10-bits 8-channels ADC || || *YES* || analog || ||
+|| MCP3204 || SPI || 12-bits 4-channels ADC || || *YES* || analog || ||
+|| MCP3208 || SPI || 12-bits 8-channels ADC || || *YES* || analog || ||
+|| MCP4725 || I2C || 12-bits 1-channel DAC || || || analog || Purchased, waiting. ||
+|| MCP4921 || SPI || 12-bits 1-channel DAC || || *YES* || analog || ||
+|| MCP4922 || SPI || 12-bits 2-channels DAC || || *YES* || analog || ||
+|| MOD-IO2 || I2C || I/O Expander board with external power || || || || Community proposal. ||
+|| PCA9685 || I2C || 16-channels PWM/Servo driver || || *YES*|| analog || ||
+|| PCF8574 || I2C || 8-bits I/O Expander || || *YES* || digital || ||
+|| PCF8574A || I2C || 8-bits I/O Expander || || *YES* || digital || ||
+|| PCF8575 || I2C || 16-bits I/O Expander || || || || ||
+|| Pi-Face || SPI || I/O Expander board with open drain output || || || || ||
+|| TMP75 || I2C || Temperature sensor || || *YES* || sensor || ||
+|| TMP102 || I2C || Temperature sensor || || *YES* || sensor || ||
+|| TMP275 || I2C || Temperature sensor || || *YES* || sensor || ||
+|| TSL2561 || I2C || Light sensor || || || || Community proposal. ||
+|| VCNL4000 || I2C || Light and Proximity sensor with IR || || || || Community proposal. ||
