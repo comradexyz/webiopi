@@ -7,7 +7,7 @@
   * Added Serial, I2C, SPI and 1-Wire  support
     * Python lightweight drivers with no dependency
     * Automatically load required linux modules
-    * Added device drivers, see [DEVICES device support page]
+    * Added many device drivers, see [DEVICES device support page]
   * Added /etc/webiopi/config file
     * HTTP server config
     * CoAP server config
@@ -20,10 +20,12 @@
       * Automatic device mapping
       * Manual URL routing
   * Added Serial monitor web app
-  * Added jQuery-mobile
+  * Added Devices monitor web app
+  * Added Devices abstractions Javascript class
   * Added Javascript GPIO getValue and getFunction methods
-  * Added Server logging facility
   * Added Cache-Control REST response header
+  * Added Server logging facility
+  * Added jQuery-mobile
   * Improved button up/down handling on mobile devices
   * Fixed error fetching python-dev package during setup
   * Fixed webiopi-passwd missing execution flag when installing with PiStore
