@@ -24,3 +24,10 @@ WebIOPi can be run in several ways :
   * By adding WebIOPi in your own Python script
 
 WebIOPI is developed by Eric PTAK, also known as trouch, french R&D engineer in networks, software, mobility and Internet of Things.
+
+  * [README Installation, Usage]
+  * [CHANGELOG Changelog]
+  * [http://groups.google.com/group/webiopi Support & Discussion]
+  * [http://trouch.com Blog]
+  * [http://issuu.com/themagpi/docs/issue_9_final?mode=window WebRobotCam Part 1 in MagPi #9]
+  * [http://www.youtube.com/watch?v=wGahWkjettw Video tutorial] by RaspberryPiBeginners
