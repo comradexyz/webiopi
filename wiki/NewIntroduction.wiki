@@ -1,0 +1,26 @@
+*/!\ For 0.6.0 /!\*
+
+*WebIOPi is a fully integrated Internet of Things framework for the Raspberry Pi.*
+
+It includes web apps useful to start enjoying GPIOs and also to debug some circuits without writing any line of code. You can also create your own web interface using the included Javascript library, or the REST API. You can even use the WebIOPi power inside your own Python script using the Server library.
+
+==Features==
+  * REST API over HTTP and CoAP (draft-13)
+  * Server written in Python with zero dependency
+  * Client web apps written in full Javascript with jQuery
+  * Supports GPIO, Serial, I2C, SPI, 1-Wire
+  * Supports more than 30 devices including DAC, ADC, sensors...
+  * Includes debug web app
+    * Raspberry P1 Header
+    * GPIO "Expert" app
+    * Serial monitor
+    * Device monitor
+  * Extensible and highly customizable
+  * Login/Password protection
+  * Mobile device compatible
+
+WebIOPi can be run in several ways :
+  * With default service and init script
+  * By adding WebIOPi in your own Python script
+
+WebIOPI is developed by Eric PTAK, also known as trouch, french R&D engineer in networks, software, mobility and Internet of Things.
