@@ -9,7 +9,7 @@ It includes web apps useful to start enjoying GPIOs and also to debug some circu
   * Server written in Python with zero dependency
   * Client web apps written in full Javascript with jQuery
   * Supports GPIO, Serial, I2C, SPI, 1-Wire
-  * Supports more than 30 devices including DAC, ADC, sensors...
+  * Supports more than [DEVICES 30 devices] including DAC, ADC, sensors...
   * Includes debug web app
     * Raspberry P1 Header
     * GPIO "Expert" app
