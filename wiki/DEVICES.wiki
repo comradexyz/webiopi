@@ -26,7 +26,7 @@ http://files.trouch.com/icon/javascript.png _Javascript library_
 || Serial || http://files.trouch.com/icon/python.png http://files.trouch.com/icon/rest.png http://files.trouch.com/icon/javascript.png || ||
 || I2C || http://files.trouch.com/icon/python.png || REST API provided with component drivers below. ||
 || SPI || http://files.trouch.com/icon/python.png || REST API provided with component drivers below. ||
-|| 1-Wire || || Only supports DS18`*` temperature sensors, relies on w1-therm modules ||
+|| 1-Wire || || Only supports DS18`*` temperature sensors, relies on w1-therm modules. ||
 
 ==Components==
 ===Analog===
