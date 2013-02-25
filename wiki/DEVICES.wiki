@@ -23,7 +23,7 @@ http://files.trouch.com/icon/rest.png _REST API_
 http://files.trouch.com/icon/javascript.png _Javascript library_
 
 || *Name* || *RAW Access * || *Comment* ||
-|| Serial || http://files.trouch.com/icon/python.png http://files.trouch.com/icon/rest.png http://files.trouch.com/icon/javascript.png || ||
+|| Serial || http://files.trouch.com/icon/python.png http://files.trouch.com/icon/rest.png http://files.trouch.com/icon/javascript.png || Supports native UART and USB adapters. ||
 || I2C || http://files.trouch.com/icon/python.png || REST API provided with component drivers below. ||
 || SPI || http://files.trouch.com/icon/python.png || REST API provided with component drivers below. ||
 || 1-Wire || || Only supports DS18`*` temperature sensors, relies on w1-therm modules. ||
