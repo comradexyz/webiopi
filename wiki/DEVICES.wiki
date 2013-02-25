@@ -67,7 +67,6 @@ http://files.trouch.com/icon/javascript.png _Javascript library_
 || MCP23S17 || SPI || 16-bits I/O Expander || [http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en023500 http://files.trouch.com/icon/net.png] [http://ww1.microchip.com/downloads/en/DeviceDoc/21952b.pdf http://files.trouch.com/icon/pdf.gif] || || Planned. Sample ordered. ||
 || MCP23S18 || SPI || 16-bits I/O Expander with Open-Drain Output || [http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en537376 http://files.trouch.com/icon/net.png] [http://ww1.microchip.com/downloads/en/DeviceDoc/22103a.pdf http://files.trouch.com/icon/pdf.gif] || || Planned. ||
 || PCF8574 || I2C || 8-bits I/O Expander || [http://www.nxp.com/products/interface_and_connectivity/i2c/i2c_general_purpose_i_o/series/PCF8574.html http://files.trouch.com/icon/net.png] [http://www.nxp.com/documents/data_sheet/PCF8574.pdf http://files.trouch.com/icon/pdf.gif] || http://files.trouch.com/icon/python.png http://files.trouch.com/icon/rest.png http://files.trouch.com/icon/javascript.png || ||
-|| PCF8575 || I2C || 16-bits I/O Expander || [http://www.nxp.com/products/interface_and_connectivity/i2c/i2c_general_purpose_i_o/PCF8575TS.html http://files.trouch.com/icon/net.png] [http://www.nxp.com/documents/data_sheet/PCF8575.pdf http://files.trouch.com/icon/pdf.gif] || || ||
 
 ===Sensors===
 http://files.trouch.com/icon/net.png _Product page_
