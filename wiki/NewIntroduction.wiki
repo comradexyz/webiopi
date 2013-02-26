@@ -10,7 +10,7 @@ It includes web apps useful to start enjoying GPIOs and also to debug some circu
   * Javascript client library built on top of jQuery
   * Supports GPIO, Serial, I2C, SPI, 1-Wire with zero dependency
   * Supports more than [DEVICES 30 devices] including DAC, ADC, sensors...
-  * Fully compatible with both Python 2 and 3, including I2C, SPI and devices drivers.
+  * Fully compatible with both Python 2 and 3, including I2C, SPI and devices drivers
   * Includes debug web apps
     * GPIO Header
     * GPIO List
