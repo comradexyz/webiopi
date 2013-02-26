@@ -7,21 +7,18 @@ It includes web apps useful to start enjoying GPIOs and also to debug some circu
 ==Features==
   * REST API over HTTP and CoAP (draft-13) with multicast support
   * Server written in Python with zero dependency
-  * Client web apps written in full Javascript with jQuery
-  * Supports GPIO, Serial, I2C, SPI, 1-Wire
+  * Javascript client library built on top of jQuery
+  * Supports GPIO, Serial, I2C, SPI, 1-Wire with zero dependency
   * Supports more than [DEVICES 30 devices] including DAC, ADC, sensors...
-  * Includes debug web app
-    * Raspberry P1 Header
-    * GPIO "Expert" app
-    * Serial monitor
-    * Device monitor
-  * Extensible and highly customizable
-  * Login/Password protection
+  * Fully compatible with both Python 2 and 3, including I2C, SPI and devices drivers.
+  * Includes debug web apps
+    * GPIO Header
+    * GPIO List
+    * Serial Monitor
+    * Devices Monitor
   * Mobile device compatible
-
-WebIOPi can be run in several ways :
-  * With default service and init script
-  * By adding WebIOPi in your own Python script
+  * Login/Password protection
+  * Extensible and highly customizable
 
 WebIOPI is developed by Eric PTAK, also known as trouch, french R&D engineer in networks, software, mobility and Internet of Things.
 
