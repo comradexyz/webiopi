@@ -4,7 +4,7 @@
 
 To do this, WebIOPi need somes drivers that inherits from devices abstractions classes. Low level acces to I2C/SPI/... is provided by lightweights classes available in the WebIOPi core without dependencies. Configuration is provided with the [http://webiopi.googlecode.com/svn/trunk/python/config /etc/webiopi/config] file. Devices and bus drivers can also be directly used in your Python script.
 
-==Interfaces==
+==Bus Interfaces==
 http://files.trouch.com/icon/python.png _Python library_
 http://files.trouch.com/icon/rest.png _REST API_
 http://files.trouch.com/icon/javascript.png _Javascript library_
@@ -88,7 +88,7 @@ http://files.trouch.com/icon/javascript.png _Javascript library_
 || MOD-IO2 || I2C || I/O board with external power|| [https://www.olimex.com/Products/Modules/IO/MOD-IO2/ http://files.trouch.com/icon/net.png] [https://www.olimex.com/Products/Modules/IO/MOD-IO2/resources/MOD-IO2.pdf http://files.trouch.com/icon/pdf.gif] || || Community proposal ||
 || Pi-Face || SPI || I/O board with Open-Drain Output || [http://pi.cs.man.ac.uk/interface.htm http://files.trouch.com/icon/net.png] [https://github.com/thomasmacpherson/piface http://files.trouch.com/icon/pdf.gif] || || Planned - Pi-Face board required ||
 
-==Device not listed==
+==Device not listed ?==
 I cannot write a driver for all components, mainly because I don't have them, and I cannot buy everything. I could write drivers simply reading specs, but I will not be able to certify it work.
 
 ===Submit your devices===
