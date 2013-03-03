@@ -7,6 +7,9 @@
   * Supports more than [DEVICES 30 devices] including DAC, ADC, sensors...
   * Full Python library for the Server, GPIO, Serial, I2C, SPI and devices drivers
   * Compatible with both Python 2 and 3
+  * Extensible and highly customizable
+  * Login/Password protection
+  * Mobile devices compatible
   * Includes debug web apps
     * GPIO Header
     * GPIO List
@@ -14,9 +17,6 @@
     * Devices Monitor
   * Javascript client library built on top of jQuery
   * Python client library with HTTP and CoAP support
-  * Mobile device compatible
-  * Login/Password protection
-  * Extensible and highly customizable
 
 WebIOPI is developed by Eric PTAK, also known as trouch, french R&D engineer in networks, software, mobility and Internet of Things.
 
