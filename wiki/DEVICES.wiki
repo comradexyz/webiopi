@@ -1,21 +1,8 @@
 =Device support and plans=
 
-*With the upcoming release, you will be able to use Serial/I2C/SPI/1-Wire devices directly from the REST API without writing macros.*
+*With WebIOPi 0.6+, you can use Serial/I2C/SPI/1-Wire devices directly from the REST API without writing macros.*
 
-To do this, WebIOPi need somes drivers that use a special Python function decorator. Low level acces to I2C/SPI/... is provided by lightweights classes available in the WebIOPi core without dependencies. Drivers simply use those classes, and the decorator to expose functions on the REST API. Configuration is then provided with a new [http://webiopi.googlecode.com/svn/trunk/python/config /etc/webiopi/config] file.
-
-I cannot write a driver for all components, mainly because I don't have them, and I cannot buy everything. I could write drivers simply reading specs, but I will not be able to certify it work.
-
-Everything will be documented to help the community write drivers, and I hope people will submit some.
-But I would like to include most used components I can hand on.
-
-==Submit your devices==
-Feel free to submit any component you use and/or would like to use with WebIOPi on the [https://groups.google.com/d/topic/webiopi/p1lfi0pIBFA/discussion discussion thread]. Depending on demands, I may write the driver if I can have a sample. If possible, add a link to the datasheet.
-
-==How to help==
-If you absolutely need particular one, you can send/buy me a sample or make a [https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=79EM7ZV9FQ4HU donation], I will write the driver required.
-
-If you know how the device work on it's low level interface, look on the [http://code.google.com/p/webiopi/source/checkout source repository], starting with [http://webiopi.googlecode.com/svn/trunk/python/webiopi/devices/digital/pcf8574.py PCF8574], write your own and submit it.
+To do this, WebIOPi need somes drivers that inherits from devices abstractions classes. Low level acces to I2C/SPI/... is provided by lightweights classes available in the WebIOPi core without dependencies. Configuration is provided with the [http://webiopi.googlecode.com/svn/trunk/python/config /etc/webiopi/config] file. Devices and bus drivers can also be directly used in your Python script.
 
 ==Interfaces==
 http://files.trouch.com/icon/python.png _Python library_
@@ -89,7 +76,7 @@ http://files.trouch.com/icon/javascript.png _Javascript library_
 || TSL4531 || I2C || Light sensor || [http://www.ams.com/eng/Products/Light-Sensors/Ambient-Light-Sensor-ALS/TSL45317 http://files.trouch.com/icon/net.png] [http://ams.com/eng/content/download/250085/975413/142835 http://files.trouch.com/icon/pdf.gif] || http://files.trouch.com/icon/python.png http://files.trouch.com/icon/rest.png http://files.trouch.com/icon/javascript.png || Submitted by Andreas Riegg ||
 || VCNL4000 || I2C || Light and Proximity sensor with IR || [http://www.vishay.com/ppg?83798 http://files.trouch.com/icon/net.png] [http://www.vishay.com/docs/83798/vcnl4000.pdf http://files.trouch.com/icon/pdf.gif] || http://files.trouch.com/icon/python.png http://files.trouch.com/icon/rest.png http://files.trouch.com/icon/javascript.png || Submitted by Andreas Riegg ||
 
-==Expansion Boards==
+===Expansion Boards===
 http://files.trouch.com/icon/net.png _Product page_
 http://files.trouch.com/icon/pdf.gif _Datasheet_
 http://files.trouch.com/icon/python.png _Python library_
@@ -100,3 +87,14 @@ http://files.trouch.com/icon/javascript.png _Javascript library_
 || Arduino || ALL || I/O, ADC, PWM || [http://arduino.cc http://files.trouch.com/icon/net.png] || || Planned -  Arduino Firmware Required ||
 || MOD-IO2 || I2C || I/O board with external power|| [https://www.olimex.com/Products/Modules/IO/MOD-IO2/ http://files.trouch.com/icon/net.png] [https://www.olimex.com/Products/Modules/IO/MOD-IO2/resources/MOD-IO2.pdf http://files.trouch.com/icon/pdf.gif] || || Community proposal ||
 || Pi-Face || SPI || I/O board with Open-Drain Output || [http://pi.cs.man.ac.uk/interface.htm http://files.trouch.com/icon/net.png] [https://github.com/thomasmacpherson/piface http://files.trouch.com/icon/pdf.gif] || || Planned - Pi-Face board required ||
+
+==Device not listed==
+I cannot write a driver for all components, mainly because I don't have them, and I cannot buy everything. I could write drivers simply reading specs, but I will not be able to certify it work.
+
+===Submit your devices===
+Feel free to submit any component you use and/or would like to use with WebIOPi on the [https://groups.google.com/d/topic/webiopi/p1lfi0pIBFA/discussion discussion thread]. Depending on demands, I may write the driver if I can have a sample. If possible, add a link to the datasheet.
+
+===How to help===
+If you absolutely need particular one, you can send/buy me a sample or make a [https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=79EM7ZV9FQ4HU donation], I will write the driver required.
+
+If you know how the device work on it's low level interface, look on the [http://code.google.com/p/webiopi/source/checkout source repository], starting with [http://webiopi.googlecode.com/svn/trunk/python/webiopi/devices/digital/pcf8574.py PCF8574], write your own and submit it.
