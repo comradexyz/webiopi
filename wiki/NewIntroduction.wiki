@@ -34,13 +34,13 @@
   * Use the Java Client to use the REST API from a Java application, including Android
   * Use the REST API from any technology/language
 
-WebIOPI is developed by Eric PTAK, also known as trouch, french R&D engineer in networks, software, mobility and Internet of Things.
+WebIOPI is developed and provided by Eric PTAK, also known as trouch, french R&D engineer in networks, software, mobility and Internet of Things.
 
 *Where to start*
   * [README Installation, Usage]
   * [CHANGELOG Changelog]
   * [http://groups.google.com/group/webiopi Support & Discussion]
   * [http://trouch.com Blog]
-  * [http://issuu.com/themagpi/docs/issue_9_final?mode=window WebRobotCam Part 1 in MagPi #9]
-  * [http://issuu.com/themagpi/docs/issue_10_final?mode=window WebRobotCam Part 2 in MagPi #10]
+  * [http://issuu.com/themagpi/docs/issue_9_final?mode=window WebRobotCam Part 1 in MagPi #9] by the creator
+  * [http://issuu.com/themagpi/docs/issue_10_final?mode=window WebRobotCam Part 2 in MagPi #10] by the creator
   * [http://www.youtube.com/watch?v=wGahWkjettw Video tutorial] by RaspberryPiBeginners
