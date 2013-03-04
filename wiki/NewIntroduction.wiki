@@ -18,7 +18,7 @@
   * Javascript client library built on top of jQuery
   * Python client library with HTTP and CoAP support
 
-*Examples*
+*What for*
   * Use webiopi.GPIO library to replace RPi.GPIO in your Python scripts
   * Use devices drivers to interact with DAC, ADC, sensors and more in your Python scripts
   * Use Serial, I2C and SPI webiopi classes in your Python scripts
