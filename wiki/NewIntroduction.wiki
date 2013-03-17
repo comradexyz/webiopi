@@ -19,7 +19,7 @@
   * Python client library with HTTP and CoAP support
 
 *What for*
-  * Use webiopi.GPIO library to replace RPi.GPIO in your Python scripts
+  * Use webiopi.GPIO library to control GPIO in your Python scripts
   * Use devices drivers to interact with DAC, ADC, sensors and more in your Python scripts
   * Use Serial, I2C and SPI webiopi classes in your Python scripts
   * Use the GPIO Header web-app to play with GPIO and debug circuits
