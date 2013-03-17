@@ -1,7 +1,7 @@
 */!\ For 0.6.0 /!\*
 
 *WebIOPi is a fully integrated Internet of Things framework for the Raspberry Pi*
-  * REST API over HTTP and CoAP (draft-13) with multicast support
+  * REST API over HTTP and CoAP (draft-14) with multicast support
   * Server written in Python with zero dependency
   * Supports GPIO, Serial, I2C, SPI, 1-Wire with zero dependency
   * Supports more than [DEVICES 30 devices] including DAC, ADC, sensors...
