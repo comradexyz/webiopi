@@ -10,7 +10,7 @@ $ cd WebIOPi-0.6.0
 $ sudo ./setup.sh
 }}}
 
-Finally, run Python using webiopi module :
+Finally, run Python using webiopi command :
 {{{
 $ sudo webiopi [-h] [-c config] [-l log] [-s script] [-d] [port]
 
