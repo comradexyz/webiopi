@@ -1,5 +1,5 @@
 =Configuration file=
-The configuration file allows to setup the WebIOPi server when using webiopi command or service. The syntax is the same as windows INI files. Several [section] contains key=value pairs.
+The configuration file allows to setup the WebIOPi server when using webiopi command or service. The syntax is the same as windows INI files. Several [section] containing key=value pairs.
 
 == GPIO setup ==
 You can set default GPIO setup at WebIOPi startup.
