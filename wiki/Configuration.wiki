@@ -1,7 +1,27 @@
 <wiki:toc max_depth="2" />
 
 =Configuration file=
-The configuration file allows to setup the WebIOPi server when using webiopi command or service. The syntax is the same as windows INI files. Several [section] containing key=value pairs.
+The configuration file allows to setup the WebIOPi server when using webiopi command or service. The syntax is the same as windows INI files. Several [section] containing key=value pairs. The webiopi service use */etc/webiopi/config* as a configuration file.
+
+== HTTP server ==
+You can enable or disable the HTTP as well as changing the port. You can also change the passwd file location and folder to look up for HTML files.
+{{{
+[HTTP]
+enabled = true
+port = 8000
+passwd-file = /etc/webiopi/passwd
+doc-root = /home/pi/webiopi/examples/scripts/macros
+welcome-file = index.html
+}}}
+
+== CoAP server ==
+You can also enable or disable the CoAP server and change its port. By default, multicasting is enabled, you can disable it here.
+{{{
+[COAP]
+enabled = true
+port = 5683
+multicast = true
+}}}
 
 == GPIO setup ==
 You can set default GPIO setup at WebIOPi startup.
@@ -29,26 +49,6 @@ Loading custom script is easy. You can add setup/loop/destroy function as well a
 [SCRIPTS]
 # name = sourcefile
 myscript = /home/pi/webiopi/examples/scripts/macros/script.py
-}}}
-
-== HTTP server ==
-You can enable or disable the HTTP as well as changing the port. You can also change the passwd file location and folder to look up for HTML files.
-{{{
-[HTTP]
-enabled = true
-port = 8000
-passwd-file = /etc/webiopi/passwd
-doc-root = /home/pi/webiopi/examples/scripts/macros
-welcome-file = index.html
-}}}
-
-== CoAP server ==
-You can also enable or disable the CoAP server and change its port. By default, multicasting is enabled, you can disable it here.
-{{{
-[COAP]
-enabled = true
-port = 5683
-multicast = true
 }}}
 
 == Device registration ==
