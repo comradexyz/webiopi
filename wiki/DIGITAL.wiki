@@ -1,3 +1,4 @@
+<wiki:toc maxdepth=2/>
 = ADC =
 == analogCount() ==
 Returns the analog channel count.
@@ -29,29 +30,29 @@ Write a float ratio value to the given analog channel.
 Write a voltage value to the given analog channel.
 
 = PWM =
-== pwmCount ==
+== pwmCount() ==
 Returns the PWM channel count.
-== pwmResolution ==
+== pwmResolution() ==
 Returns the PWM resolution (bit count).
-== pwmMaximum ==
+== pwmMaximum() ==
 Returns the PWM maximum integer value.
-== pwmWrite ==
+== pwmWrite(channel, value) ==
 Write an integer value to the given PWM channel.
-== pwmWriteFloat ==
+== pwmWriteFloat(channel, ratio) ==
 Write a float duty-cycle ratio value to the given PWM channel.
-== pwmWriteAngle ==
+== pwmWriteAngle(channel, angle) ==
 Write a servo angle value to the given PWM channel.
-== pwmRead ==
+== pwmRead(channel) ==
 Returns the integer value of the given PWM channel.
-== pwmReadFloat ==
+== pwmReadFloat(channel) ==
 Returns the float duty-cycle ratio value of the given PWM channel.
-== pwmReadAngle ==
+== pwmReadAngle(channel) ==
 Returns the servo angle value of the given PWM channel.
-== pwmReadAll ==
+== pwmReadAll() ==
 Returns a list containing all PWM channels integer value.
-== pwmReadAllFloat ==
+== pwmReadAllFloat() ==
 Returns a list containing all PWM channels float duty-cycle ratio value.
-== pwmReadAllAngle ==
+== pwmReadAllAngle() ==
 Returns a list containing all PWM channels servo angle value.
-== pwmWildcard ==
+== pwmWildcard() ==
 Returns a list containing all PWM channels value.
