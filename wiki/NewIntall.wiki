@@ -25,7 +25,7 @@ $ sudo webiopi [-h] [-c config] [-l log] [-s script] [-d] [port]
       port                 Port to bind the HTTP Server
 }}}
  
-You're done, and ready to enjoy WebIOPi ! But the server and GPIO state will be lost when you'll stop the script (CTRL-C) or close the terminal session.
+You're done, and ready to enjoy WebIOPi ! But the server and GPIO state will be lost when you'll stop the script (CTRL-C) or close the terminal.
 
 You can also start/stop the background service :
 {{{
