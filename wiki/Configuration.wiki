@@ -1,7 +1,6 @@
-<wiki:toc max_depth="2" />
-
-=Configuration file=
 The configuration file allows to setup the WebIOPi server when using webiopi command or service. The syntax is the same as windows INI files. Several [section] containing key=value pairs. The webiopi service use */etc/webiopi/config* as a configuration file.
+
+<wiki:toc max_depth="2" />
 
 == HTTP server ==
 You can enable or disable the HTTP as well as changing the port. You can also change the passwd file location and folder to look up for HTML files.
