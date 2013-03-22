@@ -22,7 +22,7 @@
   * Added Serial monitor web app
   * Added Devices monitor web app
   * Added Devices abstractions Javascript class
-  * Added Javascript GPIO digitalRead/Write and getFunction methods
+  * Added GPIO digitalRead/Write and getFunction methods
   * Added Cache-Control REST response header
   * Added Server logging facility
   * Added jQuery-mobile
