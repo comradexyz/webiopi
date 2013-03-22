@@ -2,7 +2,7 @@ The configuration file allows to setup the WebIOPi server when using webiopi com
 
 <wiki:toc max_depth="2" />
 
-== HTTP server ==
+= HTTP server =
 You can enable or disable the HTTP as well as changing the port. You can also change the passwd file location and folder to look up for HTML files.
 {{{
 [HTTP]
@@ -13,7 +13,7 @@ doc-root = /home/pi/webiopi/examples/scripts/macros
 welcome-file = index.html
 }}}
 
-== CoAP server ==
+= CoAP server =
 You can also enable or disable the CoAP server and change its port. By default, multicasting is enabled, you can disable it here.
 {{{
 [COAP]
@@ -22,7 +22,7 @@ port = 5683
 multicast = true
 }}}
 
-== GPIO setup ==
+= GPIO setup =
 You can set default GPIO setup at WebIOPi startup.
 {{{
 [GPIO]
@@ -32,7 +32,7 @@ You can set default GPIO setup at WebIOPi startup.
 25 = OUT 1
 }}}
 
-== GPIO reset ==
+= GPIO reset =
 You can also reset GPIO with WebIOPi shutdown.
 {{{
 [~GPIO]
@@ -42,7 +42,7 @@ You can also reset GPIO with WebIOPi shutdown.
 25 = OUT 0
 }}}
 
-== Python script loading ==
+= Python script loading =
 Loading custom script is easy. You can add setup/loop/destroy function as well as register macros.
 {{{
 [SCRIPTS]
@@ -50,7 +50,7 @@ Loading custom script is easy. You can add setup/loop/destroy function as well a
 myscript = /home/pi/webiopi/examples/scripts/macros/script.py
 }}}
 
-== Device registration ==
+= Device registration =
 {{{
 [DEVICES]
 # Device configuration syntax:
@@ -81,7 +81,7 @@ pwm0 = PCA9685
 pwm1 = PCA9685 slave:0x41
 }}}
 
-== REST API configuration ==
+= REST API configuration =
 By default, REST API allows to GET/POST on all GPIOs, use gpio-export to limit GPIO available. You can also disable GPIO setup and toggling on the REST API.
 {{{
 [REST]
@@ -91,7 +91,7 @@ gpio-post-function = false
 device-mapping = false
 }}}
 
-== URL re-routing ==
+= URL re-routing =
 Adding routes allows to simplify access with Human comprehensive URLs
 {{{
 [ROUTES]
