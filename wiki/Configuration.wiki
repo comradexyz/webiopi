@@ -35,15 +35,9 @@ You can enable or disable the HTTP as well as changing the port. You can also ch
 [HTTP]
 enabled = true
 port = 8000
-
-# Use webiopi-passwd command to generate passwd file
 passwd-file = /etc/webiopi/passwd
-
-# Use doc-root to change default HTML and resource files location
-#doc-root = /home/pi/webiopi/examples/scripts/macros
-
-# Use welcome-file to change the default "Welcome" file
-#welcome-file = index.html
+doc-root = /home/pi/webiopi/examples/scripts/macros
+welcome-file = index.html
 }}}
 
 == CoAP server ==
@@ -63,7 +57,7 @@ multicast = true
 #   name   : used in the URL mapping
 #   device : device name
 #   args   : (optional) see device driver doc
-# If enabled, devices configured here are mapped on REST API /device/name
+# Devices configured here are mapped on REST API /device/name
 # Devices are also accessible in custom scripts using deviceInstance(name)
 # See device driver doc for methods and URI scheme available
 
