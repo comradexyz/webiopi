@@ -12,7 +12,7 @@ Returns the Voltage reference for a full scale (max integer or 1.0 float)
 Returns the integer value of the given analog channel.
 == analogReadFloat(channel) ==
 Returns the float value of the given analog channel, from 0.0 to 1.0.
-== analogReadVolt(channel)
+== analogReadVolt(channel)==
 Returns the voltage value of the given analog channel.
 == analogReadAll() ==
 Returns a list containing all analog channels integer value.
