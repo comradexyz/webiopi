@@ -5,8 +5,8 @@
 
 == Python Constructor ==
 Use following constructors if you want to use create some MCP492x from your python scripts.
-  * *MCP492x(chip)*
-  * *MCP492x(chip)*
+  * *MCP4921(chip)*
+  * *MCP4922(chip)*
 
 Parameters :
     * chip (optional, default=0): SPI Chip Enable number (0=CE0, 1=CE1)
@@ -24,7 +24,7 @@ mcp1 = MCP4922(chip=1)
 }}}
 
 == Configuration File syntax ==
-Use following syntax to setup some ADS1000 in the webiopi service/command configuration file.
+Use following syntax to setup some MCP492x in the webiopi service/command configuration file.
 {{{
 [DEVICES]
 # Setup a MCP4922 on SPI CE0
