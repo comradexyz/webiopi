@@ -2,7 +2,7 @@
 
 <wiki:toc maxdepth=2/>
 
-= ADC (Analog-to-Digital Converters)=
+= ADC (Analog-to-Digital Converter)=
 == Summary ==
 *ADC interface provide analogRead functions to read analog inputs.*
 
