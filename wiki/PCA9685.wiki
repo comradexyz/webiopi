@@ -11,7 +11,7 @@ Parameters :
     * slave (optional, default=0x40): I2C slave address
 
 {{{
-from webiopi.devices.analog import MCP4725
+from webiopi.devices.analog import PCA9685
 
 # Setup a PCA9685 on I2C slave 0x40 (default)
 pca0 = PCA9685()
