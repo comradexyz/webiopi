@@ -1,0 +1,52 @@
+*Digital package provides drivers for GPIO expanders.*
+
+<wiki:toc maxdepth=2/>
+
+= GPIOPort =
+== Summary ==
+*GPIOPort interface provide functions to use digital I/O.*
+
+== Supported devices ==
+  * [DS2408] (1-Wire)
+  * [MCP230xx] series (I2C): MCP23008, MCP23009, MCP23017, MCP23018
+  * [MCP23Sxx] series (SPI): MCP23S08, MCP23S09, MCP23S17, MCP23S18
+  * [PCF8574] (I2C)
+
+== Methods list ==
+
+=== digitalCount() ===
+Returns the digital channel count.
+
+REST API : GET /devices/*name*/count
+  * name : device name from configuration file
+
+=== digitalRead(channel) ===
+Returns the value of the given digital channel.
+
+REST API : GET /devices/*name*/*channel*/value
+  * name (str) : device name from configuration file
+  * channel (int) : digital channel number
+
+=== digitalReadAll() ===
+Returns a list containing all digital channels value.
+
+REST API : GET /devices/*name*/`*`/value
+  * name (str) : device name from configuration file
+
+=== digitalWrite(channel, val) ===
+Write the value of the given digital channel.
+
+REST API : GET /devices/*name*/*channel*/value/*val*
+  * name (str) : device name from configuration file
+  * channel (int) : digital channel number
+  * val (int) : digital value (0 or 1)
+
+== Python example ==
+{{{
+
+}}}
+
+== REST example ==
+{{{
+
+}}}
