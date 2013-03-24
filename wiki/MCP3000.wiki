@@ -1,7 +1,7 @@
 =MCP3000 series SPI Analog-to-Digital Converter=
 
 == Supported interfaces ==
-  * [ANALOG#ADC_(Analog-to-Digital_Converters) webiopi.devices.analog.ADC]
+  * [ANALOG#ADC_(Analog-to-Digital_Converter) webiopi.devices.analog.ADC]
 
 == Python Constructor ==
 Use following constructors if you want to use create some MCP3000 from your python scripts.
