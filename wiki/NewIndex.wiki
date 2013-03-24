@@ -4,7 +4,7 @@
   * [PASSWORD Password]
   * [CUSTOMIZE Customize]
   * API & Libraries
-    * [PYTHON Server Library]
+    * [PYTHON Server library]
     * [DEVICES Supported devices]
     * [DIGITAL Digital devices]
     * [ANALOG Analog devices]
