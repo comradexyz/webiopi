@@ -1,7 +1,7 @@
 =MCP23Sxx series SPI GPIO Expander=
 
 == Supported interfaces ==
-  * [DIGITAL#GPIOPort) webiopi.devices.digital.GPIOPort]
+  * [DIGITAL#GPIOPort webiopi.devices.digital.GPIOPort]
 
 == Python Constructor ==
 Use following constructors if you want to create some MCP230xx from your Python scripts.
