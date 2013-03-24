@@ -1,7 +1,7 @@
 =PCA9685 I2C Pulse Width Modulation driver=
 
 == Supported interfaces ==
-  * [ANALOG#DAC_(Digital-to-Analog_Converter) webiopi.devices.analog.DAC]
+  * [ANALOG#PWM_(Pulse_Width_Modulation) webiopi.devices.analog.PWM]
 
 == Python Constructor ==
 Use following constructors if you want to create some PCA9685 from your python scripts.
