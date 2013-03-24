@@ -7,8 +7,8 @@
 *ADC interface provide analogRead functions to read analog inputs.*
 
 == Supported devices ==
-  * ADS1x1x (I2C): ADS1014, 1015, 1114, 1115
-  * MCP3x0x (SPI): MCP3004, 3008, 3204, 3208
+  * [ADS1000] series (I2C): ADS1014, ADS1015, ADS1114, ADS1115
+  * [MCP3000] series (SPI): MCP3004, MCP3008, MCP3204, MCP3208
 
 == Methods list ==
 
@@ -108,8 +108,8 @@ HTTP GET /devices/ads/analog/0/volt     # returns "ads" analog channel 0 as volt
 *DAC interfaces extends ADC to add analogWrite functions.*
 
 == Supported devices ==
-  * MCP4725 (I2C)
-  * MCP492x (SPI) : MCP4921, 4922
+  * [MCP4725] (I2C)
+  * [MCP492x] (SPI) : MCP4921, MCP4922
 
 == Methods list ==
 
@@ -167,7 +167,7 @@ HTTP GET  /devices/mcp/analog/0/volt         # returns "mcp" analog channel 0 as
 *PWM interface provides pwmWrite functions to output duty-cycle ratio PWM.*
 
 == Supported devices ==
-  * PCA9685 (I2C)
+  * [PCA9685] (I2C)
 
 == Methods lists ==
 === pwmCount() ===
