@@ -1,13 +1,18 @@
-*MCP3000 series SPI ADC.*
-  * MCP3004
-  * MCP3008
-  * MCP3204
-  * MCP3208
+=MCP3000 series SPI Analog-to-Digital Converter=
 
-= Supported interfaces =
+== Supported interfaces ==
   * [ANALOG#ADC webiopi.devices.analog.ADC]
 
-= Python Constructor =
+== Python Constructor ==
+Use following constructors if you want to use create some MCP3000 from your python scripts.
+  * *MCP3004(chip)*
+  * *MCP3008(chip)*
+  * *MCP3204(chip)*
+  * *MCP3208(chip)*
+
+Parameters :
+    * chip (optional, default=0): SPI Chip Enable number (0=CE0, 1=CE1)
+
 {{{
 from webiopi.devices.analog import MCP3004, MCP3008, MCP3204, MCP3208
 
@@ -20,7 +25,8 @@ mcp0 = MCP3008(chip=0)
 mcp1 = MCP3008(chip=1)
 }}}
 
-= Configuration File syntax =
+== Configuration File syntax ==
+Use following syntax to setup some MCP3000 in the webiopi service/command configuration file.
 {{{
 [DEVICES]
 # Setup a MCP3008 on SPI CE0
