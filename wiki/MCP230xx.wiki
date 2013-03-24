@@ -1,7 +1,7 @@
 =MCP230xx series I2C GPIO expander=
 
 == Supported interfaces ==
-  * [DIGITAL#GPIOPort) webiopi.devices.digital.GPIOPort]
+  * [DIGITAL#GPIOPort webiopi.devices.digital.GPIOPort]
 
 == Python Constructor ==
 Use following constructors if you want to create some MCP230xx from your python scripts.
