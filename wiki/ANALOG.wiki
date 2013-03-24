@@ -144,9 +144,9 @@ from webiopi.devices.analog import MCP4725
 mcp = MCP4725(...)           # setup a MCP4725 I2C DAC
 mcp.analogCount()            # returns MCP4725 analog channel count
 max = mcp.analogMaximum()    # returns MCP4725 maximum integer value
-mcp.analogWrite(0, max)      # set max to MCP4725 analog channel 0
-mcp.analogWriteFloat(0, 1.0) # set max to MCP4725 analog channel 0
-mcp.analogWriteVolt(0, 0.0)  # set 0 to MCP4725 analog channel 0
+mcp.analogWrite(0, max)      # set 100% on MCP4725 analog channel 0
+mcp.analogWriteFloat(0, 0.5) # set  50% on MCP4725 analog channel 0
+mcp.analogWriteVolt(0, 0.0)  # set   0V on MCP4725 analog channel 0
 mcp.analogRead(0)            # returns MCP4725 analog channel 0 as integer
 mcp.analogReadFloat(0)       # returns MCP4725 analog channel 0 as float
 mcp.analogReadVolt(0)        # returns MCP4725 analog channel 0 as volt
