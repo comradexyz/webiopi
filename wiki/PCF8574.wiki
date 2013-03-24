@@ -1,7 +1,7 @@
 =PCF8574 series I2C GPIO expander=
 
 == Supported interfaces ==
-  * [DIGITAL#GPIOPort) webiopi.devices.digital.GPIOPort]
+  * [DIGITAL#GPIOPort webiopi.devices.digital.GPIOPort]
 
 == Python Constructor ==
 Use following constructors if you want to create some PCF8574 from your python scripts.
