@@ -143,10 +143,10 @@ REST API : POST /devices/*name*/analog/*channel*/volt/*value*
 from webiopi.devices.analog import MCP4725
 mcp = MCP4725(...)           # setup a MCP4725 I2C DAC
 mcp.analogCount()            # returns MCP4725 analog channel count
-mcp.analogMaximum()          # returns MCP4725 maximum integer value
-mcp.analogWrite(0, 0)        # returns MCP4725 analog channel 0 as integer
-mcp.analogWriteFloat(0, 0.0) # returns MCP4725 analog channel 0 as integer
-mcp.analogWriteVolt(0, 0.0)  # returns MCP4725 analog channel 0 as integer
+max = mcp.analogMaximum()    # returns MCP4725 maximum integer value
+mcp.analogWrite(0, max)      # set max to MCP4725 analog channel 0
+mcp.analogWriteFloat(0, 1.0) # set max to MCP4725 analog channel 0
+mcp.analogWriteVolt(0, 0.0)  # set 0 to MCP4725 analog channel 0
 mcp.analogRead(0)            # returns MCP4725 analog channel 0 as integer
 mcp.analogReadFloat(0)       # returns MCP4725 analog channel 0 as float
 mcp.analogReadVolt(0)        # returns MCP4725 analog channel 0 as volt
@@ -154,9 +154,9 @@ mcp.analogReadVolt(0)        # returns MCP4725 analog channel 0 as volt
 
 == REST example ==
 {{{
-HTTP POST /devices/mcp/analog/0/integer/0    # returns "mcp" analog channel 0 as integer
-HTTP POST /devices/mcp/analog/0/float/0.0    # returns "mcp" analog channel 0 as float
-HTTP POST /devices/mcp/analog/0/volt/0.0     # returns "mcp" analog channel 0 as volt
+HTTP POST /devices/mcp/analog/0/integer/0    # send 0 to "mcp" analog channel 0
+HTTP POST /devices/mcp/analog/0/float/0.0    # send 0 to "mcp" analog channel 0
+HTTP POST /devices/mcp/analog/0/volt/0.0     # send 0 to "mcp" analog channel 0
 HTTP GET  /devices/mcp/analog/0/integer      # returns "mcp" analog channel 0 as integer
 HTTP GET  /devices/mcp/analog/0/float        # returns "mcp" analog channel 0 as float
 HTTP GET  /devices/mcp/analog/0/volt         # returns "mcp" analog channel 0 as volt
@@ -263,27 +263,26 @@ REST API : GET /devices/*name*/pwm/`*`
 == Python example ==
 {{{
 from webiopi import deviceInstance
-from webiopi.devices.analog import ADS1015, MCP3208
-ads = ADS1015(...)          # setup a ADS1015 I2C ADC
+from webiopi.devices.analog import PCA9685
+pca = PCA9685(...)          # setup a PCA9685 I2C PWM
 # or
-ads = deviceInstance("ads") # retrieve device named "ads" in configuration file
-ads.analogCount()           # returns ADS1015 analog channel count
-ads.analogMaximum()         # returns ADS1015 maximum integer value
-ads.analogRead(0)           # returns ADS1015 analog channel 0 as integer
-ads.analogReadFloat(0)      # returns ADS1015 analog channel 0 as float
-ads.analogReadVolt(0)       # returns ADS1015 analog channel 0 as volt
-
-mcp = MCP3208(...)          # setup a MCP3208 SPI ADC
-mcp.analogCount()           # returns MCP3208 analog channel count
-mcp.analogMaximum()         # returns MCP3208 maximum integer value
-mcp.analogRead(0)           # returns MCP3208 analog channel 0 as integer
-mcp.analogReadFloat(0)      # returns MCP3208 analog channel 0 as float
-mcp.analogReadVolt(0)       # returns MCP3208 analog channel 0 as volt
+pca = deviceInstance("pca") # retrieve device named "pca" in configuration file
+pca.pwmCount()              # returns PCA9685 pwm channel count
+max = pca.pwmMaximum()      # returns PCA9685 maximum integer value
+pca.pwmWrite(0, max)        # set 100% on PCA9685 pwm channel 0 (integer value)
+pca.pwmWriteFloat(0, 0.5)   # set  50% on PCA9685 pwm channel 0 (float value)
+pca.pwmWriteAngle(0, 0.0)   # set   0° on PCA9685 pwm channel 0 (servo angle value)
+pca.pwmRead(0)              # returns PCA9685 pwm channel 0 as integer
+pca.pwmReadFloat(0)         # returns PCA9685 pwm channel 0 as float
+pca.pwmReadAngle(0)         # returns PCA9685 pwm channel 0 as angle
 }}}
 
 == REST example ==
 {{{
-HTTP GET /devices/ads/analog/0/integer  # returns "ads" analog channel 0 as integer
-HTTP GET /devices/ads/analog/0/float    # returns "ads" analog channel 0 as float
-HTTP GET /devices/ads/analog/0/volt     # returns "ads" analog channel 0 as volt
+HTTP POST /devices/pca/pwm/0/integer/0  # set 0% on "pca" pwm channel 0 (integer value)
+HTTP POST /devices/pca/pwm/0/float/0.0  # set 0% on "pca" pwm channel 0 (float value)
+HTTP POST /devices/pca/pwm/0/angle/0.0  # set 0° on "pca" pwm channel 0 (servo angle value)
+HTTP GET  /devices/pca/pwm/0/integer    # returns "pca" pwm channel 0 as integer
+HTTP GET  /devices/pca/pwm/0/float      # returns "pca" pwm channel 0 as float
+HTTP GET  /devices/pca/pwm/0/angle      # returns "pca" pwm channel 0 as servo angle
 }}}
