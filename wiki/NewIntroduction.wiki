@@ -34,7 +34,7 @@
   * Use the Java Client to use the REST API from a Java application, including Android
   * Use the REST API from any technology/language
 
-WebIOPI is developed and provided by Eric PTAK, also known as trouch, french R&D engineer in networks, software, mobility and Internet of Things.
+WebIOPI is developed and provided by Eric PTAK, also known as trouch, french R&D engineer in networks, software, and Internet of Things.
 
 *Where to start*
   * [README Installation]
