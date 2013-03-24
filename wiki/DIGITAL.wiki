@@ -4,7 +4,7 @@
 
 = GPIOPort =
 == Summary ==
-*GPIOPort interface provide functions to use digital I/O.*
+*GPIOPort interface provides functions to use digital I/O.*
 
 == Supported devices ==
   * [DS2408] (1-Wire)
@@ -33,17 +33,81 @@ Returns a list containing all digital channels value.
 REST API : GET /devices/*name*/`*`/value
   * name (str) : device name from configuration file
 
-=== digitalWrite(channel, val) ===
+=== digitalWrite(channel, digit) ===
 Write the value of the given digital channel.
 
-REST API : GET /devices/*name*/*channel*/value/*val*
+REST API : POST /devices/*name*/*channel*/value/*digit*
   * name (str) : device name from configuration file
   * channel (int) : digital channel number
-  * val (int) : digital value (0 or 1)
+  * digit (int) : digital value (0 or 1)
+
+=== portRead() ===
+Returns an integer composed of all digital bits.
+
+REST API : POST /devices/*name*/`*`/integer
+  * name (str) : device name from configuration file
+
+=== portWrite(value) ===
+Write on all digital channels with an integer composed of all bits.
+
+REST API : POST /devices/*name*/`*`/integer/*value*
+  * name (str) : device name from configuration file
+  * value (int) : integer value to write on the port.
+
+=== getFunction(channel) ===
+Returns the current fonction of the given digital channel.
+  * channel (int) : digital channel number
+
+REST API : Use getFunctionString instead.
+
+=== getFunctionString(channel) ===
+Returns the current fonction of the given digital channel.
+
+REST API : GET /devices/*name*/*channel*/function
+  * name (str) : device name from configuration file
+  * channel (int) : digital channel number
+
+=== setFunction(channel, func) ===
+Setup the given digital channel with the given function
+  * channel (int) : digital channel number
+  * func (int) : GPIO.IN or GPIO.OUT
+
+REST API : Use setFunctionString instead.
+
+=== setFunctionString(channel, func) ===
+Setup the given digital channel.
+
+REST API : GET /devices/*name*/*channel*/function/*func*
+  * name (str) : device name from configuration file
+  * channel (int) : digital channel number
+  * func (str) : "IN" or "OUT"
+
+=== wildcard() ===
+Returns a list containing the current value and function of all digital channels.
+
+REST API : GET /devices/*name*/`*`
+  * name (str) : device name from configuration file
 
 == Python example ==
 {{{
+mcp = MCP23008(...)
+or
+mcp = deviceInstance("mcp")
 
+mcp.getFunction(0)              # Get current MCP digital channel 0 setup
+
+mcp.setFunction(0, GPIO.OUT)    # Setup MCP digital channel 0 as output
+mcp.setFunction(1, GPIO.OUT)    # Setup MCP digital channel 1 as output
+mcp.setFunction(2, GPIO.OUT)    # Setup MCP digital channel 2 as output
+mcp.setFunction(3, GPIO.OUT)    # Setup MCP digital channel 3 as output
+
+mcp.digitalRead(4)              # Read MCP digital channel 0
+
+mcp.digitalWrite(4, GPIO.HIGH)  # Write MCP digital channel 4 as HIGH
+
+mcp.portWrite(0x0F)             # Write channels 0-3 as HIGH
+
+mcp.portRead()                  # Read all MCP digital channels in a single integer
 }}}
 
 == REST example ==
