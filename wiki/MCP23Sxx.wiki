@@ -15,7 +15,7 @@ Parameters :
   * slave (optional, default=0x20): MCP23Sxx slave address    
 
 {{{
-from webiopi.devices.analog import MC23S17
+from webiopi.devices.digital import MC23S17
 
 # Setup a MC23S17 on SPI CE0 with slave address 0x20 (default)
 mcp0 = MC23S17()
