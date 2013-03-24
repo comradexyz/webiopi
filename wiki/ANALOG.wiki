@@ -1,4 +1,7 @@
+*Analog package provides drivers for ADC, DAC, and PWM components.*
+
 <wiki:toc maxdepth=2/>
+
 = ADC =
 *ADC interface provide analogRead functions to read analog inputs.*
 
@@ -6,68 +9,99 @@ Devices supporting ADC interface :
   * ADS1x1x (I2C): ADS1014, 1015, 1114, 1115
   * MCP3x0x (SPI): MCP3004, 3008, 3204, 3208
 
-== analogCount() ==
+== Methods list ==
+
+=== analogCount() ===
 Returns the analog channel count.
 
 REST API : GET /devices/*name*/analog/count
   * name : device name from configuration file
 
-== analogResolution() ==
+=== analogResolution() ===
 Returns the analog resolution (bit count).
 
 REST API : GET /devices/*name*/analog/count
   * name : device name from configuration file
 
-== analogMaximum() ==
+=== analogMaximum() ===
 Returns the analog maximum integer value.
 
 REST API : GET /devices/*name*/analog/maximum
   * name : device name from configuration file
 
-== analogReference() ==
+=== analogReference() ===
 Returns the Voltage reference for a full scale.
 
 REST API : GET /devices/*name*/analog/vref
   * name : device name from configuration file
 
-== analogRead(channel) ==
+=== analogRead(channel) ===
 Returns the integer value of the given analog channel.
 
 REST API : GET /devices/*name*/analog/*channel*/integer
   * name (str) : device name from configuration file
   * channel (int) : analog channel number
 
-== analogReadFloat(channel) ==
+=== analogReadFloat(channel) ===
 Returns the float value of the given analog channel, from 0.0 to 1.0.
 
 REST API : GET /devices/*name*/analog/*channel*/float
   * name (str) : device name from configuration file
   * channel (int) : analog channel number
 
-== analogReadVolt(channel)==
+=== analogReadVolt(channel)===
 Returns the voltage value of the given analog channel.
 
 REST API : GET /devices/*name*/analog/*channel*/volt
   * name (str) : device name from configuration file
   * channel (int) : analog channel number
 
-== analogReadAll() ==
+=== analogReadAll() ===
 Returns a list containing all analog channels integer value.
 
 REST API : GET /devices/*name*/analog/`*`/integer
   * name (str) : device name from configuration file
 
-== analogReadAllFloat() ==
+=== analogReadAllFloat() ===
 Returns a list containing all analog channels float value.
 
 REST API : GET /devices/*name*/analog/`*`/float
   * name (str) : device name from configuration file
 
-== analogReadAllVolt() ==
+=== analogReadAllVolt() ===
 Returns a list containing all analog channels voltage value.
 
 REST API : GET /devices/*name*/analog/`*`/float
   * name (str) : device name from configuration file
+
+== Python example ==
+
+{{{
+from webiopi import deviceInstance
+from webiopi.devices.analog import ADS1015, MCP3208
+ads = ADS1015(slave=0x48)   # setup a ADS1015 on I2C slave 0x48
+# or
+ads = deviceInstance("ads") # retrieve device named "ads" in configuration file
+ads.analogCount()           # returns ADS1015 analog channel count
+ads.analogMaximum()         # returns ADS1015 maximum integer value
+ads.analogRead(0)           # returns ADS1015 analog channel 0 as integer
+ads.analogReadFloat(0)      # returns ADS1015 analog channel 0 as float
+ads.analogReadVolt(0)       # returns ADS1015 analog channel 0 as volt
+
+mcp = MCP3208(chip=0)       # setup a MCP3208 on SPI CE 0
+mcp.analogCount()           # returns MCP3208 analog channel count
+mcp.analogMaximum()         # returns MCP3208 maximum integer value
+mcp.analogRead(0)           # returns MCP3208 analog channel 0 as integer
+mcp.analogReadFloat(0)      # returns MCP3208 analog channel 0 as float
+mcp.analogReadVolt(0)       # returns MCP3208 analog channel 0 as volt
+}}}
+
+== REST example ==
+{{{
+HTTP GET /devices/ads/analog/0/integer  # returns "ads" analog channel 0 as integer
+HTTP GET /devices/ads/analog/0/float    # returns "ads" analog channel 0 as float
+HTTP GET /devices/ads/analog/0/volt     # returns "ads" analog channel 0 as volt
+}}}
 
 = DAC =
 *DAC interfaces extends ADC to add analogWrite functions.*
