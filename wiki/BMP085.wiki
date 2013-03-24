@@ -1,0 +1,27 @@
+=BMP085 I2C Temperature and Pressure sensor =
+
+== Supported interfaces ==
+  * [SENSOR#Temperature webiopi.devices.sensor.Temperature]
+  * [SENSOR#Pressure webiopi.devices.sensor.Pressure]
+
+== Python Constructor ==
+Use following constructors if you want to create some BMP085 from your python scripts.
+  * *BMP085(slave)*
+
+Parameters :
+    * slave (optional, default=0b1110111): I2C slave address
+
+{{{
+from webiopi.devices.sensor import BMP085
+
+# Setup a BMP085 on I2C slave 0b1110111 (default)
+bmp = BMP085()
+}}}
+
+== Configuration File syntax ==
+Use following syntax to setup some BMP085 in the webiopi service/command configuration file.
+{{{
+[DEVICES]
+# Setup a BMP085 on I2C slave 0b1110111 (default)
+bmp = BMP085
+}}}
