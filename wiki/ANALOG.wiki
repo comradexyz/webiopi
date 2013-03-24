@@ -2,7 +2,7 @@
 
 <wiki:toc maxdepth=2/>
 
-= ADC =
+= ADC (Analog-to-Digital Converters)=
 == Summary ==
 *ADC interface provide analogRead functions to read analog inputs.*
 
@@ -103,7 +103,7 @@ HTTP GET /devices/ads/analog/0/float    # returns "ads" analog channel 0 as floa
 HTTP GET /devices/ads/analog/0/volt     # returns "ads" analog channel 0 as volt
 }}}
 
-= DAC =
+= DAC (Digital-to-Analog Converter)=
 == Summary ==
 *DAC interfaces extends ADC to add analogWrite functions.*
 
@@ -162,7 +162,7 @@ HTTP GET  /devices/mcp/analog/0/float        # returns "mcp" analog channel 0 as
 HTTP GET  /devices/mcp/analog/0/volt         # returns "mcp" analog channel 0 as volt
 }}}
 
-= PWM =
+= PWM (Pulse Width Modulation)=
 == Summary ==
 *PWM interface provides pwmWrite functions to output duty-cycle ratio PWM.*
 
