@@ -1,4 +1,4 @@
-*Analog package provides drivers for ADC, DAC, and PWM components.*
+*Analog package provides drivers for analog converter and PWM drivers.*
 
 <wiki:toc maxdepth=2/>
 
