@@ -1,7 +1,7 @@
 =MCP492x series SPI Digital-to-Analog Converter=
 
 == Supported interfaces ==
-  * [ANALOG#DAC_(Digital-to-Analog_Converters) webiopi.devices.analog.DAC]
+  * [ANALOG#DAC_(Digital-to-Analog_Converter) webiopi.devices.analog.DAC]
 
 == Python Constructor ==
 Use following constructors if you want to use create some MCP492x from your python scripts.
