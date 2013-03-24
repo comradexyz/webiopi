@@ -1,4 +1,4 @@
-=Device support and plans=
+=Device support=
 
 *With WebIOPi 0.6+, you can use Serial/I2C/SPI/1-Wire devices directly from the REST API without writing macros.*
 
