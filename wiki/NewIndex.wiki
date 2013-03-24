@@ -5,7 +5,7 @@
   * [CUSTOMIZE Customize]
   * API & Libraries
     * [PYTHON Server library]
-    * [DEVICES Supported devices]
+    * [DEVICES Devices supported]
     * [DIGITAL Digital library]
     * [ANALOG Analog library]
     * [SENSOR Sensor library]
