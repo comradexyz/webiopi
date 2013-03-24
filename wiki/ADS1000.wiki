@@ -8,7 +8,7 @@ Use following constructors if you want to use create some ADS1000 from your pyth
   * *ADS1014(slave)*
   * *ADS1015(slave)*
   * *ADS1114(slave)*
-  * *ADS1115(chip)*
+  * *ADS1115(slave)*
 
 Parameters :
     * slave (optional, default=0x48): I2C slave address
