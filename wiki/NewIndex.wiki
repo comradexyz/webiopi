@@ -1,5 +1,5 @@
   * [NewIntroduction Introduction]
-  * [NewInstall Installation]
+  * [NewInstal Installation]
   * [Configuration Configuration]
   * [PASSWORD Password]
   * [CUSTOMIZE Customize]
