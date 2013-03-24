@@ -1,0 +1,33 @@
+*MCP3000 series SPI ADC.*
+  * MCP3004
+  * MCP3008
+  * MCP3204
+  * MCP3208
+
+= Supported interfaces =
+  * [ANALOG#ADC webiopi.devices.analog.ADC]
+
+= Python Constructor =
+{{{
+from webiopi.devices.analog import MCP3004, MCP3008, MCP3204, MCP3208
+
+# Setup a MCP3008 on SPI CE0
+mcp0 = MCP3008()
+# or
+mcp0 = MCP3008(chip=0)
+
+# Setup a MCP3008 on SPI CE1
+mcp1 = MCP3008(chip=1)
+}}}
+
+= Configuration File syntax =
+{{{
+[DEVICES]
+# Setup a MCP3008 on SPI CE0
+mcp0 = MCP3008
+# or
+mcp0 = MCP3008 chip:0
+
+# Setup a MCP3008 on SPI CE1
+mcp1 = MCP3008 chip:1
+}}}
