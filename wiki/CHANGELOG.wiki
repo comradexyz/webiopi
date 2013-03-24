@@ -8,17 +8,7 @@
     * Python lightweight drivers with no dependency
     * Automatically load required linux modules
     * Added many device drivers, see [DEVICES device support page]
-  * Added /etc/webiopi/config file
-    * HTTP server config
-    * CoAP server config
-    * GPIO setup
-    * Script loading facility
-    * Serial lines config
-    * Devices config
-    * REST API config
-      * GPIO exported to the API
-      * Automatic device mapping
-      * Manual URL routing
+  * Added [Configuration] file
   * Added Serial monitor web app
   * Added Devices monitor web app
   * Added Devices abstractions Javascript class
