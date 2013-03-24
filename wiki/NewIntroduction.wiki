@@ -37,10 +37,9 @@
 WebIOPI is developed and provided by Eric PTAK, also known as trouch, french R&D engineer in networks, software, mobility and Internet of Things.
 
 *Where to start*
-  * [README Installation, Usage]
-  * [CHANGELOG Changelog]
+  * [README Installation]
   * [http://groups.google.com/group/webiopi Support & Discussion]
-  * [http://trouch.com Blog]
-  * [http://issuu.com/themagpi/docs/issue_9_final?mode=window WebRobotCam Part 1 in MagPi #9] by the creator
-  * [http://issuu.com/themagpi/docs/issue_10_final?mode=window WebRobotCam Part 2 in MagPi #10] by the creator
+  * [http://trouch.com Developer's Blog (Eric/trouch)]
+  * [http://issuu.com/themagpi/docs/issue_9_final?mode=window WebRobotCam Part 1 in MagPi #9] by Eric
+  * [http://issuu.com/themagpi/docs/issue_10_final?mode=window WebRobotCam Part 2 in MagPi #10] by Eric
   * [http://www.youtube.com/watch?v=wGahWkjettw Video tutorial] by RaspberryPiBeginners
