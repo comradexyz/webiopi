@@ -4,7 +4,7 @@
   * [ANALOG#DAC_(Digital-to-Analog_Converter) webiopi.devices.analog.DAC]
 
 == Python Constructor ==
-Use following constructors if you want to use create some MCP4725 from your python scripts.
+Use following constructors if you want to create some MCP4725 from your python scripts.
   * *MCP4725(slave)*
 
 Parameters :
