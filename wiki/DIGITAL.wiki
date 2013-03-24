@@ -90,27 +90,34 @@ REST API : GET /devices/*name*/`*`
 
 == Python example ==
 {{{
-mcp = MCP23008(...)
-or
-mcp = deviceInstance("mcp")
+form webiopi.devices.digital import MCP23008
+mcp = MCP23008(...)             # setup a MCP23008 I2C GPIO expander
+# or
+from webiopi import deviceInstance
+mcp = deviceInstance("mcp")     # retrieve device named "mcp" in configuration file
 
-mcp.getFunction(0)              # Get current MCP digital channel 0 setup
+mcp.getFunction(0)              # get current MCP digital channel 0 setup
 
-mcp.setFunction(0, GPIO.OUT)    # Setup MCP digital channel 0 as output
-mcp.setFunction(1, GPIO.OUT)    # Setup MCP digital channel 1 as output
-mcp.setFunction(2, GPIO.OUT)    # Setup MCP digital channel 2 as output
-mcp.setFunction(3, GPIO.OUT)    # Setup MCP digital channel 3 as output
+mcp.setFunction(0, GPIO.OUT)    # setup MCP digital channel 0 as output
+mcp.setFunction(1, GPIO.OUT)    # setup MCP digital channel 1 as output
+mcp.setFunction(2, GPIO.OUT)    # setup MCP digital channel 2 as output
+mcp.setFunction(3, GPIO.OUT)    # setup MCP digital channel 3 as output
 
-mcp.digitalRead(4)              # Read MCP digital channel 0
+mcp.digitalRead(4)              # read MCP digital channel 0
 
-mcp.digitalWrite(4, GPIO.HIGH)  # Write MCP digital channel 4 as HIGH
+mcp.digitalWrite(4, GPIO.HIGH)  # write MCP digital channel 4 as HIGH
 
-mcp.portWrite(0x0F)             # Write channels 0-3 as HIGH
+mcp.portWrite(0x0F)             # write channels 0-3 as HIGH
 
-mcp.portRead()                  # Read all MCP digital channels in a single integer
+mcp.portRead()                  # read all MCP digital channels in a single integer
 }}}
 
 == REST example ==
 {{{
 
+HTTP GET  /devices/mcp/0/function      # retrieve "mcp" channel 0 setup
+HTTP GET  /devices/mcp/0/value         # retrieve "mcp" channel 0 digital value
+
+HTTP POST /devices/mcp/0/function/out  # set "mcp" channel 0 as output
+HTTP POST /devices/mcp/0/value/1       # set "mcp" channel 0 as digital HIGH
 }}}
