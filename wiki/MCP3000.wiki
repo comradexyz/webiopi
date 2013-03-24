@@ -4,7 +4,7 @@
   * [ANALOG#ADC_(Analog-to-Digital_Converter) webiopi.devices.analog.ADC]
 
 == Python Constructor ==
-Use following constructors if you want to use create some MCP3000 from your python scripts.
+Use following constructors if you want to create some MCP3000 from your python scripts.
   * *MCP3004(chip)*
   * *MCP3008(chip)*
   * *MCP3204(chip)*
