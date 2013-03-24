@@ -4,7 +4,7 @@
   * [ANALOG#ADC_(Analog-to-Digital_Converter) webiopi.devices.analog.ADC]
 
 == Python Constructor ==
-Use following constructors if you want to use create some ADS1000 from your python scripts.
+Use following constructors if you want to create some ADS1000 from your python scripts.
   * *ADS1014(slave)*
   * *ADS1015(slave)*
   * *ADS1114(slave)*
