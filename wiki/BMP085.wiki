@@ -9,7 +9,7 @@ Use following constructors if you want to create a BMP085 from your python scrip
   * *BMP085(altitude, external)*
 
 Parameters:
-  * altitude (int, optional) : Altitude in meter of the sensor
+  * altitude (int, optional) : Altitude of the sensor, in meters
   * external (Temperature, optional) : External temperature sensor to use for compensated pressure.
 
 {{{
