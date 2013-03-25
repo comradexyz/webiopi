@@ -5,20 +5,35 @@
   * [SENSOR#Pressure webiopi.devices.sensor.Pressure]
 
 == Python Constructor ==
-Use following constructors if you want to create some BMP085 from your python scripts.
-  * *BMP085()*
+Use following constructors if you want to create a BMP085 from your python scripts.
+  * *BMP085(altitude, external)*
+
+Parameters:
+  * altitude (int, optional) : Altitude in meter of the sensor
+  * external (Temperature, optional) : External temperature sensor to use for compensated pressure.
 
 {{{
 from webiopi.devices.sensor import BMP085
 
-# Setup a BMP085
+# Setup a BMP085 with no altitude or external sensor
 bmp = BMP085()
+
+# Setup a Temperature sensor for pressure compensation
+tmp = DS18B20(...)
+# Setup a BMP085 with the external temperature sensor for pressure compensation
+bmp = BMP085(altitude=100, external:tmp)
+
 }}}
 
 == Configuration File syntax ==
-Use following syntax to setup some BMP085 in the webiopi service/command configuration file.
+Use following syntax to setup a BMP085 in the webiopi service/command configuration file.
 {{{
 [DEVICES]
-# Setup a BMP085
+# Setup a BMP085 with no altitude or external sensor
 bmp = BMP085
+
+# Setup a Temperature sensor for pressure compensation
+tmp = DS18B20
+# Setup a BMP085 with the external temperature sensor for pressure compensation
+bmp = BMP085 altitude:100 external:tmp
 }}}
