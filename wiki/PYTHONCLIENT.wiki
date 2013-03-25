@@ -1,0 +1,28 @@
+Using WebIOPi from the browser is easy, but using it from an application is now easy as well. Just like the Javascript library, you can use the Python and Java Client libraries to make anything-to-Pi or Pi-to-Pi communication. Python client library provides both HTTP and CoAP WebIOPi Clients, and also a Mixed one, which uses CoAP with a HTTP fallback.
+
+{{{
+from webiopi.clients import *
+from time import sleep
+
+client = PiHttpClient("192.168.1.234")
+#client = PiMixedClient("192.168.1.234")
+#client = PiCoapClient("192.168.1.234")
+#client = PiMulticastClient()
+
+client.setCredentials("webiopi", "raspberry")
+
+gpio = NativeGPIO(client)
+gpio.setFunction(25, "out")
+state = True
+
+adc0 = ADC(client, "adc0")
+
+while True: 
+    global gpio, state, adc0
+    gpio.digitalWrite(25, state)
+    state = not state
+    a0 = adc0.analogRead(0)
+    print(a0)
+    sleep(0.5)
+}}}
+
