@@ -9,7 +9,7 @@
 == Supported devices ==
   * [OneWireTemp DS18*] (1-Wire)
   * [TMPXXX] (I2C) : TMP75, TMP102, TMP275
-  * [BMP085]
+  * [BMP085] (I2C)
 
 == Methods list ==
 
