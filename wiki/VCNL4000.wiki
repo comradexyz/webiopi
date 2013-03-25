@@ -1,8 +1,8 @@
 =VCNL4000 I2C Distance and Luminosity sensor =
 
 == Supported interfaces ==
-  * [SENSOR#Temperature webiopi.devices.sensor.Distance]
-  * [SENSOR#Pressure webiopi.devices.sensor.Luminosity]
+  * [SENSOR#Distance webiopi.devices.sensor.Distance]
+  * [SENSOR#Luminosity webiopi.devices.sensor.Luminosity]
 
 == Python Constructor ==
 Use following constructors if you want to create a VCNL4000 from your python scripts.
