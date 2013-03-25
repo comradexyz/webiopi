@@ -1,10 +1,9 @@
-*/!\ For 0.6.0 /!\*
+===WebIOPi is a fully integrated Internet of Things framework for the Raspberry Pi.===
+  * Control, debug, and use your Pi's I/O locally or remotely.
+  * From a browser or any app, WebIOPi is the perfect swiss-knife to make connected thing with the Pi.
+  * Developed and provided by Eric PTAK, french R&D engineer in networks, software, and Internet of Things.
 
-*WebIOPi is a fully integrated Internet of Things framework for the Raspberry Pi.*
-
-Developed and provided by Eric PTAK, french R&D engineer in networks, software, and Internet of Things.
-
-*Features*
+===Features===
   * REST API over HTTP and CoAP (draft-14) with multicast support
   * Server written in Python with zero dependency
   * Supports GPIO, Serial, I2C, SPI, 1-Wire with zero dependency
@@ -22,7 +21,7 @@ Developed and provided by Eric PTAK, french R&D engineer in networks, software, 
   * Javascript client library built on top of jQuery
   * Python client library with HTTP and CoAP support
 
-*What for*
+===What for===
   * Use webiopi.GPIO library to control GPIO in your Python scripts
   * Use devices drivers to interact with DAC, ADC, sensors and more in your Python scripts
   * Use Serial, I2C and SPI webiopi classes in your Python scripts
@@ -38,8 +37,7 @@ Developed and provided by Eric PTAK, french R&D engineer in networks, software, 
   * Use the Java Client to use the REST API from a Java application, including Android
   * Use the REST API from any technology/language
 
-
-*Where to start*
+===Where to start===
   * [INSTALLATION Installation]
   * [http://groups.google.com/group/webiopi Support & Discussion]
   * [http://trouch.com Developer's Blog (Eric/trouch)]
