@@ -35,7 +35,7 @@ Use following syntax to setup a TMP102 in the webiopi service/command configurat
 # Setup a TMP102 with I2C slave address 0x48 (default)
 tmp0 = TMP102
 # or
-tmp1 = TMP102 slave:0x48
+tmp0 = TMP102 slave:0x48
 
 # Setup a TMP102 with I2C slave address 0x49
 tmp1 = TMP102 slave:0x49
