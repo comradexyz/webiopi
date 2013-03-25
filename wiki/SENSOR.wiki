@@ -7,7 +7,7 @@
 *Temperature interface provides functions to read temperature.*
 
 == Supported devices ==
-  * [OneWireTemp DS18`*`] (1-Wire)
+  * [OneWireTemp DS18*] (1-Wire)
   * [TMPXXX] (I2C) : TMP75, TMP102, TMP275
   * [BMP085]
 
