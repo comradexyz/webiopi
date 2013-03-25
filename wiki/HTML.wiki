@@ -1,7 +1,3 @@
-WebIOPi customization is easy but requires some Javascript and CSS knowledge for the UI. You can also create your own Python script to change the server behavior.
-
-http://trouch.com/wp-content/uploads/2012/11/webiopi-architecture.png
-
 =HTML/Javascript : Client and UI=
 The WebIOPi Javascript library allows you to make your own interface easily, only requiring one single script tag to include /webiopi.js
 
