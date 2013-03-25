@@ -1,6 +1,10 @@
 */!\ For 0.6.0 /!\*
 
-*WebIOPi is a fully integrated Internet of Things framework for the Raspberry Pi*
+*WebIOPi is a fully integrated Internet of Things framework for the Raspberry Pi.*
+
+Developed and provided by Eric PTAK, french R&D engineer in networks, software, and Internet of Things.
+
+*Features*
   * REST API over HTTP and CoAP (draft-14) with multicast support
   * Server written in Python with zero dependency
   * Supports GPIO, Serial, I2C, SPI, 1-Wire with zero dependency
@@ -34,7 +38,6 @@
   * Use the Java Client to use the REST API from a Java application, including Android
   * Use the REST API from any technology/language
 
-WebIOPI is developed and provided by Eric PTAK, also known as trouch, french R&D engineer in networks, software, and Internet of Things.
 
 *Where to start*
   * [INSTALLATION Installation]
@@ -43,3 +46,17 @@ WebIOPI is developed and provided by Eric PTAK, also known as trouch, french R&D
   * [http://issuu.com/themagpi/docs/issue_9_final?mode=window WebRobotCam Part 1 in MagPi #9] by Eric
   * [http://issuu.com/themagpi/docs/issue10final?mode=window WebRobotCam Part 2 in MagPi #10] by Eric
   * [http://www.youtube.com/watch?v=wGahWkjettw Video tutorial] by RaspberryPiBeginners
+
+<p></p>
+
+http://trouch.com/wp-content/uploads/2012/11/webiopi-architecture.png
+
+http://trouch.com/wp-content/uploads/2012/08/webiopi-chrome.png
+
+http://trouch.com/wp-content/uploads/2013/03/webiopi-0.6-serialmon.png
+
+http://trouch.com/wp-content/uploads/2013/03/webiopi-0.6-devices1.png
+
+<p></p>
+
+<p align="center"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=79EM7ZV9FQ4HU">https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif</a></p>
