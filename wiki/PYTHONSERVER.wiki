@@ -1,5 +1,5 @@
 = New Python Server Library =
-The new Server [Configuration] file allows to load customs Python scripts for advanced configuration or computation. You can write your scripts with an Arduino sketch-like format using *setup/loop/destroy* functions. Macro registering to the REST API has been simplified as it only requires to add *@macro* before each macro definition.
+The new Server [CONFIGURATION configuration file] allows to load customs Python scripts for advanced configuration or computation. You can write your scripts with an Arduino sketch-like format using *setup/loop/destroy* functions. Macro registering to the REST API has been simplified as it only requires to add *@macro* before each macro definition.
 
 {{{
 import webiopi
@@ -22,7 +22,7 @@ def Hello(first, last):
     return "Hello %s %s !" % (first, last)
 }}}
 
-Anyone should be able to use the included library without changing their 0.5 habits and extend WebIOPi without worrying about the Server. Simply register the script in the [Configuration] File :
+Anyone should be able to use the included library without changing their 0.5 habits and extend WebIOPi without worrying about the Server. Simply register the script in the [CONFIGURATION configuration file]:
 {{{
 [SCRIPTS]
 myscript = /path/to/script.py
