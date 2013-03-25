@@ -28,4 +28,4 @@ Anyone should be able to use the included library without changing their 0.5 hab
 myscript = /path/to/script.py
 }}}
 
-As usual, make a POST to /macros/Hello/Eric,PTAK to call the macro or use one of the client.
+Make a POST to /macros/Hello/Eric,PTAK to call the macro or use one of the client helpers.
