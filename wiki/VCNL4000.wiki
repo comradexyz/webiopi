@@ -28,7 +28,7 @@ vcnl = VCNL4000()
 Use following syntax to setup a VCNL4000 in the webiopi service/command configuration file.
 {{{
 [DEVICES]
-# Setup a VCNL4000 with no altitude or external sensor
+# Setup a VCNL4000
 vcnl = VCNL4000
 
 }}}
