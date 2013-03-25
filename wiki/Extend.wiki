@@ -22,4 +22,10 @@ def Hello(first, last):
     return "Hello %s %s !" % (first, last)
 }}}
 
-Anyone should be able to use the included library without changing their habits and extend WebIOPi without worrying about the Server. As usual, make a POST to /macros/Hello/Eric,PTAK to call the macro or use one of the client.
+Anyone should be able to use the included library without changing their 0.5 habits and extend WebIOPi without worrying about the Server. Simply register the script in the [Configuration] File :
+{{{
+[SCRIPTS]
+myscript = /path/to/script.py
+}}}
+
+As usual, make a POST to /macros/Hello/Eric,PTAK to call the macro or use one of the client.
