@@ -21,7 +21,7 @@ bmp = BMP085()
 # Setup a Temperature sensor for pressure compensation
 tmp = DS18B20(...)
 # Setup a BMP085 with the external temperature sensor for pressure compensation
-bmp = BMP085(altitude=100, external:tmp)
+bmp = BMP085(altitude=100, external=tmp)
 
 }}}
 
