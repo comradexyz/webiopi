@@ -16,7 +16,7 @@ $ sudo webiopi [-h] [-c config] [-l log] [-s script] [-d] [port]
     Options:
       -h, --help           Display this help
       -c, --config  file   Load config from file
-      -l, --log     file      Log to file
+      -l, --log     file   Log to file
       -s, --script  file   Load script from file
       -d, --debug          Enable DEBUG
 
