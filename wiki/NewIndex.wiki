@@ -1,7 +1,7 @@
   * [INTRODUCTION Introduction]
   * [CHANGELOG Changelog]
-  * [INSTALLATION Installation]
-  * [CONFIGURATION Configuration]
+  * [INSTALL Installation]
+  * [CONFIG Configuration]
   * [PASSWORD Change Password]
   * Libraries & REST API
     * [PYTHONSERVER New Server library]
