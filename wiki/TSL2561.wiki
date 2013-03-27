@@ -11,7 +11,7 @@ Use following constructors if you want to create a TSL2561 from your python scri
 
 Parameters:
   * slave (optional, default=0x39) : I2C slave address (0x29, 0x39, 0x49)
-  * time (optional, default=402): Integration time in ms (402, 101, 14)
+  * time (optional, default=402) : Integration time in ms (402, 101, 14)
   * gain (optional, default=1) : Extra gain factor (1, 16)
 
 {{{
