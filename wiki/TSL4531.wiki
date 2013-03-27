@@ -13,7 +13,7 @@ Use following constructors if you want to create a TSL4531 from your python scri
 
 Parameters:
   * slave (optional, default=0x39) : I2C slave address
-  * time (optional, default=400)
+  * time (optional, default=400) : Integration time in ms (400, 200, 100)
 
 {{{
 from webiopi.devices.sensor import TSL4531
