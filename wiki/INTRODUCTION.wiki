@@ -38,7 +38,7 @@
   * Use the REST API from any technology/language
 
 ===Where to start===
-  * [INSTALLATION Installation]
+  * [INSTALL Installation]
   * [http://groups.google.com/group/webiopi Support & Discussion]
   * [http://trouch.com Developer's Blog (Eric/trouch)]
   * [http://issuu.com/themagpi/docs/issue_9_final?mode=window WebRobotCam Part 1 in MagPi #9] by Eric
