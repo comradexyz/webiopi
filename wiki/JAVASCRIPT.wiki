@@ -1,5 +1,3 @@
-*<font color="red">WebIOPi 0.5.x Javascript library</font>*
-
 You can use the included Javascript library to build your own interface. You will find an example on the [CUSTOMIZE] page.
 
 <wiki:toc max_depth="3" />
