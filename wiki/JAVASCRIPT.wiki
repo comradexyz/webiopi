@@ -1,4 +1,4 @@
-You can use the included Javascript library to build your own interface. You will find an example on the [CUSTOMIZE] page.
+You can use the included Javascript library to build your own interface. You will find an example on the [HTML] page.
 
 <wiki:toc max_depth="3" />
 
