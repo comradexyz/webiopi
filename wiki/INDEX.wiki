@@ -3,6 +3,10 @@
   * [INSTALL Installation]
   * [CONFIGURATION Configuration]
   * [PASSWORD Change Password]
+  * Customize
+    * [JAVASCRIPT Javascript]
+    * [HTML]
+    * [CSS]
   * Libraries & REST API
     * [PYTHONSERVER New Server library]
     * [PYTHON Old Server library]
@@ -12,9 +16,5 @@
     * [SENSOR Sensor package]
     * [RESTAPI GPIO REST API]
   * Clients libraries
-    * [JAVASCRIPT Javascript]
     * [PYTHONCLIENT Python]
     * [JAVACLIENT Java]
-  * Customize
-    * [HTML]
-    * [CSS]
