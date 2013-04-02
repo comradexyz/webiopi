@@ -70,11 +70,11 @@ After unpacking WebIOPi, you'll find the following code in examples/custom/index
 	});
 		
 	function mousedown() {
-		webiopi().setValue(7, 1);
+		webiopi().digitalWrite(7, 1);
 	}
 	
 	function mouseup() {
-		webiopi().setValue(7, 0);
+		webiopi().digitalWrite(7, 0);
 	}
 	
 	function outputSequence() {
