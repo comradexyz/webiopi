@@ -15,7 +15,7 @@ Set the function on the GPIO.
   * (string) func : "IN" or "OUT" or "PWM"
   * (function) callback (optional) : function called when result received from the server
 
-=WebIOPi.setValue(gpio, value[, callback])=
+=WebIOPi.digitalWrite(gpio, value[, callback])=
 Set the output value of a GPIO.
   * (int) gpio : GPIO number from 0 to 53
   * (int) value : 0 or 1
