@@ -39,15 +39,12 @@
 
 ===Where to start===
   * [INSTALL Installation]
+  * [SCREENS Screenshots]
   * [http://groups.google.com/group/webiopi Support & Discussion]
   * [http://trouch.com Developer's Blog (Eric/trouch)]
   * [http://issuu.com/themagpi/docs/issue_9_final?mode=window WebRobotCam Part 1 in MagPi #9] by Eric
   * [http://issuu.com/themagpi/docs/issue10final?mode=window WebRobotCam Part 2 in MagPi #10] by Eric
   * [http://www.youtube.com/watch?v=wGahWkjettw Video tutorial] by RaspberryPiBeginners
-
-<p></p>
-
-http://trouch.com/wp-content/uploads/2012/11/webiopi-architecture.png
 
 <p></p>
 
