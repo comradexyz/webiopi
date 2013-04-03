@@ -49,12 +49,6 @@
 
 http://trouch.com/wp-content/uploads/2012/11/webiopi-architecture.png
 
-http://trouch.com/wp-content/uploads/2012/08/webiopi-chrome.png
-
-http://trouch.com/wp-content/uploads/2013/03/webiopi-0.6-serialmon.png
-
-http://trouch.com/wp-content/uploads/2013/03/webiopi-0.6-devices1.png
-
 <p></p>
 
 <p align="center"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=79EM7ZV9FQ4HU">https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif</a></p>
