@@ -1,1 +1,21 @@
-Roadmap has been moved to [http://code.google.com/p/webiopi/issues/list?can=2&q=enhancement bug tracker]
+This roadmap gives information about upcoming work. Each feature/fix will be added for the given packaged version at last.
+
+0.6.2 (April 2013):
+  * Remove name from BUS/I2C/SPI.__init__ and add __str__
+  * Ease DS2482 I2C 1-Wire controller use
+  * Add RPIDOM board support
+  * Add PiFace board support
+  * Complete all clients libraries
+
+0.7 (May-June 2013):
+  * Improve software PWM (issue 42)
+  * Add GPIO interrupt handling (issue 8)
+  * Improve HTTP handling (issue 40)
+  * Add HTTP push (issue 9)
+  * Make debian package (issue 41)
+  * Add Arduino board support
+  * Devices configuration setup (issue 34)
+
+0.8 (June-July 2013):
+  * Improve default UI
+  * Add task scheduling (issue 19)
