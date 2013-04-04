@@ -20,11 +20,13 @@ This roadmap gives information about upcoming work. Each feature/fix will be add
   * Add digest authentication
 
 0.8 (June/July 2013):
-  * Improve default UI
+  * Improve default web UI
+  * Mobile apps
   * Add task scheduling (issue 19)
   * Add administration web app
 
 0.9 (H2 2013):
+  * UI builder
 
 1.0 (???):
   * Java server version
