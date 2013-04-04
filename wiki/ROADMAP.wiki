@@ -1,4 +1,4 @@
-This roadmap gives information about upcoming work. Each featurewill be added for the given version at last.
+This roadmap gives information about upcoming work. Each feature will be added for the given version at last. Firsts items have higher priority. 
 
 0.6.2 (April 2013):
   * Remove name from BUS/I2C/SPI.__init__ and add __str__
@@ -13,6 +13,7 @@ This roadmap gives information about upcoming work. Each featurewill be added fo
   * Improve HTTP handling (issue 40)
   * Add HTTPS support
   * Add data push (issue 9)
+  * Asynchronous client libraries
   * Make debian package (issue 41)
   * Add Arduino board support
   * Devices configuration setup (issue 34)
