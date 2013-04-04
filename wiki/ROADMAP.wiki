@@ -1,4 +1,4 @@
-This roadmap gives information about upcoming work. Each feature/fix will be added for the given packaged version at last.
+This roadmap gives information about upcoming work. Each featurewill be added for the given version at last.
 
 0.6.2 (April 2013):
   * Remove name from BUS/I2C/SPI.__init__ and add __str__
