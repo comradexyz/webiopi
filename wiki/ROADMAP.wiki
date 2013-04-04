@@ -7,15 +7,24 @@ This roadmap gives information about upcoming work. Each feature/fix will be add
   * Add PiFace board support
   * Complete all clients libraries
 
-0.7 (May-June 2013):
+0.7 (May/June 2013):
   * Improve software PWM (issue 42)
   * Add GPIO interrupt handling (issue 8)
   * Improve HTTP handling (issue 40)
-  * Add HTTP push (issue 9)
+  * Add HTTPS support
+  * Add data push (issue 9)
   * Make debian package (issue 41)
   * Add Arduino board support
   * Devices configuration setup (issue 34)
+  * Advanced user management
+  * Add digest authentication
 
-0.8 (June-July 2013):
+0.8 (June/July 2013):
   * Improve default UI
   * Add task scheduling (issue 19)
+  * Add administration web app
+
+0.9 (H2 2013):
+
+1.0 (???):
+  * Java server version
