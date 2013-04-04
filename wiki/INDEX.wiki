@@ -1,8 +1,11 @@
   * [INTRODUCTION Introduction]
   * [CHANGELOG Changelog]
-  * [INSTALL Installation]
-  * [CONFIGURATION Configuration]
-  * [PASSWORD Change Password]
+  * [ROADMAP Roadmap]
+  * Basics
+    * [UPGRADE Upgrade]
+    * [INSTALL Installation]
+    * [CONFIGURATION Configuration]
+    * [PASSWORD Change Password]
   * Customize
     * [JAVASCRIPT Javascript]
     * [HTML]
