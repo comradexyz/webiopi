@@ -42,7 +42,7 @@ You can also reset GPIO with WebIOPi shutdown.
 25 = OUT 0
 }}}
 
-= Python script loading =
+= Script loading =
 Loading custom script is easy. You can add setup/loop/destroy function as well as register macros.
 {{{
 [SCRIPTS]
