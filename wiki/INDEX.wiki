@@ -1,7 +1,7 @@
   * [INTRODUCTION Introduction]
   * [CHANGELOG Changelog]
   * [ROADMAP Roadmap]
-  * Basics
+  * [Basics]
     * [UPGRADE Upgrade]
     * [INSTALL Installation]
     * [CONFIGURATION Configuration]
