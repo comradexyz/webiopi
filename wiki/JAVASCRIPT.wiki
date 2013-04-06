@@ -21,6 +21,11 @@ Set the output value of a GPIO.
   * (int) value : 0 or 1
   * (function) callback (optional) : function called when result received from the server
 
+=WebIOPi.digitalRead(gpio[, callback])=
+Read the value of a GPIO.
+  * (int) gpio : GPIO number from 0 to 53
+  * (function) callback (optional) : function called when result received from the server
+
 =WebIOPi.toggleValue(gpio)=
 Toggle value of a GPIO.
   * (int) gpio : GPIO number from 0 to 53
