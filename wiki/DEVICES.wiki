@@ -87,7 +87,7 @@ http://files.trouch.com/icon/javascript.png _Javascript library_
 || *Name* || *Bus* || *Description* || *Links* || *Support * || *Comment* ||
 || Arduino || ALL || I/O, ADC, PWM || [http://arduino.cc http://files.trouch.com/icon/net.png] || || Planned -  Arduino Firmware Required ||
 || MOD-IO2 || I2C || I/O board with external power|| [https://www.olimex.com/Products/Modules/IO/MOD-IO2/ http://files.trouch.com/icon/net.png] [https://www.olimex.com/Products/Modules/IO/MOD-IO2/resources/MOD-IO2.pdf http://files.trouch.com/icon/pdf.gif] || || Community proposal ||
-|| Pi-Face || SPI || I/O board with Open-Drain Output || [http://pi.cs.man.ac.uk/interface.htm http://files.trouch.com/icon/net.png] [https://github.com/thomasmacpherson/piface http://files.trouch.com/icon/pdf.gif] || || Planned - Pi-Face board required ||
+|| Pi-Face || SPI || I/O board with Open-Drain Output || [http://pi.cs.man.ac.uk/interface.htm http://files.trouch.com/icon/net.png] [https://github.com/thomasmacpherson/piface http://files.trouch.com/icon/pdf.gif] || || Planned ||
 || RPIDOM || I2C || Téléinfo and 1-Wire controller || [http://www.yadom.fr/carte-rpidom.html http://files.trouch.com/icon/net.png] || || Planned - Board gracefully provided by Yadom ||
 
 ==Device not listed ?==
