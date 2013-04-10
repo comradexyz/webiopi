@@ -1,33 +1,39 @@
 This roadmap gives information about upcoming work. Each feature will be added for the given version at last. Firsts items have higher priority. 
 
-0.6.2 (April 2013):
+0.7 (April 2013):
   * Remove name from BUS/I2C/SPI.`__init__, add __str__`
   * Ease DS2482 I2C 1-Wire controller use
   * Add RPIDOM board support
   * Add PiFace board support
   * Complete all clients libraries
 
-0.7 (May 2013):
+0.8 :
   * Improve software PWM (issue 42)
   * Add GPIO interrupt handling (issue 8)
+
+0.9 :
   * Improve HTTP handling (issue 40)
   * Add HTTPS support
   * Add data push (issue 9)
+
+0.10 :
   * Asynchronous client libraries
   * Make debian package (issue 41)
   * Add Arduino board support
+
+0.11 :
   * Devices configuration setup (issue 34)
   * Advanced user management
   * Add digest authentication
 
-0.8 (June 2013):
+0.12 :
   * Mobile apps
   * Improve default web UI
   * Add task scheduling (issue 19)
   * Add administration web app
 
-0.9 (H2 2013):
+0.13 :
   * UI builder
 
-1.0 (???):
+1.0 :
   * Java server version
