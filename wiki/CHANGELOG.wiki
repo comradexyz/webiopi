@@ -1,3 +1,7 @@
+==trunk/developer version==
+  * Support multiple MCP23Sxx with a single SPI Chip Enable
+  * Added Pi-Face Digital support
+
 ==0.6 (27/03/13)==
   * Added CoAP ([http://tools.ietf.org/html/draft-ietf-core-coap-14 draft-14]) implementation (Server and Client)
   * Added Python WebIOPi Client class (HTTP or CoAP with HTTP fallback)
