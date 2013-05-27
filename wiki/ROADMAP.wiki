@@ -1,6 +1,6 @@
 This roadmap gives information about upcoming work. Each feature will be added for the given version at last. Firsts items have higher priority. 
 
-0.7 (April 2013):
+0.7 :
   * Remove name from BUS/I2C/SPI.`__init__, add __str__`
   * Ease DS2482 I2C 1-Wire controller use
   * Add RPIDOM board support
